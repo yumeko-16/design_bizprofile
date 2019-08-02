@@ -124,3 +124,12 @@ header a {
 .header-menu-item-dropDown li:hover a {
   color: #fff;
 }
+
+footer {
+  width: 100%;
+  background: #0096DE;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
