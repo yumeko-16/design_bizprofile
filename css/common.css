@@ -19,6 +19,102 @@
   width: 100%;
   height: 80px;
   background-color: #FFF;
+  box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
+}
+
+.header-menu {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.header-menu > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-menu > li:hover {
+  background-color: rgba(52,152,219,0.3);
+}
+
+.header-menu-logo {
+  margin-right: auto;
+}
+
+.header-menu-logo img {
+  display: block;
+}
+
+.header-menu-item {
+  margin-right: 15px;
+}
+
+.header-menu-item a {
+  text-decoration: none;
+}
+
+.header-menu-item img {
+  vertical-align: bottom;
+}
+
+.header-menu-item-userName {
+  display: inline;
+  vertical-align: text-bottom;
+  font-size: 12px;
+}
+
+.header-menu-item-dropDown {
+  display: none;
+}
+
+.header-menu-item:hover .header-menu-item-dropDown {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 150px;
+  background-color: #FFF;
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.header-menu-item-dropDown li {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-menu-item-dropDown > li:hover {
+  background: #0096DE;
+}
+
+.header-menu-item-dropDown a {
+  color: #333;
+}
+
+.header-menu-item-dropDown li:hover a {
+  color: #fff;
+}
+
+.logo{
+  width: 150px;
+  height: 76px;
+}
+
+.image-myprofile{
+  width: 45px;
+  height: 45px;
+}
+
+.image-memberlist{
+  width: 50;
+  height: 50;
 }
 
 .title{
