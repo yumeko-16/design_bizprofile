@@ -12,10 +12,6 @@
 /*
 　1.common
 ================================*/
-span {
-  color: #333;
-}
-
 .sp-none {
   display: block;
 }
@@ -30,27 +26,24 @@ span {
   clear: both;
 }
 
-.mgr-5 {
-  margin-right: 5px;
-}
-
 /*
 　2.header
 ================================*/
 .header {
   display: flex;
+  position: fixed;
   width: 100%;
   margin: 0 auto;
   box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
   list-style: none;
 }
 
-header a {
-  display: block;
-}
-
 .header__logo {
   margin-right: auto;
+}
+
+.header__logo a {
+  display: block;
 }
 
 .header__logo img {
@@ -62,7 +55,7 @@ header a {
   display: flex;
 }
 
-.header__nav-list {
+.header__nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,53 +64,11 @@ header a {
   list-style: none;
 }
 
-.header__nav-list a {
-  text-decoration: none;
-}
-
-.header__nav-list img {
-  vertical-align: bottom;
-}
-
-
-
-.header-menu {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  list-style: none;
-}
-
-.header-menu > li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-menu-item {
-  margin-right: 15px;
-}
-
-.header-menu-item a {
-  text-decoration: none;
-}
-
-.header-menu-item img {
-  vertical-align: bottom;
-}
-
-.header-menu-item-userName {
-  display: inline;
-  vertical-align: text-bottom;
-  font-size: 12px;
-}
-
-.header-menu-item-dropDown {
+.header__dropDown {
   display: none;
 }
 
-.header-menu-item:hover .header-menu-item-dropDown {
+.header__nav-item:hover .header__dropDown {
   display: block;
   overflow: hidden;
   position: absolute;
@@ -125,28 +76,32 @@ header a {
   right: 0;
   width: 150px;
   box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
+  background-color: #fff;
   font-size: 14px;
 }
 
-.header-menu-item-dropDown li {
+.header__dropDown-item {
   display: block;
   padding: 10px;
   text-align: center;
-}
-
-.header-menu-item-dropDown > li:hover {
-  background: #0096DE;
-}
-
-.header-menu-item-dropDown a {
   color: #333;
+  text-decoration: none;
 }
 
-.header-menu-item-dropDown li:hover a {
+.header__dropDown-item:hover {
+  background: #0096DE;
   color: #fff;
 }
 
-footer {
+.header__dropDown-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*
+　3.footer
+================================*/
+.footer {
   width: 100%;
   background: #0096DE;
   font-size: 14px;
