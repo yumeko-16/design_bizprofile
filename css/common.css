@@ -98,6 +98,10 @@
   color: #333;
 }
 
+.header__dropDown-item:hover a {
+  color: #fff;
+}
+
 /*
 　3.main
 ================================*/
