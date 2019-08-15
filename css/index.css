@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.menu_image {
+.menu img {
   width: 60px;
   height: 60px;
   margin-bottom: 5px;
@@ -16,16 +16,20 @@
   opacity: 0.5;
 }
 
-.menu ul li {
+.menu__item {
   display: inline-block;
   width: 272px;
   height: 140px;
   padding: 30px 0 0;
   margin: 0 30px;
   background-color: #689ACA;
+}
+
+.menu__item a {
   color: #FFF;
   font-weight: bold;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .table {
