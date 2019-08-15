@@ -61,6 +61,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 60px;
   margin-right: 15px;
   list-style: none;
 }
@@ -83,8 +84,9 @@
 
 .header__dropDown-item {
   display: block;
-  padding: 10px;
-  text-align: center;
+  padding-left: 15px;
+  line-height: 40px;
+  vertical-align: middle;
   color: #333;
   text-decoration: none;
 }
@@ -94,7 +96,21 @@
   color: #fff;
 }
 
+.header__dropDown-item--userName {
+  padding-left: 0;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 2px solid #0096DE;
+  font-weight: bold;
+}
+
+.header__dropDown-item--userName:hover {
+  background: none;
+  color: #333;
+}
+
 .header__dropDown-item a {
+  display: block;
   text-decoration: none;
   color: #333;
 }
