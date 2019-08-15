@@ -6,13 +6,18 @@
 
 　　1.common
 　　2.header
-　　3.footer
+　　3.main
+　　4.footer
 
 ================================*/
 
 /*
 　1.common
 ================================*/
+* {
+  font-family: 'メイリオ';
+}
+
 span {
   color: #333;
 }
@@ -43,11 +48,6 @@ span {
   text-align: left;
 }
 
-.main {
-  background-color: #EAEDF2;
-  font-family: 'メイリオ';
-}
-
 .title {
   width: 100%;
   height: 102px;
@@ -64,60 +64,47 @@ span {
 　2.header
 ================================*/
 .header {
-  width: 100%;
-  box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
-}
-
-.header a {
-  display: block;
-}
-
-.header-menu {
   display: flex;
+  position: fixed;
   width: 100%;
   margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
   list-style: none;
 }
 
-.header-menu > li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-menu-logo {
+.header__logo {
   margin-right: auto;
 }
 
-.header-menu-logo img {
+.header__logo a {
+  display: block;
+}
+
+.header__logo img {
   display: block;
   height: 60px;
 }
 
-.header-menu-item {
+.header__nav {
+  display: flex;
+}
+
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 60px;
   margin-right: 15px;
+  list-style: none;
 }
 
-.header-menu-item a {
-  text-decoration: none;
-}
-
-.header-menu-item img {
-  vertical-align: bottom;
-}
-
-.header-menu-item-userName {
-  display: inline;
-  vertical-align: text-bottom;
-  font-size: 12px;
-}
-
-.header-menu-item-dropDown {
+.header__dropDown {
   display: none;
 }
 
-.header-menu-item:hover .header-menu-item-dropDown {
+.header__nav-item:hover .header__dropDown {
   display: block;
   overflow: hidden;
   position: absolute;
@@ -125,30 +112,56 @@ span {
   right: 0;
   width: 150px;
   box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
-  background-color: #FFF;
+  background-color: #fff;
   font-size: 14px;
 }
 
-.header-menu-item-dropDown li {
+.header__dropDown-item {
   display: block;
-  padding: 10px;
-  text-align: center;
+  padding-left: 15px;
+  line-height: 40px;
+  color: #333;
+  text-decoration: none;
 }
 
-.header-menu-item-dropDown > li:hover {
+.header__dropDown-item:hover {
   background: #0096DE;
+  color: #fff;
 }
 
-.header-menu-item-dropDown a {
+.header__dropDown-item--userName {
+  padding-left: 0;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #689ACA;
+}
+
+.header__dropDown-item--userName:hover {
+  background: none;
+  color: #689ACA;
+}
+
+.header__dropDown-item a {
+  display: block;
+  text-decoration: none;
   color: #333;
 }
 
-.header-menu-item-dropDown li:hover a {
+.header__dropDown-item:hover a {
   color: #fff;
 }
 
 /*
-　3.footer
+　3.main
+================================*/
+.main {
+  background-color: #EAEDF2;
+  padding-top: 60px;
+}
+
+/*
+　4.footer
 ================================*/
 .footer {
   width:100%;
