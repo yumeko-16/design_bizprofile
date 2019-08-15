@@ -56,19 +56,19 @@
   background-color: #FFF;
 }
 
-.table-heading {
+.table__heading {
   padding: 5px 0 20px 10px;
   color: #0096DE;
   font-weight: bold;
   font-size: 23px;
 }
 
-.table-dashboard {
+.table__dashboard {
   width: 100%;
   padding:0 30px;
 }
 
-.table-dashboard th {
+.table__dashboard th {
   width:50%;
   padding: 10px 0;
   text-align: center;
@@ -76,7 +76,7 @@
   color: #FFF;
 }
 
-.table-dashboard td {
+.table__dashboard td {
   padding: 10px 0 10px 10px;
   text-align: center;
   background-color: #EAEDF2;
