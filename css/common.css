@@ -124,7 +124,8 @@
 　3.main
 ================================*/
 .main {
-  padding: 60px 0;
+  height: 100%;
+  padding-top: 60px;
   background-color: #EAEDF2;
 }
 
