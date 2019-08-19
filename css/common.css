@@ -147,7 +147,7 @@
 .menu__nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -176,6 +176,40 @@
   display: block;
   text-align: center;
   font-weight: bold;
+}
+
+.table {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 50px;
+  background-color: #FFF;
+  border-top: solid 5px #0096DE;
+}
+
+.table__title {
+  width: 95%;
+  margin: 0 auto 20px;
+  line-height: 40px;
+  color: #0096DE;
+}
+
+.table__body {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+
+.table__thead {
+  line-height: 40px;
+  background-color: #0096DE;
+  color: #fff;
+}
+
+.table__tbody {
+  padding-left: 20px;
+  text-align: left;
+  line-height: 40px;
+  background-color: #EAEDF2;
 }
 
 /*
