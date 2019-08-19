@@ -200,16 +200,21 @@
 }
 
 .table__thead {
-  line-height: 40px;
+  width: 50%;
+  padding: 10px 0;
   background-color: #0096DE;
   color: #fff;
 }
 
 .table__tbody {
-  padding-left: 20px;
-  text-align: left;
-  line-height: 40px;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
   background-color: #EAEDF2;
+}
+
+.table__tbody--subject {
+  text-align: left;
 }
 
 /*
