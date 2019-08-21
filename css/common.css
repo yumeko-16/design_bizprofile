@@ -32,14 +32,6 @@
   clear: both;
 }
 
-.mgr-5 {
-  margin-right: 5px;
-}
-
-.left {
-  text-align: left;
-}
-
 .title {
   width: 100%;
   margin-bottom: 50px;
@@ -147,6 +139,27 @@
 .main {
   padding: 60px 0;
   background-color: #EAEDF2;
+}
+
+.table {
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto 50px;
+  background-color: #FFF;
+  border-top: solid 5px #0096DE;
+}
+
+.table__title {
+  width: 95%;
+  margin: 0 auto 20px;
+  line-height: 40px;
+  color: #0096DE;
+}
+
+.table__body {
+  width: 95%;
+  margin: 0 auto 20px;
 }
 
 /*
