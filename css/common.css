@@ -139,46 +139,6 @@
   color: #FFF;
 }
 
-.menu {
-  max-width: 1000px;
-  width: 90%;
-  margin: 0 auto 50px;
-}
-
-.menu__nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.menu__nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 272px;
-  height: 140px;
-  list-style: none;
-  background-color: #689ACA;
-}
-
-.menu__nav-item a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.menu__nav-item img {
-  display: block;
-  width: 80px;
-  margin: 0 auto 15px;
-}
-
-.menu__nav-item-text {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-}
-
 .table {
   max-width: 1000px;
   width: 90%;
