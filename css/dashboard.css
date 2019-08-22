@@ -2,14 +2,14 @@
 
 .menu {
   max-width: 1000px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto 50px;
 }
 
 .menu__nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
