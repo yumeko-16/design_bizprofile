@@ -1,6 +1,6 @@
-@charset "utf-8";
+@charset "UTF-8";
 
-  /*===============================
+/*===============================
 
 　PC
 
@@ -33,14 +33,6 @@
   clear: both;
 }
 
-.title {
-  width: 100%;
-  margin-bottom: 50px;
-  text-align: center;
-  line-height: 102px;
-  background-color: #0096DE;
-  color: #FFF;
-}
 
 /*
 　2.header
@@ -138,8 +130,18 @@
 　3.main
 ================================*/
 .main {
+  height: 100%;
   padding-top: 60px;
   background-color: #EAEDF2;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 102px;
+  background-color: #0096DE;
+  color: #FFF;
 }
 
 .table {
@@ -167,15 +169,15 @@
 　4.footer
 ================================*/
 .footer {
-  width:100%;
+  width: 100%;
   text-align: center;
   line-height: 41px;
   background-color: #0096DE;
-  font-size: 12px;
+  font-size: 14px;
   color: #FFF;
-  }
+}
 
-  /*
+/*
 　5.smooth-scroll
 ================================*/
 #page_top {
