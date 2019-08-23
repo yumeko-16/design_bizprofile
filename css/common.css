@@ -208,3 +208,33 @@
   margin: auto;
   text-align: center;
 }
+
+/*===============================
+
+　SP
+
+　　1.common
+　　2.header
+　　3.main
+　　4.footer
+　　5.smooth-scroll
+
+================================*/
+@media only screen and (max-width: 767px) {
+
+/*
+　1.common
+================================*/
+  .sp-none {
+    display: none;
+  }
+
+  .pc-none {
+    display: block;
+  }
+
+/*
+　2.header
+================================*/
+
+}
