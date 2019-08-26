@@ -15,7 +15,7 @@
     <div class="header__logo">
       <a href="/"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
     </div>
-    <nav>
+    <nav class ="sp-none">
       <ul class="header__nav">
         <li class="header__nav-item">
           <img src="/images/img_icon_member.png" alt="メンバーメニュー">
@@ -32,6 +32,24 @@
             <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
             <li class="header__dropDown-item"><a href="#">ダッシュボード</a></li>
             <li class="header__dropDown-item"><a href="#">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class ="pc-none">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a class="header__nav-item-trigger" href="#" >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="#">小寺ひめ</a></li>
+            <li class="header__dropDown-item"><a href="#">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="#">マイプロフィール</a></li>
+            <li class="header__dropDown-item"><a href="#">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
           </ul>
         </li>
       </ul>
@@ -107,6 +125,8 @@
   <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
   <div id="page_top"><a href="#"></a></div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/hamburger-menu.js"></script>
 </body>
 </html>
