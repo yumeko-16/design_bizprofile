@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ダッシュボード | BizProfile</title>
+  <link rel="stylesheet" type="text/css" href="/css/ress.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+    </div>
+    <nav>
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="#">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <img src="/images/img_icon_private.png" alt="個人メニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
+            <li class="header__dropDown-item"><a href="#">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="#">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+    <h1 class="title">ダッシュボード</h1>
+    <nav class="menu">
+      <ul class="menu__nav">
+        <li class="menu__nav-item">
+          <a href="">
+            <img src="/images/img_icon_private-64.png" alt="マイプロフィール">
+            <span class="menu__nav-item-text">マイプロフィール</span>
+          </a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="">
+            <img src="/images/img_icon_member-64.png" alt="プロフィール一覧">
+            <span class="menu__nav-item-text">プロフィール一覧</span>
+          </a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="">
+            <img src="/images/img_icon_register-white.png" alt="新規登録">
+            <span class="menu__nav-item-text">新規登録</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="table">
+      <h2 class="table__title">プロフィール更新情報</h2>
+      <table class="table__body">
+        <thead>
+          <tr>
+            <th class="table__thead">更新日</th>
+            <th class="table__thead">更新者</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table__tbody">1996年2月2日</td>
+            <td class="table__tbody">10001：田口有海</td>
+          </tr>
+          <tr>
+            <td class="table__tbody">2019年12月31日</td>
+            <td class="table__tbody">10002：安座間みき</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table">
+      <h2 class="table__title">お知らせ一覧</h2>
+      <table class="table__body">
+        <thead>
+          <tr>
+            <th class="table__thead ">掲載日</th>
+            <th class="table__thead">内容</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table__tbody">1996年2月2日</td>
+            <td class="table__tbody table__tbody--subject">ダッシュボード画面に「お知らせ情報」欄追加</td>
+          </tr>
+          <tr>
+            <td class="table__tbody">2019年12月31日</td>
+            <td class="table__tbody table__tbody--subject">プロフィール詳細画面のバグ修正</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
+  <div id="page_top"><a href="#"></a></div>
+
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+</body>
+</html>
