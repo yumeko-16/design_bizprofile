@@ -287,3 +287,55 @@
   -webkit-transform: translateY(-20px) rotate(45deg);
   transform: translateY(-20px) rotate(45deg);
 }
+
+.header__dropDown-sp {
+  display: none;
+}
+
+.header__nav-item:hover .header__dropDown-sp {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 150px;
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.header__dropDown-sp-item {
+  display: block;
+  padding-left: 15px;
+  line-height: 40px;
+  color: #333;
+  text-decoration: none;
+}
+
+.header__dropDown-sp-item:hover {
+  background: #0096DE;
+  color: #fff;
+}
+
+.header__dropDown-sp-item--userName {
+  padding-left: 0;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #689ACA;
+}
+
+.header__dropDown-sp-item--userName:hover {
+  background: none;
+  color: #689ACA;
+}
+
+.header__dropDown-sp-item a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.header__dropDown-sp-item:hover a {
+  color: #fff;
+}
