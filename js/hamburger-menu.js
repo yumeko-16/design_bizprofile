@@ -4,3 +4,7 @@ $(function() {
     return false;
   });
 });
+
+$(".header__nav-item-trigger").click(function () {
+  $(".header__dropDown-sp").slideToggle();
+});
