@@ -15,7 +15,7 @@
     <div class="header__logo">
       <a href="/"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
     </div>
-    <nav>
+    <nav class="sp-none">
       <ul class="header__nav">
         <li class="header__nav-item">
           <img src="/images/img_icon_member.png" alt="メンバーメニュー">
@@ -36,6 +36,20 @@
         </li>
       </ul>
     </nav>
+    <nav class="global-nav pc-none">
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
   </header>
 
   <div class="main">
@@ -114,5 +128,6 @@
   <div id="page_top"><a href="#"></a></div>
 
   <script type="text/javascript" src="/js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="/js/burger.js"></script>
 </body>
 </html>
