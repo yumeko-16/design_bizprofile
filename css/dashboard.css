@@ -74,3 +74,20 @@
 .table__tbody--subject {
   text-align: left;
 }
+
+/*===============================
+
+　SP
+
+　　1.menu
+
+================================*/
+@media only screen and (max-width: 767px) {
+
+  /*
+　　1.menu
+  ================================*/
+    .menu__nav-item-text {
+      font-size: 14px;
+    }
+  }
