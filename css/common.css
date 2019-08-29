@@ -223,11 +223,11 @@
 　　2.header
 
 ================================*/
+@media only screen and (max-width: 767px) {
 
 /*
 　1.common
 ================================*/
-@media screen and (max-width: 767px) {
   .sp-none {
     display: none;
   }
@@ -235,108 +235,122 @@
   .pc-none {
     display: block;
   }
-}
 
 /*
 　2.header
 ================================*/
-.header__nav-item-trigger,
-.header__nav-item-trigger span {
-  display: inline-block;
-  transition: all .4s;
-  box-sizing: border-box;
-}
+  .global-nav {
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #0096DE;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto;
+  }
 
-.header__nav-item-trigger {
-  position: relative;
-  width: 50px;
-  height: 44px;
-}
+  .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    z-index: 300;
+  }
 
-.header__nav-item-trigger span {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #000;
-  border-radius: 4px;
-}
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.header__nav-item-trigger span:nth-of-type(1) {
-  top: 0;
-}
+  .global-nav__item {
+    text-align: center;
+    padding: 7px 14px;
+  }
 
-.header__nav-item-trigger span:nth-of-type(2) {
-  top: 20px;
-}
+  .global-nav__item a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  }
 
-.header__nav-item-trigger span:nth-of-type(3) {
-  bottom: 0;
-}
+  .global-nav__item a:hover {
+    background-color: #fff;
+  }
 
-.header__nav-item-trigger.active span:nth-of-type(1) {
-  -webkit-transform: translateY(20px) rotate(-45deg);
-  transform: translateY(20px) rotate(-45deg);
-}
+  .hamburger__line {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 2px;
+    background-color: #111;
+    transition: all .6s;
+  }
 
-.header__nav-item-trigger.active span:nth-of-type(2) {
-  opacity: 0;
-}
+  .hamburger__line--1 {
+    top: 20px;
+  }
 
-.header__nav-item-trigger.active span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(45deg);
-  transform: translateY(-20px) rotate(45deg);
-}
+  .hamburger__line--2 {
+    top: 30px;
+  }
 
-.header__nav-sp {
-  display: flex;
-}
+  .hamburger__line--3 {
+    top: 40px;
+  }
 
-.header__nav-item-sp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 60px;
-  margin-right: 15px;
-  list-style: none;
-}
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
 
-.header__dropDown-sp {
-  display: none;
-}
+  .nav-open .global-nav {
+    right: 0;
+  }
 
-.header__nav-item-sp:hover .header__dropDown-sp {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 150px;
-  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
-  background-color: #fff;
-  font-size: 14px;
-}
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
 
-.header__dropDown-sp-item {
-  display: block;
-  padding-left: 15px;
-  line-height: 40px;
-  color: #333;
-  text-decoration: none;
-}
+  .nav-open .global-nav__item a {
+    color: #fff;
+  }
 
-.header__dropDown-sp-item--userName {
-  padding-left: 0;
-  line-height: 50px;
-  text-align: center;
-  font-weight: bold;
-  color: #689ACA;
-}
+  .nav-open .global-nav__item a:hover {
+    color: #0096DE;
+  }
 
-.header__dropDown-sp-item a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-}
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 30px;
+    background-color: #fff;
+  }
 
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 30px;
+    background-color: #fff;
+  }
+}

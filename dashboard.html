@@ -36,24 +36,20 @@
         </li>
       </ul>
     </nav>
-    <nav class ="pc-none">
-      <ul class="header__nav-sp">
-        <li class="header__nav-item-sp">
-          <a class="header__nav-item-trigger" href="#" >
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <ul class="header__dropDown-sp">
-            <li class="header__dropDown-sp-item--userName"><a href="#"><img src="/images/img_icon_private.png" alt="マイプロフィール">小寺ひめ</a></li>
-            <li class="header__dropDown-sp-item"><a href="#">ダッシュボード</a></li>
-            <li class="header__dropDown-sp-item"><a href="#">マイプロフィール</a></li>
-            <li class="header__dropDown-sp-item"><a href="#">プロフィール一覧</a></li>
-            <li class="header__dropDown-sp-item"><a href="#">新規登録</a></li>
-          </ul>
-        </li>
+    <nav class="global-nav pc-none">
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
       </ul>
     </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
   </header>
   <div class="main">
     <h1 class="title">ダッシュボード</h1>
@@ -125,7 +121,6 @@
   <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
   <div id="page_top"><a href="#"></a></div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/hamburger-menu.js"></script>
 </body>

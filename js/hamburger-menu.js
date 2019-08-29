@@ -1,10 +1,13 @@
-$(function() {
-  $('.header__nav-item-trigger').on('click', function(){
-    $(this).toggleClass('active');
-    return false;
-  });
-});
+function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('js-hamburger');
+  var blackBg = document.getElementById('js-black-bg');
 
-$(".header__nav-item-trigger").click(function () {
-  $(".header__dropDown-sp").slideToggle();
-});
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav-open');
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav-open');
+  });
+}
+toggleNav();
