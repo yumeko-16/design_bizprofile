@@ -278,7 +278,7 @@
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     text-decoration: none;
-    color: #111;
+    color: #fff;
   }
 
   .global-nav__item a:hover {
@@ -327,10 +327,6 @@
   .nav-open .black-bg {
     opacity: .8;
     visibility: visible;
-  }
-
-  .nav-open .global-nav__item a {
-    color: #fff;
   }
 
   .nav-open .global-nav__item a:hover {
