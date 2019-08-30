@@ -249,6 +249,27 @@
     overflow-y: auto;
   }
 
+  .global-nav__user {
+    display: flex;
+    padding: 0 60px 30px;
+  }
+
+  .global-nav__userIcon {
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/img_icon_private.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .global-nav__userName {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 25px;
+    color: #fff;
+  }
+
   .hamburger {
     position: absolute;
     right: 0;
@@ -267,7 +288,7 @@
 
   .global-nav__item {
     text-align: center;
-    padding: 7px 14px;
+    padding: 7px 60px;
   }
 
   .global-nav__item a {
