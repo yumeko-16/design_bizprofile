@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>プロフィール一覧 | BizProfile</title>
+  <link rel="stylesheet" href="/css/ress.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/list.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+    </div>
+    <nav class="sp-none">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="#">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <img src="/images/img_icon_private.png" alt="個人メニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
+            <li class="header__dropDown-item"><a href="#">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="#">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="global-nav pc-none">
+      <div class="global-nav__user">
+        <div class="global-nav__userIcon"></div>
+        <div class="global-nav__userName">小寺ひめ</div>
+      </div>
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+
+  <div class="main">
+    <h1 class="title">プロフィール一覧</h1>
+
+    <div class="table">
+      <h2 class="table__title">検索条件</h2>
+      <form>
+        <ul class="conditional__list">
+          <li class="conditional__item">
+            <label>所属</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>拠点</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>社員名</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>実施年数</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>役割</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>資格</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>言語</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>参画工程</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+          <li class="conditional__item">
+            <label>スキル</label>
+            <div class="conditional__pullDown">
+              <select class="conditional__pullDown-list">
+                <option value="1">kodera</option>
+                <option value="2">hime</option>
+                <option value="3">is</option>
+                <option value="4">mochi</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div class="table">
+      <h2 class="table__title">検索結果</h2>
+    </div>
+  </div>
+
+  <footer class="footer">© 2019 エレクス株式会社</footer>
+
+  <div id="page_top"><a href="#"></a></div>
+
+  <script type="text/javascript" src="/js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="/js/burger.js"></script>
+</body>
+</html>
