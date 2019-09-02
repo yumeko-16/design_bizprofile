@@ -73,7 +73,7 @@
   list-style: none;
 }
 
-.header__nav-item-image{
+.header__nav-item-image {
   width:30px;
   height:30px;
 }
@@ -268,7 +268,7 @@
     background-position: center;
   }
 
-  .global-nav__userIcon-image{
+  .global-nav__userIcon-image {
     width:30px;
     height:30px;
   }
