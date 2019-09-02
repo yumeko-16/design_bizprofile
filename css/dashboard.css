@@ -56,20 +56,20 @@
 /*
 　2.table
 ================================*/
-.table__thead {
+.contents__thead {
   width: 50%;
   padding: 10px 0;
   background-color: #0096DE;
   color: #fff;
 }
 
-.table__tbody {
+.contents__tbody {
   width: 50%;
   padding: 10px 20px;
   text-align: center;
   background-color: #EAEDF2;
 }
 
-.table__tbody--subject {
+.contents__tbody--subject {
   text-align: left;
 }
