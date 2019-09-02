@@ -26,11 +26,11 @@
 }
 
 .conditional__item:nth-child(odd) {
-  padding: 10px 10px 10px 0;
+  padding: 10px 30px 10px 0;
 }
 
 .conditional__item:nth-child(even) {
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 30px;
 }
 
 .conditional__label {
