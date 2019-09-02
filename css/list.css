@@ -11,17 +11,31 @@
 /*
 　1.conditional
 ================================*/
+.conditional {
+  width: 95%;
+  margin: 0 auto 20px;
+}
 .conditional__list {
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
-  margin: 0 auto 20px;
   list-style: none;
 }
 
 .conditional__item {
   width: 50%;
-  padding: 10px;
+}
+
+.conditional__item:nth-child(odd) {
+  padding: 10px 10px 10px 0;
+}
+
+.conditional__item:nth-child(even) {
+  padding: 10px 0 10px 10px;
+}
+
+.conditional__label {
+  padding: .25em 0 .25em .75em;
+  border-left: 6px solid #0096DE;
 }
 
 .conditional__pullDown {
