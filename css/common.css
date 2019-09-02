@@ -259,7 +259,6 @@
   .global-nav__userIcon {
     width: 40px;
     height: 40px;
-    background-image: url(/images/img_icon_private.png);
     background-size: cover;
     background-position: center;
   }
