@@ -73,6 +73,11 @@
   list-style: none;
 }
 
+.header__nav-item-image{
+  width:30px;
+  height:30px;
+}
+
 .header__dropDown {
   display: none;
 }
@@ -261,6 +266,11 @@
     height: 40px;
     background-size: cover;
     background-position: center;
+  }
+
+  .global-nav__userIcon-image{
+    width:30px;
+    height:30px;
   }
 
   .global-nav__userName {
