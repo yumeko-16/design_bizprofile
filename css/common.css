@@ -76,6 +76,7 @@
 .header__nav-item-image {
   width:30px;
   height:30px;
+  border-radius: 50%;
 }
 
 .header__dropDown {
@@ -271,6 +272,7 @@
   .global-nav__userIcon-image {
     width:30px;
     height:30px;
+    border-radius: 50%;
   }
 
   .global-nav__userName {
