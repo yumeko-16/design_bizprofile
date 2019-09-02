@@ -139,7 +139,7 @@
   color: #FFF;
 }
 
-.table {
+.contents {
   max-width: 1024px;
   width: 90%;
   height: 100%;
@@ -148,14 +148,14 @@
   border-top: solid 5px #0096DE;
 }
 
-.table__title {
+.contents__title {
   width: 95%;
   margin: 0 auto 20px;
   line-height: 40px;
   color: #0096DE;
 }
 
-.table__body {
+.contents__body {
   width: 95%;
   margin: 0 auto 20px;
 }
