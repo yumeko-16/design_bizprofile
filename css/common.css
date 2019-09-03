@@ -70,6 +70,13 @@
   list-style: none;
 }
 
+.header__nav-item--private {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: scale-down;
+}
+
 .header__dropDown {
   display: none;
 }
