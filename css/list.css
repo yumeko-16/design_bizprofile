@@ -5,6 +5,7 @@
 　PC
 
 　　1.conditional
+　　2.result
 
 ================================*/
 
@@ -78,4 +79,35 @@
   appearance: none;
   padding: 8px 38px 8px 8px;
   color: #666666;
+}
+
+/*
+　1.conditional
+================================*/
+.result {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+
+.result__list {
+  list-style: none;
+}
+
+.result__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.result__item-detail {
+  width: calc(33.3% - 10px);
+}
+
+.result__item--img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: scale-down;
+  margin: 20px auto 10px;
 }
