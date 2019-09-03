@@ -30,7 +30,6 @@
   align-items: center;
   justify-content: center;
   width: 30%;
-  height: 140px;
   background-color: #689ACA;
 }
 
@@ -44,11 +43,18 @@
 .menu__nav-item img {
   display: block;
   width: 80px;
-  margin: 25px auto 15px;
+  height: 80px;
+  object-fit: scale-down;
+  margin: 20px auto 10px;
+}
+
+.menu__nav-item--myIcon {
+  border-radius: 50%;
 }
 
 .menu__nav-item-text {
   display: block;
+  margin: 0 auto 20px;
   text-align: center;
   font-weight: bold;
 }
