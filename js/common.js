@@ -26,3 +26,17 @@ function topButton(elmId, duration) {
 
   //トップに戻るボタンの id とアニメーションにかかる時間をミリ秒で指定
   topButton("page_top", 200)
+
+  function toggleNav() {
+    var body = document.body;
+    var hamburger = document.getElementById('js-hamburger');
+    var blackBg = document.getElementById('js-black-bg');
+
+    hamburger.addEventListener('click', function() {
+      body.classList.toggle('nav-open');
+    });
+    blackBg.addEventListener('click', function() {
+      body.classList.remove('nav-open');
+    });
+  }
+  toggleNav();
