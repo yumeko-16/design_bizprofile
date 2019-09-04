@@ -31,12 +31,11 @@
   align-items: center;
   justify-content: center;
   width: 30%;
-  height: 140px;
   background-color: #689ACA;
 }
 
 .menu__nav-item:hover{
-  opacity: 0.7;
+  background-color: rgba(104,154,202,0.7);
 }
 
 .menu__nav-item-image-circle {
@@ -55,13 +54,14 @@
   display: block;
   width: 80px;
   height: 80px;
-  margin: 15px auto 5px;
+  margin: 20px auto 5px;
 }
 
 .menu__nav-item-text {
   display: block;
   text-align: center;
   font-weight: bold;
+  margin-bottom: 12px;
 }
 
 /*
