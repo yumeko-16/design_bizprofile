@@ -27,6 +27,9 @@
       justify-content: center;
       width: 30%;
       background-color: #689ACA;
+      &:hover {
+        background: rgba(104, 154, 202, .5);
+      }
       a {
         width: 100%;
         height: 100%;

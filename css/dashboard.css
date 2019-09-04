@@ -28,6 +28,9 @@
   width: 30%;
   background-color: #689ACA;
 }
+.menu__nav-item:hover {
+  background: rgba(104, 154, 202, 0.5);
+}
 .menu__nav-item a {
   width: 100%;
   height: 100%;
