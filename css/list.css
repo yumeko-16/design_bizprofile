@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*===============================
 
 　PC
@@ -8,7 +7,6 @@
 　　2.result
 
 ================================*/
-
 /*
 　1.conditional
 ================================*/
@@ -21,35 +19,29 @@
   flex-wrap: wrap;
   list-style: none;
 }
-
 .conditional__item {
   width: 50%;
 }
-
 .conditional__item:nth-child(odd) {
   padding: 10px 30px 10px 0;
 }
-
 .conditional__item:nth-child(even) {
   padding: 10px 0 10px 30px;
 }
-
 .conditional__label {
   padding: .25em 0 .25em .75em;
   border-left: 6px solid #0096DE;
 }
-
 .conditional__pullDown {
   position: relative;
   overflow: hidden;
   width: 100%;
   margin: 1em auto;
   text-align: center;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #bbb;
   border-radius: 2px;
-  background: #ffffff;
+  background: #fff;
 }
-
 .conditional__pullDown::before {
   position: absolute;
   top: 1.1em;
@@ -60,10 +52,9 @@
   content: '';
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #666666;
+  border-top: 6px solid #666;
   pointer-events: none;
 }
-
 .conditional__pullDown-list {
   width: 100%;
   padding-right: 1em;
@@ -78,7 +69,7 @@
   -webkit-appearance: none;
   appearance: none;
   padding: 8px 38px 8px 8px;
-  color: #666666;
+  color: #666;
 }
 
 /*
@@ -88,11 +79,9 @@
   width: 95%;
   margin: 0 auto 20px;
 }
-
 .result__list {
   list-style: none;
 }
-
 .result__item {
   display: flex;
   flex-direction: row;
@@ -100,17 +89,14 @@
   justify-content: space-between;
   margin: 25px;
 }
-
 .result__item-detail {
   width: calc(33.3% - 10px);
 }
-
 .result__item-detail-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .result__item-detail-icon--img {
   display: block;
   width: 60px;
@@ -118,28 +104,25 @@
   object-fit: scale-down;
   margin: 0 auto;
 }
-
 .result__item-detail-name {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
 .result__item-detail-name--jp {
   font-size: 20px;
 }
-
 .result__item-detail-name--en {
   font-size: 14px;
 }
-
 .result__item-detail-employee {
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-size: 14px;
 }
-
 .result__item-detail-mail {
   width: 18px;
 }
+
+/*# sourceMappingURL=list.css.map */

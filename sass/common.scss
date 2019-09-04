@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+/*===============================
+
+　PC
+
+　　1.common
+　　2.header
+　　3.main
+　　4.footer
+　　5.smooth-scroll
+
+================================*/
+
+/*
+　1.common
+================================*/
+.sp-none {
+  display: block;
+}
+.pc-none {
+  display: none;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/*
+　2.header
+================================*/
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
+  list-style: none;
+  z-index: 1;
+  &__logo {
+    margin-right: auto;
+    a {
+      display: block;
+    }
+    img {
+      display: block;
+      height: 60px;
+    }
+  }
+  &__nav {
+    display: flex;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 60px;
+      margin-right: 15px;
+      list-style: none;
+      &:hover .header__dropDown {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 150px;
+        box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
+        background-color: #fff;
+        font-size: 14px;
+      }
+      &--private {
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: scale-down;
+      }
+    }
+  }
+  &__dropDown {
+    display: none;
+    &-item {
+      display: block;
+      padding-left: 15px;
+      line-height: 40px;
+      color: #333;
+      text-decoration: none;
+      &:hover {
+        background: #0096DE;
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+      }
+      &--userName {
+        padding-left: 0;
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+        color: #689ACA;
+        &:hover {
+          background: none;
+          color: #689ACA;
+        }
+      }
+    }
+  }
+}
+
+/*
+　3.main
+================================*/
+.main {
+  height: 100%;
+  padding-top: 60px;
+  background-color: #EAEDF2;
+}
+.title {
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 102px;
+  background-color: #0096DE;
+  color: #FFF;
+}
+.contents {
+  max-width: 1024px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto 50px;
+  background-color: #FFF;
+  border-top: solid 5px #0096DE;
+  &__title {
+    width: 95%;
+    margin: 0 auto 20px;
+    line-height: 40px;
+    color: #0096DE;
+  }
+}
+.btn {
+  padding: 10px 0;
+  text-align: right;
+  &--green {
+    display: inline-block;
+    padding: 0.3em 1em;
+    background: #31C453;
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+    &:hover {
+      background: rgba(49,196,83,.5);
+    }
+  }
+}
+
+/*
+　4.footer
+================================*/
+.footer {
+  text-align: center;
+  line-height: 41px;
+  background-color: #0096DE;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*
+　5.smooth-scroll
+================================*/
+.page_top {
+  position: fixed;
+  right: 20px;
+  bottom: 45px;
+  width: 50px;
+  height: 50px;
+  background: #689ACA;
+  border-radius: 50%;
+  a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f106';
+      font-size: 25px;
+      color: #fff;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -5px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+/*===============================
+
+　SP
+
+　　1.common
+　　2.header
+　　3.main
+　　4.footer
+　　5.smooth-scroll
+
+================================*/
+@media only screen and (max-width: 767px) {
+
+/*
+　1.common
+================================*/
+  .sp-none {
+    display: none;
+  }
+  .pc-none {
+    display: block;
+  }
+/*
+　2.header
+================================*/
+  .global-nav {
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #0096DE;
+    transition: all .6s;
+    z-index: 3;
+    overflow-y: auto;
+    &__user {
+      display: flex;
+      padding: 0 60px 30px;
+      &Icon {
+        width: 40px;
+        height: 40px;
+        background-image: url(/images/img_icon_private.png);
+        background-size: cover;
+        background-position: center;
+      }
+      &Name {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 25px;
+        color: #fff;
+      }
+    }
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    &__item {
+      text-align: center;
+      padding: 7px 60px;
+      a {
+        display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    z-index: 4;
+    &__line {
+      position: absolute;
+      left: 15px;
+      width: 30px;
+      height: 2px;
+      background-color: #111;
+      transition: all .6s;
+      &--1 {
+        top: 20px;
+      }
+      &--2 {
+        top: 30px;
+      }
+      &--3 {
+        top: 40px;
+      }
+    }
+  }
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  .nav-open {
+    .global-nav {
+      right: 0;
+      &__item a:hover {
+        color: #0096DE;
+      }
+    }
+    .black-bg {
+      opacity: .8;
+      visibility: visible;
+    }
+    .hamburger__line {
+      &--1 {
+        transform: rotate(45deg);
+        top: 30px;
+        background-color: #fff;
+      }
+      &--2 {
+        width: 0;
+        left: 50%;
+      }
+      &--3 {
+        transform: rotate(-45deg);
+        top: 30px;
+        background-color: #fff;
+      }
+    }
+  }
+}
