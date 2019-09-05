@@ -29,7 +29,8 @@
   padding: 10px 0 10px 30px;
 }
 .conditional__label {
-  padding: .25em 0 .25em .75em;
+  display: block;
+  padding: .25em .25em .25em .75em;
   border-left: 6px solid #0096DE;
 }
 .conditional__pullDown {
@@ -70,6 +71,58 @@
   appearance: none;
   padding: 8px 38px 8px 8px;
   color: #666;
+}
+.conditional__txtField {
+  width: 100%;
+  height: 42px;
+  margin: 1em auto;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+}
+.conditional__years {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 1em auto;
+}
+.conditional__years--txtField {
+  width: 100%;
+  height: 42px;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+}
+.conditional__years--txt {
+  height: 42px;
+  padding: 8px;
+}
+.conditional__skill {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 1em auto;
+}
+.conditional__skill--txtField {
+  width: 100%;
+  height: 42px;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+  color: #333;
+}
+.conditional__skill--btn {
+  width: 70px;
+  height: 42px;
+  margin-left: 15px;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+  color: #333;
 }
 
 /*
