@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*===============================
+
+　PC
+
+　　1.conditions
+　　2.result
+　　3.pager
+
+================================*/
+
+/*
+　1.conditions
+================================*/
+.conditions {
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto 50px;
+}
+
+.conditions__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.conditions__list__item {
+  flex-basis:50%
+}
+
+.conditions__list__item-label {
+  border-left: solid 6px #0096DE;
+  margin: 10px auto 12px;
+}
+
+.conditions__list__item-box {
+  width: 400px;
+  border: solid 1px #000000;
+}
+
+.conditions__list__item-textbox-year {
+  width: 173px;
+  border: solid 1px #000000;
+}
+
+/*
+　2.result
+================================*/
+
+/*
+　2.pager
+================================*/
+
+
+/*===============================
+
+　SP
+
+　　1.conditions
+　　2.result
+　　3.pager
+
+================================*/
+@media only screen and (max-width: 767px) {
+
+  /*
+　　1.contents-conditions
+  ================================*/
+
+  }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>プロフィール一覧 | BizProfile</title>
+  <link rel="stylesheet" type="text/css" href="/css/ress.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/memberlist.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/dashboard.html"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+    </div>
+    <nav class="sp-none">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="/memberlist.html">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="header__nav-item-image">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
+            <li class="header__dropDown-item"><a href="/dashboard.html">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="#">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="global-nav pc-none">
+      <div class="global-nav__user">
+        <div class="global-nav__userIcon">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="global-nav__userIcon-image">
+        </div>
+        <div class="global-nav__userName">小寺ひめ</div>
+      </div>
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="/dashboard.html">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="/memberlist.html">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+  <div class="main">
+    <h1 class="title">プロフィール一覧</h1>
+    <div class="table">
+      <h2 class="table__title">検索条件</h2>
+      <form class="conditions">
+        <ul class="conditions__list">
+          <li class="conditions__list__item">
+            <div class="conditions__list__item-label">所属</div>
+            <select name="example01" class="conditions__list__item-box">
+              <option value="aaa">サンプル01</option>
+            </select>
+          </li>
+          <li class="conditions__list__item">
+            <div class="conditions__list__item-label">社員名</div>
+            <input type="text" name="example02" class="conditions__list__item-box">
+          </li>
+          <li class="conditions__list__item">
+            <div class="conditions__list__item-label">実施年数</div>
+            <input type="text" name="example03" class="conditions__list__item-textbox-year">　～　
+            <input type="text" name="name" class="conditions__list__item-textbox-year">
+          </li>
+        </ul>
+        <div class="">
+          <a href="#" class="">
+            <input type="submit" value="検索" class="">
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="table">
+      <h2 class="table__title">検索結果</h2>
+      <div class="contents-result">
+        <a href=""><img src="/images/no_image.png" alt="社員画像"></a>
+        <div>山城　正佳</div>
+        <div>Yamashiro Masayoshi</div>
+        <div>社員番号</div>
+        <div>10000</div>
+        <div>入社</div>
+        <div>2000/4/1</div>
+        <a href=""><img src="/images/img_icon_drop-down_black.png" alt="メールアイコン"></a>
+        </span>
+      </div>
+      <div>1/20</div>
+    </div>
+  </div>
+  <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
+  <div id="page_top"><a href="#"></a></div>
+
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/hamburger-menu.js"></script>
+</body>
+
+</html>
