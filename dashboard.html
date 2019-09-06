@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +11,53 @@
   <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header__logo">
-      <a href="/"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+      <a href="/dashboard.html"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
     </div>
-    <nav>
+    <nav class="sp-none">
       <ul class="header__nav">
         <li class="header__nav-item">
           <img src="/images/img_icon_member.png" alt="メンバーメニュー">
           <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
           <ul class="header__dropDown">
-            <li class="header__dropDown-item"><a href="#">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="/memberlist.html">プロフィール一覧</a></li>
             <li class="header__dropDown-item"><a href="#">新規登録</a></li>
           </ul>
         </li>
         <li class="header__nav-item">
-          <img src="/images/img_icon_private.png" alt="個人メニュー">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="header__nav-item-image">
           <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
           <ul class="header__dropDown">
             <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
-            <li class="header__dropDown-item"><a href="#">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="/dashboard.html">ダッシュボード</a></li>
             <li class="header__dropDown-item"><a href="#">マイプロフィール</a></li>
           </ul>
         </li>
       </ul>
     </nav>
+    <nav class="global-nav pc-none">
+      <div class="global-nav__user">
+        <div class="global-nav__userIcon">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="global-nav__userIcon-image">
+        </div>
+        <div class="global-nav__userName">小寺ひめ</div>
+      </div>
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="/dashboard.html">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="/memberlist.html">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
   </header>
   <div class="main">
     <h1 class="title">ダッシュボード</h1>
@@ -43,19 +65,19 @@
       <ul class="menu__nav">
         <li class="menu__nav-item">
           <a href="">
-            <img src="/images/img_icon_private-64.png" alt="マイプロフィール">
+              <img src="/images/no_image.png" alt="マイプロフィール" class="menu__nav-item-image-circle">
             <span class="menu__nav-item-text">マイプロフィール</span>
           </a>
         </li>
         <li class="menu__nav-item">
-          <a href="">
-            <img src="/images/img_icon_member-64.png" alt="プロフィール一覧">
+          <a href="/memberlist.html">
+              <img src="/images/img_icon_member-64.png" alt="プロフィール一覧">
             <span class="menu__nav-item-text">プロフィール一覧</span>
           </a>
         </li>
         <li class="menu__nav-item">
           <a href="">
-            <img src="/images/img_icon_register-white.png" alt="新規登録">
+              <img src="/images/img_icon_register-white.png" alt="新規登録">
             <span class="menu__nav-item-text">新規登録</span>
           </a>
         </li>
@@ -105,8 +127,9 @@
     </div>
   </div>
   <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
-  <div id="page_top"><a href="#"></a></div>
+  <div id="page_top" class="page_top"><a href="#"></a></div>
 
-  <script type="text/javascript" src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
 </body>
+
 </html>
