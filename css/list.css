@@ -126,7 +126,7 @@
 }
 
 /*
-　1.conditional
+　2.result
 ================================*/
 .result {
   width: 95%;
@@ -176,6 +176,70 @@
 }
 .result__item-detail-mail {
   width: 18px;
+}
+
+.pager {
+  width: 95%;
+  margin: 0 auto 20px;
+}
+.pager__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.pager__list-item {
+  display: inline;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 2px;
+  padding: 0;
+  background: #9D50BB;
+  text-align: center;
+  position: relative;
+}
+.pager__list-item a {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  text-decoration: none;
+}
+.pager__list-item a:hover, .pager__list-item a.active {
+  color: #000;
+  background: #ccf;
+}
+.pager__list-item a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  .pager__list-item {
+    display: none;
+  }
+  .pager__list-item.pre, .pager__list-item.next {
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+  }
+  .pager__list-item.pre a, .pager__list-item.next a {
+    width: 100%;
+    text-align: center;
+  }
+  .pager__list-item.pre span::after {
+    content: "　前の10件へ";
+  }
+  .pager__list-item.next span::before {
+    content: "次の10件へ　";
+  }
 }
 
 /*# sourceMappingURL=list.css.map */
