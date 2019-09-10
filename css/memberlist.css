@@ -29,6 +29,7 @@
 }
 
 .conditions__list__item-label {
+  font-weight: bold;
   border-left: solid 6px #0096DE;
   margin: 10px auto 12px;
   padding-left: 10px;
@@ -36,12 +37,12 @@
 
 .conditions__list__item-box {
   width: 400px;
-  border: solid 1px #000000;
+  border: solid 1px #a9a9a9;
 }
 
 .conditions__list__item-textbox-year {
   width: 173px;
-  border: solid 1px #000000;
+  border: solid 1px #a9a9a9;
 }
 
 /*
@@ -71,6 +72,14 @@
 .result__list-name {
   text-align: center;
   font-size: 25px;
+}
+
+.result__list-title {
+  font-weight: bold;
+}
+
+.result__list-item_info {
+  margin-left: 30px;
 }
 
 /*===============================
