@@ -117,12 +117,10 @@
 　3.main
 ================================*/
 .main {
-  height: 100%;
-  padding-top: 60px;
+  padding: 60px 0;
   background-color: #EAEDF2;
 }
 .title {
-  margin-bottom: 50px;
   text-align: center;
   line-height: 102px;
   background-color: #0096DE;
@@ -131,13 +129,13 @@
 .contents {
   max-width: 1024px;
   width: 90%;
-  height: 100%;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
   background-color: #FFF;
   border-top: solid 5px #0096DE;
   &__title {
     width: 95%;
-    margin: 0 auto 20px;
+    margin: 0 auto;
+    padding-bottom: 20px;
     line-height: 40px;
     color: #0096DE;
   }

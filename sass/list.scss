@@ -14,7 +14,8 @@
 ================================*/
 .conditional {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +133,8 @@
 ================================*/
 .result {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   &__list {
     list-style: none;
   }
@@ -181,7 +183,8 @@
 }
 .pager {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   &__list {
     display: flex;
     margin: 0;

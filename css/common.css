@@ -16,9 +16,11 @@
 .sp-none {
   display: block;
 }
+
 .pc-none {
   display: none;
 }
+
 .clearfix::after {
   display: block;
   content: "";
@@ -115,31 +117,32 @@
 　3.main
 ================================*/
 .main {
-  height: 100%;
-  padding-top: 60px;
+  padding: 60px 0;
   background-color: #EAEDF2;
 }
+
 .title {
-  margin-bottom: 50px;
   text-align: center;
   line-height: 102px;
   background-color: #0096DE;
   color: #FFF;
 }
+
 .contents {
   max-width: 1024px;
   width: 90%;
-  height: 100%;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
   background-color: #FFF;
   border-top: solid 5px #0096DE;
 }
 .contents__title {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   line-height: 40px;
   color: #0096DE;
 }
+
 .btn {
   padding: 10px 0;
   text-align: right;
@@ -221,6 +224,7 @@
   .sp-none {
     display: none;
   }
+
   .pc-none {
     display: block;
   }
@@ -277,6 +281,7 @@
   .global-nav__item a:hover {
     background-color: #fff;
   }
+
   .hamburger {
     position: absolute;
     right: 0;
@@ -303,6 +308,7 @@
   .hamburger__line--3 {
     top: 40px;
   }
+
   .black-bg {
     position: fixed;
     left: 0;
@@ -316,6 +322,7 @@
     transition: all .6s;
     cursor: pointer;
   }
+
   .nav-open .global-nav {
     right: 0;
   }

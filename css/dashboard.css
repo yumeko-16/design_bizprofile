@@ -13,7 +13,7 @@
 .menu {
   max-width: 1024px;
   width: 90%;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
 }
 .menu__nav {
   display: flex;
@@ -59,7 +59,8 @@
 ================================*/
 .table__body {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .table__thead {
   width: 50%;
