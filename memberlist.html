@@ -81,27 +81,41 @@
             <input type="text" name="name" class="conditions__list__item-textbox-year">
           </li>
         </ul>
-        <div class="">
-          <a href="#" class="">
-            <input type="submit" value="検索" class="">
+        <div class="btn">
+          <a href="#">
+            <input type="submit" value="&#xf002; 検索" class="btn__search fas">
           </a>
         </div>
       </form>
     </div>
     <div class="table">
       <h2 class="table__title">検索結果</h2>
-      <div class="contents-result">
-        <a href=""><img src="/images/no_image.png" alt="社員画像"></a>
-        <div>山城　正佳</div>
-        <div>Yamashiro Masayoshi</div>
-        <div>社員番号</div>
-        <div>10000</div>
-        <div>入社</div>
-        <div>2000/4/1</div>
-        <a href=""><img src="/images/img_icon_drop-down_black.png" alt="メールアイコン"></a>
-        </span>
+      <ul class="result">
+        <li class="result__list">
+          <a href=""><img src="/images/no_image.png" alt="社員画像" class="result-img"></a>
+        </li>
+        <li class="result__list">
+          <div class="result__list-name">山城　正佳</div>
+          <div>Yamashiro Masayoshi</div>
+        </li>
+        <li class="result__list">
+          <div class="result__list-item">
+            <span>社員番号</span>
+            <span class="result__list-item_info">10000</span>
+          </div>
+          <div class="result__list-item">
+            <span class="">入社</span>
+            <span class="result__list-item_info">2000/4/1</span>
+          </div>
+          <a href=""><img src="/images/img_icon_mail.png" alt="メールアイコン"></a>
+        </li>
+
+      </ul>
+      <div class="pager">
+        <a href=""><img src="/images/img_icon_pager-left.png" alt="左矢印アイコン" class="pager-img"></a>
+        <span class="pager-item">1/20</span>
+        <a href=""><img src="/images/img_icon_pager-right.png" alt="右矢印アイコン" class="pager-img"></a>
       </div>
-      <div>1/20</div>
     </div>
   </div>
   <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>

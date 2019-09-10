@@ -9,6 +9,8 @@
 　　3.main
 　　4.footer
 　　5.smooth-scroll
+　　6.button
+　　7.pager
 
 ================================*/
 
@@ -219,6 +221,41 @@
   margin: auto;
   text-align: center;
 }
+
+/*
+　6.button
+================================*/
+.btn {
+  padding: 15px 0;
+  text-align: right;
+}
+
+.btn__search{
+  color: #FFF;
+  width:90px;
+  height: 30px;
+  text-align: center;
+  background-color: #31C453;
+}
+
+.btn__search:hover{
+  background-color: rgba(49,196,83,0.7);
+}
+
+/*
+　7.pager
+================================*/
+.pager {
+  text-align: center;
+}
+
+.pager-img {
+  width: 20px;
+  height: 20px;
+}
+
+.pager-item {
+  margin: 10px 30px;
 
 /*===============================
 

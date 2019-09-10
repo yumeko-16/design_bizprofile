@@ -6,7 +6,6 @@
 
 　　1.conditions
 　　2.result
-　　3.pager
 
 ================================*/
 
@@ -32,6 +31,7 @@
 .conditions__list__item-label {
   border-left: solid 6px #0096DE;
   margin: 10px auto 12px;
+  padding-left: 10px;
 }
 
 .conditions__list__item-box {
@@ -47,11 +47,31 @@
 /*
 　2.result
 ================================*/
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto 50px;
+  list-style: none;
+}
 
-/*
-　2.pager
-================================*/
+.result-img {
+  width: 110px;
+  height: 110px;
+  margin:auto;
+}
 
+.result__list {
+  margin:0px auto;
+}
+
+.result__list-name {
+  text-align: center;
+  font-size: 25px;
+}
 
 /*===============================
 
