@@ -246,25 +246,25 @@
 /*
 　7.pager
 ================================*/
-.pager  ul.pagination {
+.pager__pagination {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.pager .pagination li {
+.pager__pagination-item {
   display: inline;
   margin: 0 2px;
   padding: 0;
   display: inline-block;
   background:#0096DE;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   position: relative;
 }
 
-.pager .pagination li a{
+.pager__pagination-item a{
   vertical-align: middle;
   position: absolute;
   top: 0;
@@ -277,13 +277,26 @@
   text-decoration: none;
 }
 
-.pager .pagination li a span{
+.pager__pagination-item a span{
   display:table-cell;
   vertical-align:middle;
 }
 
-.pager .pagination li a:hover,
-.pager .pagination li a.active{
+.pager__pagination-number {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.pager__pagination-item a:hover,
+.pager__pagination-item a.active{
   background: #46B0E4;
 }
 

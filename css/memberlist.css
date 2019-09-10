@@ -12,6 +12,11 @@
 /*
 　1.conditions
 ================================*/
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
 .conditions {
   max-width: 1000px;
   width: 90%;
