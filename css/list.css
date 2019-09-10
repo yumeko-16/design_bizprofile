@@ -142,7 +142,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 25px;
+  padding: 20px 0;
 }
 .result__item-detail {
   width: calc(33.3% - 10px);
@@ -187,36 +187,27 @@
 }
 .pager__list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  justify-content: center;
+  list-style: none;
 }
 .pager__list-item {
-  display: inline;
-  display: inline-block;
   width: 50px;
   height: 50px;
   margin: 0 2px;
   padding: 0;
-  background: #9D50BB;
+  background: #0096DE;
   text-align: center;
-  position: relative;
 }
 .pager__list-item a {
   display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  text-align: center;
-  vertical-align: middle;
   color: #fff;
   text-decoration: none;
 }
 .pager__list-item a:hover, .pager__list-item a.active {
-  color: #000;
-  background: #ccf;
+  background: #99CCFF;
+  color: #333;
 }
 .pager__list-item a span {
   display: table-cell;
@@ -230,7 +221,6 @@
   .pager__list-item.pre, .pager__list-item.next {
     display: inline-block;
     width: 40%;
-    height: 50px;
     text-align: center;
   }
   .pager__list-item.pre a, .pager__list-item.next a {
