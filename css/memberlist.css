@@ -30,6 +30,7 @@ select {
   list-style: none;
 }
 .conditions__list__item {
+  white-space: nowrap;
   flex-basis:50%
 }
 
