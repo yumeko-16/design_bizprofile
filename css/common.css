@@ -225,7 +225,7 @@
 　6.button
 ================================*/
 .btn {
-  padding: 15px 0;
+  padding: 15px;
   text-align: right;
 }
 
@@ -456,7 +456,7 @@
 　3.button
 ================================*/
   .btn__search{
-    width:400px;
+    width: 100%;
   }
 
 }
