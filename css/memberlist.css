@@ -31,7 +31,8 @@ select {
 }
 .conditions__list__item {
   white-space: nowrap;
-  flex-basis:50%
+  flex-basis:50%;
+  padding-bottom: 20px;
 }
 
 .conditions__list__item-label {
