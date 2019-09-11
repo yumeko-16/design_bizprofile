@@ -137,8 +137,7 @@
 　3.main
 ================================*/
 .main {
-  height: 100%;
-  padding: 60px 0 20px;
+  padding: 60px 0;
   background-color: #EAEDF2;
 }
 
