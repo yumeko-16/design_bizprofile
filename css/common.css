@@ -247,6 +247,7 @@
 .pager__pagination {
   display: flex;
   justify-content: center;
+  padding-bottom: 8px;
 }
 
 .pager__pagination-item {
