@@ -475,4 +475,8 @@
     width: 100%;
   }
 
+  .btn a{
+    padding: 0 15px 15px;
+  }
+
 }

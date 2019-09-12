@@ -30,6 +30,7 @@ select {
   flex-wrap: wrap;
   list-style: none;
 }
+
 .conditions__list__item {
   white-space: nowrap;
   width: 50%;
@@ -115,16 +116,22 @@ select {
 　SP
 
 　　1.conditions
-　　2.result
-　　3.pager
 
 ================================*/
 @media only screen and (max-width: 767px) {
 
   /*
-　　1.contents-conditions
+　　1.conditions
   ================================*/
   .conditions__list__item:last-child {
+    width: 100%;
+  }
+
+  .conditions__list {
+    display: block;
+  }
+
+  .conditions__list__item {
     width: 100%;
   }
 
