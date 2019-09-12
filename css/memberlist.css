@@ -49,6 +49,7 @@ select {
 
 .conditions__list__item-box {
   width: 100%;
+  height: 30px;
   border: solid 1px #a9a9a9;
 }
 
@@ -63,6 +64,7 @@ select {
 
 .conditions__list__item-year-textbox {
   width: 50%;
+  height: 30px;
   border: solid 1px #a9a9a9;
 }
 
