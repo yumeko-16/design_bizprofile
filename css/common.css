@@ -161,7 +161,7 @@
 .table__title {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   line-height: 40px;
   color: #0096DE;
 }
@@ -226,8 +226,15 @@
 　6.button
 ================================*/
 .btn {
-  padding: 15px;
+  width: 95%;
+  padding-bottom: 25px;
+  margin: 0 auto;
   text-align: right;
+}
+
+.btn a{
+  display: block;
+  padding-right: 15px;
 }
 
 .btn__search{
@@ -245,12 +252,16 @@
 /*
 　7.pager
 ================================*/
+.pager {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+
 .pager__pagination {
   display: flex;
   justify-content: center;
-  width: 95%;
-  margin: 0 auto;
-  padding: 15px;
 }
 
 .pager__pagination-item {
