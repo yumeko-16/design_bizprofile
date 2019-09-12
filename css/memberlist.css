@@ -74,6 +74,7 @@ select {
 .result {
   margin: 0 auto;
   padding-bottom: 15px;
+  list-style: none;
 }
 
 .result__list {
