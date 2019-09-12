@@ -160,7 +160,8 @@
 
 .table__title {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   line-height: 40px;
   color: #0096DE;
 }
