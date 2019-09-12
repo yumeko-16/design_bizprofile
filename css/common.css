@@ -248,6 +248,8 @@
 .pager__pagination {
   display: flex;
   justify-content: center;
+  width: 95%;
+  margin: 0 auto;
   padding: 15px;
 }
 
