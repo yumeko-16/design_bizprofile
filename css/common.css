@@ -227,14 +227,14 @@
 ================================*/
 .btn {
   width: 95%;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   margin: 0 auto;
   text-align: right;
 }
 
 .btn a{
   display: block;
-  padding-right: 15px;
+  padding: 15px;
 }
 
 .btn__search{
@@ -255,13 +255,14 @@
 .pager {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 
 .pager__pagination {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 .pager__pagination-item {
