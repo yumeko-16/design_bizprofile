@@ -111,6 +111,11 @@ select {
   margin-left: 30px;
 }
 
+.result__list-item-mail {
+  color: #0096DE;
+  text-decoration: none;
+}
+
 /*===============================
 
 　SP
