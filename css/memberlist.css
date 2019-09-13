@@ -84,7 +84,7 @@ select {
   align-items: center;
   justify-content: space-between;
   width: 75%;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   list-style: none;
 }
 
