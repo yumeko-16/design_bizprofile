@@ -149,7 +149,7 @@
   color: #FFF;
 }
 
-.table {
+.contents {
   max-width: 1000px;
   width: 90%;
   height: 100%;
@@ -158,7 +158,7 @@
   border-top: solid 5px #0096DE;
 }
 
-.table__title {
+.contents__title {
   width: 95%;
   margin: 0 auto;
   padding-bottom: 15px;
@@ -240,7 +240,7 @@
 .btn__search{
   color: #FFF;
   width:90px;
-  height: 30px;
+  height: 40px;
   text-align: center;
   background-color: #31C453;
 }
