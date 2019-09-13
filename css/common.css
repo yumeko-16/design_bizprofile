@@ -138,17 +138,23 @@
 .contents__title {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   line-height: 40px;
   color: #0096DE;
 }
 
 .btn {
-  padding: 10px 0;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
   text-align: right;
 }
+.btn a {
+  display: block;
+  padding: 15px 0;
+}
 .btn--green {
-  display: inline-block;
+  height: 40px;
   padding: 0.3em 1em;
   background: #31C453;
   text-decoration: none;
@@ -346,6 +352,18 @@
     transform: rotate(-45deg);
     top: 30px;
     background-color: #fff;
+  }
+
+  /*
+  　3.main
+  ================================*/
+  .btn {
+    padding: 10px 30px;
+    text-align: center;
+  }
+  .btn--green {
+    width: 100%;
+    height: 50px;
   }
 }
 

@@ -13,7 +13,7 @@
 .conditional {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .conditional__list {
   display: flex;
@@ -24,10 +24,10 @@
   width: 50%;
 }
 .conditional__item:nth-child(odd) {
-  padding: 10px 30px 10px 0;
+  padding: 15px 30px 15px 0;
 }
 .conditional__item:nth-child(even) {
-  padding: 10px 0 10px 30px;
+  padding: 15px 0 15px 30px;
 }
 .conditional__label {
   display: block;
@@ -38,7 +38,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin: 1em auto;
+  margin: .5em auto;
   text-align: center;
   border: 1px solid #bbb;
   border-radius: 2px;
@@ -132,9 +132,10 @@
 .result {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .result__list {
+  padding: 15px 0;
   list-style: none;
 }
 .result__item {
@@ -183,11 +184,12 @@
 .pager {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .pager__list {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
   list-style: none;
 }
 .pager__list-item {
@@ -214,13 +216,41 @@
   vertical-align: middle;
 }
 
+/*===============================
+
+　SP
+
+　　1.conditional
+　　2.result
+　　3.pager
+
+================================*/
 @media only screen and (max-width: 767px) {
+  .conditional__list {
+    display: block;
+  }
+  .conditional__item {
+    width: 100%;
+  }
+  .conditional__item:nth-child(odd) {
+    padding: 10px 30px;
+  }
+  .conditional__item:nth-child(even) {
+    padding: 10px 30px;
+  }
+
+  /*
+  　3.pager
+  ================================*/
+  .pager {
+    padding: 20px 30px;
+  }
   .pager__list-item {
     display: none;
   }
   .pager__list-item.pre, .pager__list-item.next {
-    display: inline-block;
-    width: 40%;
+    display: block;
+    width: 100%;
     text-align: center;
   }
   .pager__list-item.pre a, .pager__list-item.next a {

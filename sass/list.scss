@@ -15,7 +15,7 @@
 .conditional {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -24,10 +24,10 @@
   &__item {
     width: 50%;
     &:nth-child(odd) {
-      padding: 10px 30px 10px 0;
+      padding: 15px 30px 15px 0;
     }
     &:nth-child(even) {
-      padding: 10px 0 10px 30px;
+      padding: 15px 0 15px 30px;
     }
   }
   &__label {
@@ -39,7 +39,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 1em auto;
+    margin: .5em auto;
     text-align: center;
     border: 1px solid #bbb;
     border-radius: 2px;
@@ -134,8 +134,9 @@
 .result {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   &__list {
+    padding: 15px 0;
     list-style: none;
   }
   &__item {
@@ -184,10 +185,11 @@
 .pager {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   &__list {
     display: flex;
     justify-content: center;
+    padding: 15px 0;
     list-style: none;
     &-item {
       width: 50px;
@@ -216,25 +218,55 @@
   }
 }
 
+/*===============================
+
+　SP
+
+　　1.conditional
+　　2.result
+　　3.pager
+
+================================*/
 @media only screen and (max-width: 767px) {
-  .pager__list {
-    &-item {
-      display: none;
-      &.pre,
-      &.next {
-        display: inline-block;
-        width: 40%;
-        text-align: center;
-        a {
+  .conditional {
+    &__list {
+      display: block;
+    }
+    &__item {
+      width: 100%;
+      &:nth-child(odd) {
+        padding: 10px 30px;
+      }
+      &:nth-child(even) {
+        padding: 10px 30px;
+      }
+    }
+  }
+
+/*
+　3.pager
+================================*/
+  .pager {
+    padding: 20px 30px;
+    &__list {
+      &-item {
+        display: none;
+        &.pre,
+        &.next {
+          display: block;
           width: 100%;
           text-align: center;
+          a {
+            width: 100%;
+            text-align: center;
+          }
         }
-      }
-      &.pre span::after {
-        content: "　前の10件へ";
-      }
-      &.next span::before {
-        content: "次の10件へ　";
+        &.pre span::after {
+          content: "　前の10件へ";
+        }
+        &.next span::before {
+          content: "次の10件へ　";
+        }
       }
     }
   }
