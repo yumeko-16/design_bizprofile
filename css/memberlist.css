@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/*===============================
+
+　PC
+
+　　1.conditions
+　　2.result
+
+================================*/
+
+/*
+　1.conditions
+================================*/
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
+.conditions {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.conditions__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.conditions__list__item {
+  white-space: nowrap;
+  width: 50%;
+  padding: 15px;
+}
+
+.conditions__list__item:last-child {
+  width: 50%;
+}
+
+.conditions__list__item-label {
+  font-weight: bold;
+  border-left: solid 6px #0096DE;
+  margin: 10px auto 12px;
+  padding-left: 10px;
+}
+
+.conditions__list__item-box {
+  width: 100%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+}
+
+.conditions__list__item-year {
+  display: flex;
+}
+
+.conditions__list__item-year span {
+  display: block;
+  margin: 0 10px;
+}
+
+.conditions__list__item-year-textbox {
+  width: 50%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+}
+
+/*
+　2.result
+================================*/
+.result {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  list-style: none;
+}
+
+.result__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.result__list-item-img {
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+
+.result__list-item {
+  margin:0px auto;
+}
+
+.result__list-item-name {
+  text-align: center;
+  font-size: 25px;
+}
+
+.result__list-item-title {
+  font-weight: bold;
+}
+
+.result__list-item-info {
+  margin-left: 30px;
+}
+
+.result__list-item-mail {
+  color: #0096DE;
+  text-decoration: none;
+}
+
+/*===============================
+
+　SP
+
+　　1.conditions
+
+================================*/
+@media only screen and (max-width: 767px) {
+
+  /*
+　　1.conditions
+  ================================*/
+  .conditions__list__item:last-child {
+    width: 100%;
+  }
+
+  .conditions__list {
+    display: block;
+  }
+
+  .conditions__list__item {
+    width: 100%;
+  }
+
+}

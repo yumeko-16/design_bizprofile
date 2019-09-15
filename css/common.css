@@ -9,6 +9,8 @@
 　　3.main
 　　4.footer
 　　5.smooth-scroll
+　　6.button
+　　7.pager
 
 ================================*/
 
@@ -135,39 +137,39 @@
 　3.main
 ================================*/
 .main {
-  height: 100%;
-  padding-top: 60px;
+  padding: 60px 0;
   background-color: #EAEDF2;
 }
 
 .title {
   width: 100%;
-  margin-bottom: 50px;
   text-align: center;
   line-height: 102px;
   background-color: #0096DE;
   color: #FFF;
 }
 
-.table {
+.contents {
   max-width: 1000px;
   width: 90%;
   height: 100%;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
   background-color: #FFF;
   border-top: solid 5px #0096DE;
 }
 
-.table__title {
+.contents__title {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 15px;
   line-height: 40px;
   color: #0096DE;
 }
 
 .table__body {
   width: 95%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /*
@@ -220,12 +222,95 @@
   text-align: center;
 }
 
+/*
+　6.button
+================================*/
+.btn {
+  width: 95%;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.btn a{
+  display: block;
+  padding: 15px;
+}
+
+.btn__search{
+  color: #FFF;
+  width:90px;
+  height: 40px;
+  text-align: center;
+  background-color: #31C453;
+}
+
+.btn__search:hover{
+  background-color: rgba(49,196,83,0.7);
+}
+
+/*
+　7.pager
+================================*/
+.pager {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+
+.pager__pagination {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.pager__pagination-item {
+  display: block;
+  margin: 0 2px;
+  background:#0096DE;
+  width: 40px;
+  height: 40px;
+}
+
+.pager__pagination-item a{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display:table;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pager__pagination-item a span{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.pager__pagination-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+
+
+.pager__pagination-item a:hover,
+.pager__pagination-item a.active{
+  background: #46B0E4;
+}
+
 /*===============================
 
 　SP
 
 　　1.common
 　　2.header
+　　3.button
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -383,4 +468,16 @@
     top: 30px;
     background-color: #fff;
   }
+
+/*
+　3.button
+================================*/
+  .btn__search{
+    width: 100%;
+  }
+
+  .btn a{
+    padding: 0 15px 15px;
+  }
+
 }
