@@ -120,6 +120,7 @@ select {
 　SP
 
 　　1.conditions
+　　2.result
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -137,6 +138,34 @@ select {
 
   .conditions__list__item {
     width: 100%;
+  }
+
+  /*
+  　2.result
+  ================================*/
+  .result {
+    width: 90%;
+  }
+
+  .result__list {
+    padding: 15px 0;
+    align-items: flex-start;
+  }
+
+  .result__list-item-img {
+    display: block;
+  }
+
+  .result__list-item-mail {
+    display: block;
+  }
+
+  .result__list-item-name {
+    text-align: left;
+  }
+
+  .result__list-item-info {
+    margin-left: 60px;
   }
 
 }
