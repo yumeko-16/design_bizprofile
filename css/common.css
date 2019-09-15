@@ -158,6 +158,22 @@
   border-top: solid 5px #0096DE;
 }
 
+.contents-nbg {
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 50px auto 0;
+}
+
+.contents-nbg__between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents-nbg__right {
+  
+}
+
 .contents__title {
   width: 95%;
   margin: 0 auto;
@@ -287,40 +303,22 @@ select {
 　6.button
 ================================*/
 .btn {
-  width: 95%;
-  padding-bottom: 15px;
-  margin: 0 auto;
-  text-align: right;
-}
-
-.btn-out {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
-  width: 90%;
-  height: 100%;
-  margin: 10px auto;
-}
-
-.btn__list{
   display: block;
-  padding: 15px;
-}
-
-.btn__search{
-  color: #FFF;
-  width:90px;
   height: 40px;
   text-align: center;
+}
+
+.btn--search {
+  width:90px;
+  color: #FFF;
   background-color: #31C453;
 }
 
-.btn__search:hover{
+.btn--search:hover {
   background-color: rgba(49,196,83,0.7);
 }
 
-.btn__back{
+.btn--back {
   width:90px;
   height: 40px;
   text-align: center;
@@ -329,24 +327,23 @@ select {
   border: 1px solid #CDCDCD;
 }
 
-.btn__edit {
+.btn--edit {
   float: right;
 }
 
-.btn__edit-item {
+.btn--edit-item {
   color: #000;
   text-decoration: none;
 }
 
-.btn__edit-item a{
+.btn--edit-item a {
   font-size: 15px;
   text-decoration: none;
 }
 
-.btn__delete{
+.btn--delete {
   width:150px;
-  height: 30px;
-  text-align: center;
+  margin-left: auto;
   background-color: #ff0000;
   color: #FFF;
 }
@@ -572,12 +569,7 @@ select {
 /*
 　3.button
 ================================*/
-  .btn__search {
+  .btn--search {
     width: 100%;
   }
-
-  .btn__list {
-    padding: 0 15px 15px;
-  }
-
 }

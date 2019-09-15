@@ -68,6 +68,12 @@ select {
   border: solid 1px #a9a9a9;
 }
 
+.conditions__btn{
+  display: block;
+  padding: 15px;
+  text-align: right;
+}
+
 /*
 　2.result
 ================================*/
@@ -138,6 +144,10 @@ select {
 
   .conditions__list__item {
     width: 100%;
+  }
+
+  .conditions__btn {
+    padding: 0 15px 15px;
   }
 
   /*
