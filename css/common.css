@@ -326,6 +326,7 @@ select {
   text-align: center;
   background-color: #FFF;
   color: #000;
+  border: 1px solid #CDCDCD;
 }
 
 .btn__edit {
@@ -397,8 +398,6 @@ select {
   height: 40px;
   text-align: center;
 }
-
-
 
 .pager__pagination-item a:hover,
 .pager__pagination-item a.active{
@@ -573,11 +572,11 @@ select {
 /*
 　3.button
 ================================*/
-  .btn__search{
+  .btn__search {
     width: 100%;
   }
 
-  .btn a{
+  .btn__list {
     padding: 0 15px 15px;
   }
 
