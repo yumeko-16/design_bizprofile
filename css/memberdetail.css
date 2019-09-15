@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*===============================
+
+　PC
+
+　　1.anchor
+　　2.basic
+　　3.admin
+　　4.qualification
+　　5.project
+　　6.skill
+　　7.button
+
+================================*/
+
+/*
+　1.anchor
+================================*/
+.anchor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 0 270px;
+  list-style: none;
+  background-color: #FFF;
+}
+
+.anchor__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.anchor__item-icon a{
+  display: block;
+}
+
+.anchor__item-name {
+  color: #0096DE;
+  font-size: 25px;
+}
+
+.anchor__item-icon {
+  display: block;
+  padding-left: 5px;
+  color: #0096DE;
+  text-decoration: none;
+}
+
+#basic, #admin, #qualification, #project, #skill {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+/*
+　2.basic
+================================*/
+.employee {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.employee__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee__img-item {
+  width: 200px;
+  height: 200px;
+}
+
+.employee_btn {
+
+}
+
+/*
+　7.button
+================================*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 10px auto;
+}
+
+.btn__edit {
+  float: right;
+}
+
+.btn__edit-item {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn__edit-item a{
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn__delete{
+  width:150px;
+  height: 30px;
+  text-align: center;
+  background-color: #ff0000;
+  color: #FFF;
+}
+
+
+/*===============================
+
+　SP
+
+　　1.anchor
+　　2.basic_info
+　　3.admin_info
+　　4.qualification_info
+　　5.project_info
+　　6.skill_info
+
+================================*/
+@media only screen and (max-width: 767px) {
+
+  /*
+　　1.menu
+  ================================*/
+    .menu__nav-item-text {
+      font-size: 10px;
+    }
+  }
