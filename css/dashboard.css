@@ -14,13 +14,12 @@
 .menu {
   max-width: 1000px;
   width: 90%;
-  margin: 0 auto 50px;
+  margin: 50px auto 0;
 }
 
 .menu__nav {
   width: 100%;
   display: flex;
-  margin: 50px auto 0;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
