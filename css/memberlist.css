@@ -120,6 +120,7 @@ select {
 　SP
 
 　　1.conditions
+　　2.result
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -139,4 +140,40 @@ select {
     width: 100%;
   }
 
+  /*
+  　2.result
+  ================================*/
+  .result {
+    width: 90%;
+  }
+
+  .result__list {
+    padding: 15px 0;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+  }
+
+  .result__list-item-img {
+    display: block;
+    width: 90px;
+    height: 90px;
+  }
+
+  .result__list-item-mail {
+    display: block;
+  }
+
+  .result__list-item-name {
+    text-align: left;
+    font-size: unset;
+  }
+
+  .result__list-item-title {
+    font-weight: unset;
+  }
+
+  .result__list-item-info {
+    font-weight: unset;
+  }
 }

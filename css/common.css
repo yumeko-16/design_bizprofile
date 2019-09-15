@@ -18,7 +18,7 @@
 　1.common
 ================================*/
 * {
-  font-family: 'メイリオ';
+  font-family: "メイリオ", Meiryo, sans-serif;
 }
 
 .sp-none {
