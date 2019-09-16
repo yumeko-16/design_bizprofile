@@ -92,17 +92,12 @@
           <div class="employee__img">
             <a href=""><img src="/images/no_image.png" alt="社員画像" class="employee__img-item"></a>
           </div>
-          <div class="employee_btn">
-            <div>
-              <a href="#">
-                <input type="submit" value="画像を選択" class="">
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <input type="submit" value="画像をアップロード" class="">
-              </a>
-            </div>
+          <div class="employee-btn">
+            <input type="submit" value="画像を選択" class="btn btn--white">
+            <span style="padding-left: 3px;">選択されていません</span>
+          </div>
+          <div class="employee-btn">
+            <input type="submit" value="画像をアップロード" class="btn btn--blue">
           </div>
         </div>
         <table class="table__vertical">
@@ -311,7 +306,7 @@
     </div>
     <div class="contents-nbg">
       <div class="contents-nbg__between">
-        <input type="submit" value="前へ戻る" class="btn btn--back">
+        <input type="submit" value="前へ戻る" class="btn btn--white">
         <input type="submit" value="&#xf2f1; 更新" class="fas btn btn--search">
       </div>
     </div>
@@ -453,8 +448,10 @@
             </tr>
           </tbody>
         </table>
-        <div>※　◎:精通している ○:活用できる △:指示通りできる</div>
-        <div>※：「一定程度であれば独力でできる」とは、⇒ "使える"、"経験がある"など実績を持つ。</div>
+        <div class="explanation">
+          <div>※　◎:精通している ○:活用できる △:指示通りできる</div>
+          <div>※：「一定程度であれば独力でできる」とは、⇒ "使える"、"経験がある"など実績を持つ。</div>
+        </div>
       </div>
     </div>
     <div class="contents-nbg">

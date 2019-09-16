@@ -170,10 +170,6 @@
   justify-content: space-between;
 }
 
-.contents-nbg__right {
-  
-}
-
 .contents__title {
   width: 95%;
   margin: 0 auto;
@@ -318,13 +314,21 @@ select {
   background-color: rgba(49,196,83,0.7);
 }
 
-.btn--back {
+.btn--white {
   width:90px;
   height: 40px;
   text-align: center;
   background-color: #FFF;
   color: #000;
   border: 1px solid #CDCDCD;
+}
+
+.btn--blue {
+  width:150px;
+  height: 40px;
+  text-align: center;
+  background-color: #0096DE;
+  color: #FFF;
 }
 
 .btn--edit {
