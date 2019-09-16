@@ -246,8 +246,6 @@
   .result {
     &__item {
       padding: 20px 30px;
-      &__list {
-      }
       &-detail {
         &:nth-child(odd) {
           width: 103px;
@@ -255,8 +253,6 @@
         &:nth-child(even) {
           width: auto;
           padding-left: 20px;
-        }
-        &-icon--img {
         }
         &-name {
           padding-bottom: 10px;
