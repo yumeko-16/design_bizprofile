@@ -240,25 +240,21 @@
   　2.result
   ================================*/
   .result__item {
-    padding: 15px 30px;
+    padding: 20px 30px;
   }
   .result__item-detail:nth-child(odd) {
-    width: 50%;
+    width: 103px;
   }
   .result__item-detail:nth-child(even) {
-    width: 50%;
-  }
-  .result__item-detail-icon--img {
-    width: 100%;
-    height: 103px;
+    width: auto;
+    padding-left: 20px;
   }
   .result__item-detail-name {
     padding-bottom: 10px;
   }
   .result__item-detail-mail {
     display: block;
-    width: 100%;
-    height: 40px;
+    width: 32px;
     object-fit: scale-down;
     padding-top: 10px;
   }
