@@ -102,7 +102,11 @@
 /*
 　7.button
 ================================*/
-
+.contents__title--edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 /*===============================

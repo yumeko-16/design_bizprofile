@@ -178,21 +178,19 @@
   color: #0096DE;
 }
 
-.table__body {
+.table {
   width: 95%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
 .table__thead {
-  width: 50%;
   padding: 10px 0;
   background-color: #0096DE;
   color: #fff;
 }
 
 .table__tbody {
-  width: 50%;
   padding: 10px 20px;
   text-align: center;
   background-color: #EAEDF2;
