@@ -243,6 +243,35 @@ select {
   color: #FF0000;
 }
 
+.radiobutton {
+  display: none;
+}
+
+label {
+  display: inline-block;
+}
+
+.radio-fontas {
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.radiobutton + .radio-fontas:before {
+  padding-right: 5px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #ccc;
+  content: '\f192';
+}
+
+.radiobutton:checked + .radio-fontas:before {
+  padding-right: 5px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #689ACA;
+  content: '\f192';
+}
+
 /*
 　4.footer
 ================================*/
@@ -575,3 +604,25 @@ select {
     width: 100%;
   }
 }
+
+
+/* .skill-grid-outer {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+
+}
+
+.skill-grid-outer div:not(.skill-grid-inner) {
+  padding: 4px;
+  border-top: solid thin;
+  border-left: solid thin;
+}
+
+.skill-grid-inner {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr 80px;
+}
+
+.grid-header {
+  background-color: #ccf;
+} */

@@ -161,8 +161,14 @@
           <tr>
             <th class="table__vertical__th">性別</th>
             <td class="table__vertical__td">
-              <input type="radio" name="" value="">男性
-              <input type="radio" name="" value="">女性
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>男性
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>女性
+              </label>
               <span class="asterisk">※</span>
             </td>
           </tr>
@@ -268,37 +274,70 @@
           <tr>
             <th class="table__vertical__th">社員ステータス</th>
             <td class="table__vertical__td">
-              <input type="radio" name="" value="">通常
-              <input type="radio" name="" value="">休職中
-              <input type="radio" name="" value="">退職
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>通常
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>休職中
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>退職
+              </label>
             </td>
           </tr>
           <tr>
             <th class="table__vertical__th">社員管理権限</th>
             <td class="table__vertical__td">
-              <input type="radio" name="" value="">あり
-              <input type="radio" name="" value="">なし
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
             </td>
           </tr>
           <tr>
             <th class="table__vertical__th">参加プロジェクト参照権限</th>
             <td class="table__vertical__td">
-              <input type="radio" name="" value="">あり
-              <input type="radio" name="" value="">なし
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
             </td>
           </tr>
           <tr>
             <th class="table__vertical__th">スキルシート情報参照権限</th>
             <td class="table__vertical__td">
-              <input type="radio" name="" value="">あり
-              <input type="radio" name="" value="">なし
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
             </td>
           </tr>
           <tr>
             <th class="table__vertical__th">保有資格情報参照権限</th>
             <td class="table__vertical__td">
-              <input type="radio" name="" value="">あり
-              <input type="radio" name="" value="">なし
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
             </td>
           </tr>
         </table>
@@ -395,7 +434,30 @@
             <a href="#">編集</a>
           </span>
         </h2>
-        <table class="table">
+        <div class="table skill-grid-outer">
+          <div class="table__thead">カテゴリ</div>
+          <div class="skill-grid-inner">
+            <div class="table__thead">スキル項目</div>
+            <div class="table__thead">習熟度</div>
+            <div class="table__thead">スキル項目</div>
+            <div class="table__thead">習熟度</div>
+          </div>
+          <!-- {% for skill_group in skill_list %} -->
+          <div class="table__tbody">業務</div>
+          <div class="table__tbody skill-grid-inner">
+            <!-- {% for skill in skill_group.skills %} -->
+            <div>販売管理</div>
+            <div>〇</div>
+            <!-- {% endfor %} -->
+            <!-- {% if not skill_group.skills.count|divisibleby:"2" %} -->
+            <div>販売管理</div>
+            <div>〇</div>
+            <!-- {% endif %} -->
+          </div>
+          <!-- {% endfor %} -->
+        </div>
+
+        <!-- <table class="table">
           <thead>
             <tr>
               <th class="table__thead">カテゴリ</th>
@@ -441,7 +503,7 @@
               <td class="table__tbody">Ruby</td>
               <td class="table__tbody"></td>
             </tr>
-          </tbody>
+          </tbody> -->
         </table>
         <div class="explanation">
           <div>※　◎:精通している ○:活用できる △:指示通りできる</div>
