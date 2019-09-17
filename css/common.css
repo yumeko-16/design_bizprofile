@@ -386,13 +386,13 @@ label {
   text-align: center;
 }
 
-.btn--search {
+.btn--green {
   width:90px;
   color: #FFF;
   background-color: #31C453;
 }
 
-.btn--search:hover {
+.btn--green:hover {
   background-color: rgba(49,196,83,0.7);
 }
 
