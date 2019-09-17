@@ -13,6 +13,10 @@
 /*
 　1.common
 ================================*/
+* {
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",YuGothic,"Yu Gothic",Verdana,Meiryo,sans-serif;
+}
+
 .sp-none {
   display: block;
 }
