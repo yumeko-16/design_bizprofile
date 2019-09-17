@@ -37,6 +37,29 @@
   }
 }
 
+/*
+　2.basic
+================================*/
+.basic {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  &__icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__img {
+      width: 200px;
+      height: 200px;
+      background-color: #ddd;
+    }
+    &__btn {
+      padding: 15px 0;
+      flex-direction: column;
+    }
+  }
+}
+
 /*===============================
 
 　SP

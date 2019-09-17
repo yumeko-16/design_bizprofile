@@ -144,25 +144,20 @@
   }
 }
 .btn {
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 15px;
-  text-align: right;
-  a {
-    display: block;
-    padding: 15px 0;
+  min-width: 90px;
+  height: 40px;
+  padding: 0 10px;
+  text-align: center;
+  color: #FFF;
+  &--search {
+    background-color: #31C453;
   }
-  &--green {
-    height: 40px;
-    padding: 0.3em 1em;
-    background: #31C453;
-    text-decoration: none;
-    color: #fff;
-    transition: .4s;
-    &:hover {
-      background: rgba(49,196,83,.5);
-    }
+  &--change {
+    background-color: #0096DE;
   }
+}
+.fa-icon--white {
+  color: white;
 }
 
 /*

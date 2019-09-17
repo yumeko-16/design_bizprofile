@@ -148,25 +148,21 @@
 }
 
 .btn {
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 15px;
-  text-align: right;
-}
-.btn a {
-  display: block;
-  padding: 15px 0;
-}
-.btn--green {
+  min-width: 90px;
   height: 40px;
-  padding: 0.3em 1em;
-  background: #31C453;
-  text-decoration: none;
-  color: #fff;
-  transition: .4s;
+  padding: 0 10px;
+  text-align: center;
+  color: #FFF;
 }
-.btn--green:hover {
-  background: rgba(49, 196, 83, 0.5);
+.btn--search {
+  background-color: #31C453;
+}
+.btn--change {
+  background-color: #0096DE;
+}
+
+.fa-icon--white {
+  color: white;
 }
 
 /*

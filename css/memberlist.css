@@ -125,6 +125,10 @@
   background: #fff;
   color: #333;
 }
+.conditional__btn {
+  padding: 15px 0;
+  text-align: right;
+}
 
 /*
 　2.result
