@@ -5,9 +5,8 @@
 
 　　1.common
 　　2.header
-　　3.main
-　　4.footer
-　　5.smooth-scroll
+　　3.footer
+　　4.smooth-scroll
 
 ================================*/
 /*
@@ -29,6 +28,155 @@
   display: block;
   content: "";
   clear: both;
+}
+
+.main {
+  padding: 60px 0;
+  background-color: #EAEDF2;
+}
+
+.title {
+  text-align: center;
+  line-height: 102px;
+  background-color: #0096DE;
+  color: #FFF;
+}
+
+.btn {
+  min-width: 90px;
+  height: 40px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 2px;
+  color: #FFF;
+}
+.btn--search {
+  background-color: #31C453;
+}
+.btn--change {
+  background-color: #0096DE;
+}
+
+.txtField {
+  height: 35px;
+  padding: 0 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.txtArea {
+  width: 100%;
+  min-height: 90px;
+  padding: 0 8px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+}
+
+.pullDown {
+  position: relative;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  background: #fff;
+}
+.pullDown::before {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666;
+  pointer-events: none;
+}
+.pullDown__list {
+  width: 100%;
+  height: 35px;
+  padding: 0 45px 0 8px;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  color: #666;
+}
+
+.radio {
+  margin-right: 15px;
+}
+.radio-btn {
+  display: none;
+}
+.radio-btn + .radio-fontas:before {
+  margin-right: 5px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #ccc;
+  content: '\f192';
+}
+.radio-btn:checked + .radio-fontas:before {
+  margin-right: 5px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #689ACA;
+  content: '\f192';
+}
+.radio-fontas {
+  vertical-align: bottom;
+  font-size: 20px;
+}
+
+.asterisk {
+  color: #ed5c65;
+}
+
+.contents {
+  max-width: 1024px;
+  width: 100%;
+  margin: 50px auto 0;
+  background-color: #FFF;
+  border-top: solid 5px #0096DE;
+}
+.contents__title {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  line-height: 40px;
+  color: #0096DE;
+}
+
+.table {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.table__thead {
+  padding: 10px 10px;
+  background-color: #0096DE;
+  color: #fff;
+}
+.table__thead--center {
+  text-align: center;
+}
+.table__thead--left {
+  min-width: 164px;
+  width: 30%;
+  text-align: left;
+}
+.table__tbody {
+  align-items: center;
+  padding: 10px;
+  background-color: #EAEDF2;
+}
+.table__tbody__frame {
+  margin-right: 5px;
 }
 
 /*
@@ -118,55 +266,7 @@
 }
 
 /*
-　3.main
-================================*/
-.main {
-  padding: 60px 0;
-  background-color: #EAEDF2;
-}
-
-.title {
-  text-align: center;
-  line-height: 102px;
-  background-color: #0096DE;
-  color: #FFF;
-}
-
-.contents {
-  max-width: 1024px;
-  width: 90%;
-  margin: 50px auto 0;
-  background-color: #FFF;
-  border-top: solid 5px #0096DE;
-}
-.contents__title {
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 15px;
-  line-height: 40px;
-  color: #0096DE;
-}
-
-.btn {
-  min-width: 90px;
-  height: 40px;
-  padding: 0 10px;
-  text-align: center;
-  color: #FFF;
-}
-.btn--search {
-  background-color: #31C453;
-}
-.btn--change {
-  background-color: #0096DE;
-}
-
-.fa-icon--white {
-  color: white;
-}
-
-/*
-　4.footer
+　3.footer
 ================================*/
 .footer {
   text-align: center;
@@ -177,7 +277,7 @@
 }
 
 /*
-　5.smooth-scroll
+　4.smooth-scroll
 ================================*/
 .page_top {
   position: fixed;
@@ -218,9 +318,8 @@
 
 　　1.common
 　　2.header
-　　3.main
-　　4.footer
-　　5.smooth-scroll
+　　3.footer
+　　4.smooth-scroll
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -233,6 +332,17 @@
 
   .pc-none {
     display: block;
+  }
+
+  .btn {
+    text-align: center;
+  }
+  .btn a {
+    padding: 15px 30px;
+  }
+  .btn--green {
+    width: 100%;
+    height: 50px;
   }
 
   /*
@@ -352,20 +462,6 @@
     transform: rotate(-45deg);
     top: 30px;
     background-color: #fff;
-  }
-
-  /*
-  　3.main
-  ================================*/
-  .btn {
-    text-align: center;
-  }
-  .btn a {
-    padding: 15px 30px;
-  }
-  .btn--green {
-    width: 100%;
-    height: 50px;
   }
 }
 

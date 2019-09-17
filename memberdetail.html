@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ダッシュボード | BizProfile</title>
+  <title>プロフィール詳細 | BizProfile</title>
   <link rel="stylesheet" href="/css/ress.css">
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/memberdetail.css">
@@ -57,7 +57,7 @@
   </header>
 
   <div class="main">
-    <h1 class="title">ダッシュボード</h1>
+    <h1 class="title">プロフィール詳細</h1>
 
     <div class="anchor">
       <ul class="anchor__list">
@@ -104,23 +104,195 @@
           </div>
         </div>
       </div>
-      <table class="table__body">
-        <thead>
-          <tr>
-            <th class="table__thead">更新日</th>
-            <th class="table__thead">更新者</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="table__tbody">1996年2月2日</td>
-            <td class="table__tbody">10001：田口有海</td>
-          </tr>
-          <tr>
-            <td class="table__tbody">2019年12月31日</td>
-            <td class="table__tbody">10002：安座間みき</td>
-          </tr>
-        </tbody>
+      <table class="table">
+        <tr>
+          <th class="table__thead table__thead--left">社員番号</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">氏名</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">氏名(カナ)</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">氏名(英字)</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">メールアドレス</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">パスワード</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">電話番号</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">生年月日</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">性別</th>
+          <td class="table__tbody">
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>男性
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>女性
+            </label>
+            <span class="asterisk">＊</span>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">国籍</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">エレクス入社年月日</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">業界入社年月日</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">住所</th>
+          <td class="table__tbody">
+            <div class="pullDown">
+              <select class="pullDown__list">
+                <option value="北海道">北海道</option>
+                <option value="青森">青森</option>
+                <option value="沖縄">沖縄</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">住所(市区町村以降)</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">交通機関</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">最寄駅</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">学校名</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">学部学科名</th>
+          <td class="table__tbody">
+            <input type="text" class="txtField">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">自己PR</th>
+          <td class="table__tbody">
+            <textarea class="txtArea"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">部署</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">拠点</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">役職</th>
+          <td class="table__tbody">
+            <div class="table__tbody__frame">
+              <input type="text" class="txtField">
+            </div>
+            <div class="asterisk">＊</div>
+          </td>
+        </tr>
       </table>
     </div>
   </div>

@@ -4,13 +4,22 @@
 
 　PC
 
+　　1.common
 　　1.menu
-　　2.table
 
 ================================*/
 
 /*
-　1.menu
+　1.common
+================================*/
+.table {
+  &__tbody {
+    text-align: center;
+  }
+}
+
+/*
+　2.menu
 ================================*/
 .menu {
   max-width: 1024px;
@@ -52,32 +61,6 @@
         text-align: center;
         font-weight: bold;
       }
-    }
-  }
-}
-
-/*
-　2.table
-================================*/
-.table {
-  &__body {
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 15px;
-  }
-  &__thead {
-    width: 50%;
-    padding: 10px 0;
-    background-color: #0096DE;
-    color: #fff;
-  }
-  &__tbody {
-    width: 50%;
-    padding: 10px 20px;
-    text-align: center;
-    background-color: #EAEDF2;
-    &--subject {
-      text-align: left;
     }
   }
 }

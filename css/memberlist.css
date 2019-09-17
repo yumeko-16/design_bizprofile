@@ -3,12 +3,25 @@
 
 　PC
 
-　　1.conditional
-　　2.result
+　　1.common
+　　2.conditional
+　　3.result
 
 ================================*/
 /*
-　1.conditional
+　1.common
+================================*/
+.pullDown {
+  margin: .5em auto;
+}
+
+.txtField {
+  width: 100%;
+  margin: .5em auto;
+}
+
+/*
+　2.conditional
 ================================*/
 .conditional {
   width: 95%;
@@ -20,13 +33,13 @@
   flex-wrap: wrap;
   list-style: none;
 }
-.conditional__item {
+.conditional__list__item {
   width: 50%;
 }
-.conditional__item:nth-child(odd) {
+.conditional__list__item:nth-child(odd) {
   padding: 15px 30px 15px 0;
 }
-.conditional__item:nth-child(even) {
+.conditional__list__item:nth-child(even) {
   padding: 15px 0 15px 30px;
 }
 .conditional__label {
@@ -34,92 +47,28 @@
   padding: .25em .25em .25em .75em;
   border-left: 6px solid #0096DE;
 }
-.conditional__pullDown {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: .5em auto;
-  text-align: center;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  background: #fff;
-}
-.conditional__pullDown::before {
-  position: absolute;
-  top: 1.1em;
-  right: 0.9em;
-  width: 0;
-  height: 0;
-  padding: 0;
-  content: '';
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #666;
-  pointer-events: none;
-}
-.conditional__pullDown-list {
-  width: 100%;
-  padding-right: 1em;
-  cursor: pointer;
-  text-indent: 0.01px;
-  text-overflow: ellipsis;
-  border: none;
-  outline: none;
-  background: transparent;
-  background-image: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  appearance: none;
-  padding: 8px 38px 8px 8px;
-  color: #666;
-}
-.conditional__txtField {
-  width: 100%;
-  height: 42px;
-  margin: .5em auto;
-  padding: 8px;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  background: #fff;
-}
 .conditional__years {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin: .5em auto;
-}
-.conditional__years--txtField {
-  width: 100%;
-  height: 42px;
-  padding: 8px;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  background: #fff;
 }
 .conditional__years--txt {
-  height: 42px;
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  margin: .5em auto;
+  padding: 0 8px;
 }
 .conditional__skill {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin: .5em auto;
-}
-.conditional__skill--txtField {
-  width: 100%;
-  height: 42px;
-  padding: 8px;
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  background: #fff;
-  color: #333;
 }
 .conditional__skill--btn {
   width: 70px;
-  height: 42px;
-  margin-left: 15px;
-  padding: 8px;
+  height: 35px;
+  margin: .5em auto .5em 5px;
+  padding: 0 8px;
   border: 1px solid #bbb;
   border-radius: 2px;
   background: #fff;
@@ -131,7 +80,7 @@
 }
 
 /*
-　2.result
+　3.result
 ================================*/
 .result {
   width: 95%;
@@ -226,6 +175,9 @@
 
 ================================*/
 @media only screen and (max-width: 767px) {
+  /*
+  　1.conditional
+  ================================*/
   .conditional__list {
     display: block;
   }
