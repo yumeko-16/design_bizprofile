@@ -225,6 +225,10 @@
   pointer-events: none;
 }
 
+.pullDown-w {
+  width: 100%;
+}
+
 .pullDown-list {
   width: 100%;
   padding-right: 1em;
@@ -270,10 +274,12 @@
 }
 
 .table__vertical__td--address {
-  width: 40%;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.table__vertical__td--address-w {
+  width: 40%
 }
 
 .table__vertical__td-pr {
@@ -287,8 +293,8 @@
   color: #FF0000;
 }
 
-.asterisk--mg {
-  margin-right: 5px;
+.asterisk--pd {
+  padding-left: 5px;
 }
 
 .radiobutton {
@@ -654,6 +660,7 @@ label {
   }
 }
 
+/* Start スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
 
 /* .skill-grid-outer {
   display: grid;
@@ -675,3 +682,5 @@ label {
 .grid-header {
   background-color: #ccf;
 } */
+
+/* End スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
