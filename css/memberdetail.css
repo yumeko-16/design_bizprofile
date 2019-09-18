@@ -39,7 +39,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
 }
 
 .anchor__item-link {
@@ -49,7 +48,6 @@
 .anchor__item-name {
   vertical-align: bottom;
   color: #0096DE;
-  font-size: 2vmin;
   font-weight: bold;
 }
 
