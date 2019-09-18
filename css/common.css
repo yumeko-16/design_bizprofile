@@ -425,6 +425,7 @@ label {
 .btn--edit-item a {
   font-size: 15px;
   text-decoration: none;
+  color: #0096DE;
 }
 
 .btn--delete {
