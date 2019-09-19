@@ -10,8 +10,8 @@
 /*
 　1.common
 ================================*/
-.table__tbody {
-  text-align: center;
+.table__tbody--subject {
+  text-align: left;
 }
 
 /*
@@ -59,6 +59,22 @@
   margin: 0 auto 20px;
   text-align: center;
   font-weight: bold;
+}
+
+/*===============================
+
+　Tablet
+
+　　1.menu
+
+================================*/
+@media only screen and (max-width: 1024px) {
+  /*
+  　1.menu
+  ================================*/
+  .menu {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=dashboard.css.map */

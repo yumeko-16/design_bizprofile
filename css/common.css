@@ -151,11 +151,14 @@
   line-height: 40px;
   color: #0096DE;
 }
-
-.table {
+.contents__body {
   width: 95%;
   margin: 0 auto;
   padding-bottom: 15px;
+}
+
+.table {
+  width: 100%;
 }
 .table__thead {
   padding: 10px 10px;
@@ -171,8 +174,8 @@
   text-align: left;
 }
 .table__tbody {
-  align-items: center;
   padding: 10px;
+  text-align: center;
   background-color: #EAEDF2;
 }
 .table__tbody__frame {

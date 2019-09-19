@@ -14,7 +14,9 @@
 ================================*/
 .table {
   &__tbody {
-    text-align: center;
+    &--subject {
+      text-align: left;
+    }
   }
 }
 
@@ -62,5 +64,22 @@
         font-weight: bold;
       }
     }
+  }
+}
+
+/*===============================
+
+　Tablet
+
+　　1.menu
+
+================================*/
+@media only screen and (max-width: 1024px) {
+
+/*
+　1.menu
+================================*/
+  .menu {
+    width: 95%;
   }
 }

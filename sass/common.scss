@@ -140,11 +140,14 @@
     line-height: 40px;
     color: #0096DE;
   }
+  &__body {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
 }
 .table {
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 15px;
+  width: 100%;
   &__thead {
     padding: 10px 10px;
     background-color: #0096DE;
@@ -159,8 +162,8 @@
     }
   }
   &__tbody {
-    align-items: center;
     padding: 10px;
+    text-align: center;
     background-color: #EAEDF2;
     &__frame {
       margin-right: 5px;

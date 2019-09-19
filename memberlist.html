@@ -61,83 +61,85 @@
 
     <div class="contents">
       <h2 class="contents__title">検索条件</h2>
-      <form class="conditional">
-        <ul class="conditional__list">
-          <li class="conditional__list__item">
-            <label class="conditional__label">所属</label>
-            <div class="pullDown">
-              <select class="pullDown__list">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-              </select>
-            </div>
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">拠点</label>
-            <div class="pullDown">
-              <select class="pullDown__list">
-                <option value="1">kodera</option>
-                <option value="2">hime</option>
-                <option value="3">is</option>
-                <option value="4">mochi</option>
-              </select>
-            </div>
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">社員名</label>
-            <input type="text" class="txtField">
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">実施年数</label>
-            <div class="conditional__years">
+      <div class="contents__body">
+        <form>
+          <ul class="conditional__list">
+            <li class="conditional__list__item">
+              <label class="conditional__label">所属</label>
+              <div class="pullDown">
+                <select class="pullDown__list">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">拠点</label>
+              <div class="pullDown">
+                <select class="pullDown__list">
+                  <option value="1">kodera</option>
+                  <option value="2">hime</option>
+                  <option value="3">is</option>
+                  <option value="4">mochi</option>
+                </select>
+              </div>
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">社員名</label>
               <input type="text" class="txtField">
-              <div class="conditional__years--txt">年</div>
-              <div class="conditional__years--txt">ー</div>
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">実施年数</label>
+              <div class="conditional__years">
+                <input type="text" class="txtField">
+                <div class="conditional__years--txt">年</div>
+                <div class="conditional__years--txt">ー</div>
+                <input type="text" class="txtField">
+                <div class="conditional__years--txt">年</div>
+              </div>
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">役割</label>
+              <div class="pullDown">
+                <select class="pullDown__list">
+                  <option value="1">kodera</option>
+                  <option value="2">hime</option>
+                  <option value="3">is</option>
+                  <option value="4">mochi</option>
+                </select>
+              </div>
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">資格</label>
               <input type="text" class="txtField">
-              <div class="conditional__years--txt">年</div>
-            </div>
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">役割</label>
-            <div class="pullDown">
-              <select class="pullDown__list">
-                <option value="1">kodera</option>
-                <option value="2">hime</option>
-                <option value="3">is</option>
-                <option value="4">mochi</option>
-              </select>
-            </div>
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">資格</label>
-            <input type="text" class="txtField">
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">言語</label>
-            <input type="text" class="txtField">
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">参画工程</label>
-            <input type="text" class="txtField">
-          </li>
-          <li class="conditional__list__item">
-            <label class="conditional__label">スキル</label>
-            <div class="conditional__skill">
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">言語</label>
               <input type="text" class="txtField">
-              <input type="submit" value="入力" class="conditional__skill--btn">
-            </div>
-          </li>
-        </ul>
-        <div class="conditional__btn">
-          <input type="submit" value="&#xf002; 検索" class="btn btn--search fas">
-        </div>
-      </form>
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">参画工程</label>
+              <input type="text" class="txtField">
+            </li>
+            <li class="conditional__list__item">
+              <label class="conditional__label">スキル</label>
+              <div class="conditional__skill">
+                <input type="text" class="txtField">
+                <input type="submit" value="入力" class="conditional__skill--btn">
+              </div>
+            </li>
+          </ul>
+          <div class="conditional__btn">
+            <input type="submit" value="&#xf002; 検索" class="btn btn--search fas">
+          </div>
+        </form>
+      </div>
     </div>
 
     <div class="contents">
       <h2 class="contents__title">検索結果</h2>
-      <div class="result">
+      <div class="contents__body">
         <ul class="result__list">
           <li class="result__item">
             <div class="sp-none">
@@ -285,7 +287,7 @@
           </li>
         </ul>
       </div>
-      <div class="pager">
+      <div class="contents__body">
         <ul class="pager__list">
           <li class="pager__list-item pre"><a href="#"><span>‹</span></a></li>
           <li class="pager__list-item"><a href="#" class="active"><span>1</span></a></li>
