@@ -653,28 +653,3 @@ label {
     width: 100%;
   }
 }
-
-/* Start スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
-
-/* .skill-grid-outer {
-  display: grid;
-  grid-template-columns: 2fr 6fr;
-
-}
-
-.skill-grid-outer div:not(.skill-grid-inner) {
-  padding: 4px;
-  border-top: solid thin;
-  border-left: solid thin;
-}
-
-.skill-grid-inner {
-  display: grid;
-  grid-template-columns: 1fr 80px 1fr 80px;
-}
-
-.grid-header {
-  background-color: #ccf;
-} */
-
-/* End スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
