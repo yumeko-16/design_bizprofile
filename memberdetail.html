@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>プロフィール詳細 | BizProfile</title>
+  <link rel="stylesheet" type="text/css" href="/css/ress.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/memberdetail.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/dashboard.html"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+    </div>
+    <nav class="sp-none">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="/memberlist.html">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="header__nav-item-image">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
+            <li class="header__dropDown-item"><a href="/dashboard.html">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="/memberdetail.html">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="global-nav pc-none">
+      <div class="global-nav__user">
+        <div class="global-nav__userIcon">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="global-nav__userIcon-image">
+        </div>
+        <div class="global-nav__userName">小寺ひめ</div>
+      </div>
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="/dashboard.html">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="/memberdetail.html">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="/memberlist.html">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+  <div class="main">
+    <h1 class="title">プロフィール詳細</h1>
+    <div class="anchor">
+      <ul class="anchor__list">
+        <li class="anchor__item">
+          <a href="#basic" class="anchor__item-link">
+            <span class="anchor__item-name">基本情報</span>
+            <span class="far fa-arrow-alt-circle-down anchor__item-icon"></span>
+          </a>
+        </li>
+        <li class="anchor__item">
+          <a href="#admin" class="anchor__item-link">
+            <span class="anchor__item-name">管理者情報</span>
+            <span class="far fa-arrow-alt-circle-down anchor__item-icon"></span>
+          </a>
+        </li>
+        <li class="anchor__item">
+          <a href="#qualification" class="anchor__item-link">
+            <span class="anchor__item-name">資格情報</span>
+            <span class="far fa-arrow-alt-circle-down anchor__item-icon"></span>
+          </a>
+        </li>
+        <li class="anchor__item">
+          <a href="#project" class="anchor__item-link">
+            <span class="anchor__item-name">参加プロジェクト情報</span>
+            <span class="far fa-arrow-alt-circle-down anchor__item-icon"></span>
+          </a>
+        </li>
+        <li class="anchor__item">
+          <a href="#skill" class="anchor__item-link">
+            <span class="anchor__item-name">スキル情報</span>
+            <span class="far fa-arrow-alt-circle-down anchor__item-icon"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="basic">
+      <div class="contents">
+        <h2 class="contents__title">基本情報</h2>
+        <div class="employee">
+          <div class="employee__img">
+            <a href=""><img src="/images/no_image.png" alt="社員画像" class="employee__img-item"></a>
+          </div>
+          <div class="employee-btn">
+            <input type="submit" value="画像を選択" class="btn btn--white">
+            <span style="padding-left: 3px;">選択されていません</span>
+          </div>
+          <div class="employee-btn">
+            <input type="submit" value="画像をアップロード" class="btn btn--blue">
+          </div>
+        </div>
+        <table class="table__vertical">
+          <tr>
+            <th class="table__vertical__th">社員番号</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">氏名</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">氏名(カナ)</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">氏名(英字)</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">メールアドレス</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">パスワード</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">電話番号</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">生年月日</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">性別</th>
+            <td class="table__vertical__td">
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>男性
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>女性
+              </label>
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">国籍</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">エレクス入社年月日</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+              <span class="asterisk">※</span>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">業界入社年月日</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">住所</th>
+            <td class="table__vertical__td">
+              <div class="table__vertical__td--address">
+                <div class="table__vertical__td--address-w">
+                  <div class="pullDown">
+                    <div class="pullDown-w">
+                      <select name="example01" class="pullDown-list">
+                        <option value="aaa">サンプル01</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="asterisk asterisk--pd">※</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">住所(市区町村以降)</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">交通機関</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">最寄駅</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">学校名</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">学部学科名</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-box">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">自己PR</th>
+            <td class="table__vertical__td">
+              <input type="text" name="" class="table__vertical__td-pr">
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">部署</th>
+            <td class="table__vertical__td">
+              <div class="table__vertical__td--address">
+                <div class="table__vertical__td--address-w">
+                  <div class="pullDown">
+                    <div class="pullDown-w">
+                      <select name="example01" class="pullDown-list">
+                        <option value="aaa">サンプル01</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="asterisk asterisk--pd">※</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">拠点</th>
+            <td class="table__vertical__td">
+              <div class="table__vertical__td--address">
+                <div class="table__vertical__td--address-w">
+                  <div class="pullDown">
+                    <div class="pullDown-w">
+                      <select name="example01" class="pullDown-list">
+                        <option value="aaa">サンプル01</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="asterisk asterisk--pd">※</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">役職</th>
+            <td class="table__vertical__td">
+              <div class="table__vertical__td--address">
+                <div class="table__vertical__td--address-w">
+                  <div class="pullDown">
+                    <div class="pullDown-w">
+                      <select name="example01" class="pullDown-list">
+                        <option value="aaa">サンプル01</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="asterisk asterisk--pd">※</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="admin">
+      <div class="contents">
+        <h2 class="contents__title">管理者情報</h2>
+        <table class="table__vertical">
+          <tr>
+            <th class="table__vertical__th">社員ステータス</th>
+            <td class="table__vertical__td">
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>通常
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>休職中
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>退職
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">社員管理権限</th>
+            <td class="table__vertical__td">
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">参加プロジェクト参照権限</th>
+            <td class="table__vertical__td">
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">スキルシート情報参照権限</th>
+            <td class="table__vertical__td">
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <th class="table__vertical__th">保有資格情報参照権限</th>
+            <td class="table__vertical__td">
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>あり
+              </label>
+              <label>
+                <input type="radio" name="radio1" class="radiobutton">
+                <span class="radio-fontas"></span>なし
+              </label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="contents-nbg">
+      <div class="contents-nbg__between">
+        <input type="submit" value="前へ戻る" class="btn btn--white">
+        <input type="submit" value="&#xf2f1; 更新" class="fas btn btn--green">
+      </div>
+    </div>
+    <div id="qualification">
+      <div class="contents">
+        <h2 class="contents__title contents__title--edit">資格情報
+          <span class="fas fa-pencil-alt btn--edit-item">
+            <a href="#">編集</a>
+          </span>
+        </h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__thead">資格名称</th>
+              <th class="table__thead">取得日</th>
+              <th class="table__thead">備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__tbody">ITパスポート</td>
+              <td class="table__tbody">2018/5/26</td>
+              <td class="table__tbody">大学時代に取得</td>
+            </tr>
+            <tr>
+              <td class="table__tbody">基本情報技術者試験</td>
+              <td class="table__tbody">2018/3/1</td>
+              <td class="table__tbody">社内業務用に取得</td>
+            </tr>
+            <tr>
+              <td class="table__tbody">Java Silver</td>
+              <td class="table__tbody">2017/3/1</td>
+              <td class="table__tbody">社内業務用に取得</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="project">
+      <div class="contents">
+        <h2 class="contents__title contents__title--edit">参加プロジェクト
+          <span class="fas fa-pencil-alt btn--edit-item">
+            <a href="#">編集</a>
+          </span>
+        </h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__thead">プロジェクト名称</th>
+              <th class="table__thead">開発期間(参加期間)</th>
+              <th class="table__thead">人数規模</th>
+              <th class="table__thead">役割</th>
+              <th class="table__thead">開発工程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__tbody">プロジェクトA</td>
+              <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+              <td class="table__tbody">16</td>
+              <td class="table__tbody">SE</td>
+              <td class="table__tbody">基本設計</td>
+            </tr>
+            <tr>
+              <td class="table__tbody">プロジェクトB</td>
+              <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+              <td class="table__tbody">16</td>
+              <td class="table__tbody">PM</td>
+              <td class="table__tbody">調査・要件定義</td>
+            </tr>
+            <tr>
+              <td class="table__tbody">プロジェクトC</td>
+              <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+              <td class="table__tbody">16</td>
+              <td class="table__tbody">PM</td>
+              <td class="table__tbody">大調査・要件定義</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="skill">
+      <div class="contents">
+        <h2 class="contents__title contents__title--edit">スキル情報
+          <span class="fas fa-pencil-alt btn--edit-item">
+            <a href="#">編集</a>
+          </span>
+        </h2>
+        <!-- Start スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で-->
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__thead">カテゴリ</th>
+              <th class="table__thead">スキル項目</th>
+              <th class="table__thead">習熟度</th>
+              <th class="table__thead">スキル項目</th>
+              <th class="table__thead">習熟度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__tbody" rowspan="3">業務</td>
+              <td class="table__tbody">販売管理</td>
+              <td class="table__tbody">〇</td>
+              <td class="table__tbody">生産管理</td>
+              <td class="table__tbody">◎</td>
+            </tr>
+            <tr>
+              <td class="table__tbody">ＰＯＳ・レジ</td>
+              <td class="table__tbody">△</td>
+              <td class="table__tbody">ＳＣＭ・物流</td>
+              <td class="table__tbody">◎</td>
+            </tr>
+            <tr>
+              <td class="table__tbody">C++</td>
+              <td class="table__tbody">〇</td>
+              <td class="table__tbody">Java</td>
+              <td class="table__tbody"></td>
+            </tr>
+            <tr>
+              <td class="table__tbody" rowspan="2">プログラミング言語</td>
+              <td class="table__tbody">HTML</td>
+              <td class="table__tbody">〇</td>
+              <td class="table__tbody">JSP</td>
+              <td class="table__tbody"></td>
+            </tr>
+            <tr>
+              <td class="table__tbody">PHP</td>
+              <td class="table__tbody">△</td>
+              <td class="table__tbody">Ruby</td>
+              <td class="table__tbody"></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <div class="table skill-grid-outer">
+          <div class="table__thead">カテゴリ</div>
+          <div class="skill-grid-inner">
+            <div class="table__thead">スキル項目</div>
+            <div class="table__thead">習熟度</div>
+            <div class="table__thead">スキル項目</div>
+            <div class="table__thead">習熟度</div>
+          </div>
+          {% for skill_group in skill_list %}
+          <div class="table__tbody">業務</div>
+          <div class="table__tbody skill-grid-inner">
+            {% for skill in skill_group.skills %}
+            <div>販売管理</div>
+            <div>〇</div>
+            {% endfor %}
+            {% if not skill_group.skills.count|divisibleby:"2" %}
+            <div>販売管理</div>
+            <div>〇</div>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div> -->
+        <!-- End スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で-->
+        <div class="explanation">
+          <div>※　◎:精通している ○:活用できる △:指示通りできる</div>
+          <div>※：「一定程度であれば独力でできる」とは、⇒ "使える"、"経験がある"など実績を持つ。</div>
+        </div>
+      </div>
+    </div>
+    <div class="contents-nbg">
+      <input type="submit" value="ユーザ情報の削除" class="btn btn--delete">
+    </div>
+  </div>
+  <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
+  <div id="page_top" class="page_top"><a href="#"></a></div>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/memberdetail.js"></script>
+
+</body>
+
+</html>

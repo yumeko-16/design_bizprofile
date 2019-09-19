@@ -42,6 +42,7 @@
   display: flex;
   position: fixed;
   width: 100%;
+  z-index: 9999;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.1);
@@ -158,6 +159,18 @@
   border-top: solid 5px #0096DE;
 }
 
+.contents-nbg {
+  max-width: 1000px;
+  width: 90%;
+  height: 100%;
+  margin: 50px auto 0;
+}
+
+.contents-nbg__between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contents__title {
   width: 95%;
   margin: 0 auto;
@@ -166,10 +179,151 @@
   color: #0096DE;
 }
 
-.table__body {
+.table {
   width: 95%;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+.table__thead {
+  padding: 10px 0;
+  background-color: #0096DE;
+  color: #fff;
+}
+
+.table__tbody {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #EAEDF2;
+}
+
+.table__tbody--subject {
+  text-align: left;
+}
+
+.pullDown {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #a9a9a9;
+  background: #fff;
+}
+
+.pullDown::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666;
+  pointer-events: none;
+}
+
+.pullDown-w {
+  width: 100%;
+}
+
+.pullDown-list {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 3px 38px 3px 8px;
+  color: #666;
+}
+
+.table__vertical {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.table__vertical__th {
+  width: 30%;
+  text-align: left;
+  padding: 1px 0 1px 15px;
+  background-color: #0096DE;
+  color: #FFF;
+}
+
+.table__vertical__td {
+  width:65%;
+  padding:5px;
+  background-color: #EAEDF2;
+}
+
+.table__vertical__td-box {
+  width: 40%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+  background-color: #FFF;
+}
+
+.table__vertical__td--address {
+  display: flex;
+  align-items: center;
+}
+
+.table__vertical__td--address-w {
+  width: 40%
+}
+
+.table__vertical__td-pr {
+  width: 100%;
+  height: 60px;
+  border: solid 1px #a9a9a9;
+  background-color: #FFF;
+}
+
+.asterisk {
+  color: #FF0000;
+}
+
+.asterisk--pd {
+  padding-left: 5px;
+}
+
+.radiobutton {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.radio-fontas {
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.radiobutton + .radio-fontas:before {
+  padding-right: 5px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #ccc;
+  content: '\f192';
+}
+
+.radiobutton:checked + .radio-fontas:before {
+  padding-right: 5px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #689ACA;
+  content: '\f192';
 }
 
 /*
@@ -226,27 +380,52 @@
 　6.button
 ================================*/
 .btn {
-  width: 95%;
-  padding-bottom: 15px;
-  margin: 0 auto;
-  text-align: right;
-}
-
-.btn a{
   display: block;
-  padding: 15px;
+  min-width: 90px;
+  height: 40px;
+  padding: 0 18px;
+  text-align: center;
 }
 
-.btn__search{
+.btn--green {
   color: #FFF;
-  width:90px;
-  height: 40px;
-  text-align: center;
   background-color: #31C453;
 }
 
-.btn__search:hover{
+.btn--green:hover {
   background-color: rgba(49,196,83,0.7);
+}
+
+.btn--white {
+  background-color: #FFF;
+  color: #000;
+  border: 1px solid #CDCDCD;
+}
+
+.btn--blue {
+  background-color: #0096DE;
+  color: #FFF;
+}
+
+.btn--edit {
+  float: right;
+}
+
+.btn--edit-item {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn--edit-item a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #0096DE;
+}
+
+.btn--delete {
+  margin-left: auto;
+  background-color: #ff0000;
+  color: #FFF;
 }
 
 /*
@@ -296,8 +475,6 @@
   height: 40px;
   text-align: center;
 }
-
-
 
 .pager__pagination-item a:hover,
 .pager__pagination-item a.active{
@@ -472,12 +649,32 @@
 /*
 　3.button
 ================================*/
-  .btn__search{
+  .btn--search {
     width: 100%;
   }
+}
 
-  .btn a{
-    padding: 0 15px 15px;
-  }
+/* Start スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
+
+/* .skill-grid-outer {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
 
 }
+
+.skill-grid-outer div:not(.skill-grid-inner) {
+  padding: 4px;
+  border-top: solid thin;
+  border-left: solid thin;
+}
+
+.skill-grid-inner {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr 80px;
+}
+
+.grid-header {
+  background-color: #ccf;
+} */
+
+/* End スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
