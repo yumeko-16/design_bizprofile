@@ -135,14 +135,19 @@
     .anchor-sp__item {
       background-color: #FFF;
       margin-top: 5px;
+      padding: 0 10px
     }
 
     .anchor-sp__item-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       text-decoration: none;
     }
 
     .anchor-sp__item-name {
       color: #0096DE;
+      font-size: 20px;
     }
 
     .anchor-sp__item-icon {
