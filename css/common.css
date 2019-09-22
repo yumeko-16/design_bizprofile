@@ -224,10 +224,6 @@
   pointer-events: none;
 }
 
-.pullDown-w {
-  width: 100%;
-}
-
 .pullDown-list {
   width: 100%;
   padding-right: 1em;
@@ -275,10 +271,6 @@
 .table__vertical__td--address {
   display: flex;
   align-items: center;
-}
-
-.table__vertical__td--address-w {
-  width: 40%
 }
 
 .table__vertical__td-pr {
@@ -487,7 +479,8 @@ label {
 
 　　1.common
 　　2.header
-　　3.button
+　　3.main
+　　4.button
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -647,9 +640,52 @@ label {
   }
 
 /*
-　3.button
+　3.main
 ================================*/
-  .btn--search {
+  .table__vertical__tr {
+    display: flex;
+    flex-direction: column
+  }
+
+  .table__vertical__th {
+    width: 100%;
+    background-color: #FFF;
+    color: #0096DE;
+  }
+
+  .table__vertical__td {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFF;
+  }
+
+  .table__vertical__td-box {
     width: 100%;
   }
+
+  .table__vertical__td-box--sp {
+    width: 49%;
+  }
+
+  .table__vertical__td--address {
+    width: 100%;
+  }
+
+  .asterisk {
+    display: none;
+  }
+
+  .asterisk--sp:after {
+    content: "※";
+    color: #FF0000;
+  }
+
+/*
+　4.button
+================================*/
+  .btn--green, .btn--white, .btn--delete {
+    width: 100%;
+  }
+
 }
