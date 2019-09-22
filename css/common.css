@@ -683,6 +683,10 @@ label {
     width: 100%;
   }
 
+  .table__vertical__td__radio {
+    justify-content: unset;
+  }
+
   .asterisk {
     display: none;
   }
@@ -726,12 +730,6 @@ label {
     font-weight: bold;
   }
 
-  .table--sp__icon {
-    position: absolute;
-    right: 10px;
-    top :4px;
-  }
-
   .table--sp__td {
     width: 65%;
     padding: 5px;
@@ -746,6 +744,11 @@ label {
   .btn--green, .btn--white, .btn--delete {
     width: 100%;
   }
+
+  .btn--between {
+    margin-top: 15px;
+  }
+
   .edit__text-sp {
     display: none;
   }

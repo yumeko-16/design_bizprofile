@@ -204,7 +204,7 @@
           </tr>
           <tr class="table__vertical__tr">
             <th class="table__vertical__th asterisk--sp">性別</th>
-            <td class="table__vertical__td">
+            <td class="table__vertical__td table__vertical__td__radio">
               <label>
                 <input type="radio" name="radio1" class="radiobutton">
                 <span class="radio-fontas"></span>男性
@@ -333,7 +333,7 @@
         <table class="table__vertical">
           <tr class="table__vertical__tr">
             <th class="table__vertical__th">社員ステータス</th>
-            <td class="table__vertical__td">
+            <td class="table__vertical__td table__vertical__td__radio">
               <label>
                 <input type="radio" name="radio1" class="radiobutton">
                 <span class="radio-fontas"></span>通常
@@ -350,7 +350,7 @@
           </tr>
           <tr class="table__vertical__tr">
             <th class="table__vertical__th">社員管理権限</th>
-            <td class="table__vertical__td">
+            <td class="table__vertical__td table__vertical__td__radio">
               <label>
                 <input type="radio" name="radio1" class="radiobutton">
                 <span class="radio-fontas"></span>あり
@@ -363,7 +363,7 @@
           </tr>
           <tr class="table__vertical__tr">
             <th class="table__vertical__th">参加プロジェクト参照権限</th>
-            <td class="table__vertical__td">
+            <td class="table__vertical__td table__vertical__td__radio">
               <label>
                 <input type="radio" name="radio1" class="radiobutton">
                 <span class="radio-fontas"></span>あり
@@ -376,7 +376,7 @@
           </tr>
           <tr class="table__vertical__tr">
             <th class="table__vertical__th">スキルシート情報参照権限</th>
-            <td class="table__vertical__td">
+            <td class="table__vertical__td table__vertical__td__radio">
               <label>
                 <input type="radio" name="radio1" class="radiobutton">
                 <span class="radio-fontas"></span>あり
@@ -389,7 +389,7 @@
           </tr>
           <tr class="table__vertical__tr">
             <th class="table__vertical__th">保有資格情報参照権限</th>
-            <td class="table__vertical__td">
+            <td class="table__vertical__td table__vertical__td__radio">
               <label>
                 <input type="radio" name="radio1" class="radiobutton">
                 <span class="radio-fontas"></span>あり
@@ -406,7 +406,7 @@
     <div class="contents-nbg">
       <div class="contents-nbg__between">
         <input type="submit" value="前へ戻る" class="btn btn--white">
-        <input type="submit" value="&#xf2f1; 更新" class="fas btn btn--green">
+        <input type="submit" value="&#xf2f1; 更新" class="fas btn btn--green btn--between">
       </div>
     </div>
     <div id="qualification">
@@ -444,33 +444,13 @@
             </tbody>
           </table>
         </div>
-        <!-- <div class="pc-none">
+        <div class="pc-none">
           <table class="table--sp">
             <tr class="table--sp__tr">
               <th colspan="2" class="table--sp__th table--sp__th-name">
                 <span>ITパスポート</span>
-                <span id="acMenu-button" class="fas fa-chevron-up table--sp__icon"></span>
               </th>
             </tr>
-            <tr id="acMenu--target1" class="table--sp__tr">
-              <th class="table--sp__th">取得日</th>
-              <td class="table--sp__td">2018/5/26</td>
-            </tr>
-            <tr id="acMenu--target2" class="table--sp__tr">
-              <th class="table--sp__th">備考</th>
-              <td class="table--sp__td">大学時代に取得</td>
-            </tr>
-          </table>
-        </div> -->
-
-        <div class="pc-none">
-          <div class="table--sp__header">
-            <div colspan="2" class="table--sp__th table--sp__th-name acMenu-button">
-              <span class="table--sp__header--name">ITパスポート</span>
-              <span class="fas fa-chevron-up table--sp__icon"></span>
-            </div>
-          </div>
-          <table class="table--sp acMenu--target">
             <tr class="table--sp__tr">
               <th class="table--sp__th">取得日</th>
               <td class="table--sp__td">2018/5/26</td>
@@ -480,16 +460,30 @@
               <td class="table--sp__td">大学時代に取得</td>
             </tr>
           </table>
-          <div class="table--sp__header">
-            <div colspan="2" class="table--sp__th table--sp__th-name acMenu-button">
-              <span class="table--sp__header--name">基本情報技術者試験</span>
-              <span class="fas fa-chevron-up table--sp__icon"></span>
-            </div>
-          </div>
-          <table class="table--sp acMenu--target">
+          <table class="table--sp">
+            <tr class="table--sp__tr">
+              <th colspan="2" class="table--sp__th table--sp__th-name">
+                <span>基本情報技術者試験</span>
+              </th>
+            </tr>
             <tr class="table--sp__tr">
               <th class="table--sp__th">取得日</th>
               <td class="table--sp__td">2018/3/1</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">備考</th>
+              <td class="table--sp__td">社内業務用に取得</td>
+            </tr>
+          </table>
+          <table class="table--sp">
+            <tr class="table--sp__tr">
+              <th colspan="2" class="table--sp__th table--sp__th-name">
+                <span>Java Silver</span>
+              </th>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">取得日</th>
+              <td class="table--sp__td">2017/3/1</td>
             </tr>
             <tr class="table--sp__tr">
               <th class="table--sp__th">備考</th>
@@ -506,40 +500,113 @@
             <a href="#" class="edit__text-sp">編集</a>
           </span>
         </h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="table__thead">プロジェクト名称</th>
-              <th class="table__thead">開発期間(参加期間)</th>
-              <th class="table__thead">人数規模</th>
-              <th class="table__thead">役割</th>
-              <th class="table__thead">開発工程</th>
+        <div class="sp-none">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__thead">プロジェクト名称</th>
+                <th class="table__thead">開発期間(参加期間)</th>
+                <th class="table__thead">人数規模</th>
+                <th class="table__thead">役割</th>
+                <th class="table__thead">開発工程</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__tbody">プロジェクトA</td>
+                <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+                <td class="table__tbody">16</td>
+                <td class="table__tbody">SE</td>
+                <td class="table__tbody">基本設計</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">プロジェクトB</td>
+                <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+                <td class="table__tbody">16</td>
+                <td class="table__tbody">PM</td>
+                <td class="table__tbody">調査・要件定義</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">プロジェクトC</td>
+                <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+                <td class="table__tbody">16</td>
+                <td class="table__tbody">PM</td>
+                <td class="table__tbody">大調査・要件定義</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pc-none">
+          <table class="table--sp">
+            <tr class="table--sp__tr">
+              <th colspan="2" class="table--sp__th table--sp__th-name">
+                <span>プロジェクトA</span>
+              </th>
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table__tbody">プロジェクトA</td>
-              <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
-              <td class="table__tbody">16</td>
-              <td class="table__tbody">SE</td>
-              <td class="table__tbody">基本設計</td>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">開発期間(参加期間)</th>
+              <td class="table--sp__td">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
             </tr>
-            <tr>
-              <td class="table__tbody">プロジェクトB</td>
-              <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
-              <td class="table__tbody">16</td>
-              <td class="table__tbody">PM</td>
-              <td class="table__tbody">調査・要件定義</td>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">人数規模</th>
+              <td class="table--sp__td">16</td>
             </tr>
-            <tr>
-              <td class="table__tbody">プロジェクトC</td>
-              <td class="table__tbody">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
-              <td class="table__tbody">16</td>
-              <td class="table__tbody">PM</td>
-              <td class="table__tbody">大調査・要件定義</td>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">役割</th>
+              <td class="table--sp__td">SE</td>
             </tr>
-          </tbody>
-        </table>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">開発工程</th>
+              <td class="table--sp__td">基本設計</td>
+            </tr>
+          </table>
+          <table class="table--sp">
+            <tr class="table--sp__tr">
+              <th colspan="2" class="table--sp__th table--sp__th-name">
+                <span>プロジェクトB</span>
+              </th>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">開発期間(参加期間)</th>
+              <td class="table--sp__td">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">人数規模</th>
+              <td class="table--sp__td">16</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">役割</th>
+              <td class="table--sp__td">PM</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">開発工程</th>
+              <td class="table--sp__td">調査・要件定義</td>
+            </tr>
+          </table>
+          <table class="table--sp">
+            <tr class="table--sp__tr">
+              <th colspan="2" class="table--sp__th table--sp__th-name">
+                <span>プロジェクトC</span>
+              </th>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">開発期間(参加期間)</th>
+              <td class="table--sp__td">2017/08/01 ～ 2017/08/31 (1ヶ月)</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">人数規模</th>
+              <td class="table--sp__td">16</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">役割</th>
+              <td class="table--sp__td">PM</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">開発工程</th>
+              <td class="table--sp__td">大調査・要件定義</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     <div id="skill">
@@ -549,51 +616,108 @@
             <a href="#" class="edit__text-sp">編集</a>
           </span>
         </h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="table__thead">カテゴリ</th>
-              <th class="table__thead">スキル項目</th>
-              <th class="table__thead">習熟度</th>
-              <th class="table__thead">スキル項目</th>
-              <th class="table__thead">習熟度</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table__tbody" rowspan="3">業務</td>
-              <td class="table__tbody">販売管理</td>
-              <td class="table__tbody">〇</td>
-              <td class="table__tbody">生産管理</td>
-              <td class="table__tbody">◎</td>
-            </tr>
-            <tr>
-              <td class="table__tbody">ＰＯＳ・レジ</td>
-              <td class="table__tbody">△</td>
-              <td class="table__tbody">ＳＣＭ・物流</td>
-              <td class="table__tbody">◎</td>
-            </tr>
-            <tr>
-              <td class="table__tbody">C++</td>
-              <td class="table__tbody">〇</td>
-              <td class="table__tbody">Java</td>
-              <td class="table__tbody"></td>
-            </tr>
-            <tr>
-              <td class="table__tbody" rowspan="2">プログラミング言語</td>
-              <td class="table__tbody">HTML</td>
-              <td class="table__tbody">〇</td>
-              <td class="table__tbody">JSP</td>
-              <td class="table__tbody"></td>
-            </tr>
-            <tr>
-              <td class="table__tbody">PHP</td>
-              <td class="table__tbody">△</td>
-              <td class="table__tbody">Ruby</td>
-              <td class="table__tbody"></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="sp-none">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__thead">カテゴリ</th>
+                <th class="table__thead">スキル項目</th>
+                <th class="table__thead">習熟度</th>
+                <th class="table__thead">スキル項目</th>
+                <th class="table__thead">習熟度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__tbody" rowspan="3">業務</td>
+                <td class="table__tbody">販売管理</td>
+                <td class="table__tbody">〇</td>
+                <td class="table__tbody">生産管理</td>
+                <td class="table__tbody">◎</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">ＰＯＳ・レジ</td>
+                <td class="table__tbody">△</td>
+                <td class="table__tbody">ＳＣＭ・物流</td>
+                <td class="table__tbody">◎</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">C++</td>
+                <td class="table__tbody">〇</td>
+                <td class="table__tbody">Java</td>
+                <td class="table__tbody"></td>
+              </tr>
+              <tr>
+                <td class="table__tbody" rowspan="2">プログラミング言語</td>
+                <td class="table__tbody">HTML</td>
+                <td class="table__tbody">〇</td>
+                <td class="table__tbody">JSP</td>
+                <td class="table__tbody"></td>
+              </tr>
+              <tr>
+                <td class="table__tbody">PHP</td>
+                <td class="table__tbody">△</td>
+                <td class="table__tbody">Ruby</td>
+                <td class="table__tbody"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pc-none">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__thead">カテゴリ</th>
+                <th class="table__thead">スキル項目</th>
+                <th class="table__thead">習熟度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__tbody" rowspan="6">業務</td>
+                <td class="table__tbody">販売管理</td>
+                <td class="table__tbody">〇</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">生産管理</td>
+                <td class="table__tbody">◎</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">ＰＯＳ・レジ</td>
+                <td class="table__tbody">△</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">ＳＣＭ・物流</td>
+                <td class="table__tbody">◎</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">C++</td>
+                <td class="table__tbody">〇</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">Java</td>
+                <td class="table__tbody"></td>
+              </tr>
+              <tr>
+                <td class="table__tbody" rowspan="4">プログラミング言語</td>
+                <td class="table__tbody">HTML</td>
+                <td class="table__tbody">〇</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">JSP</td>
+                <td class="table__tbody"></td>
+              </tr>
+              <tr>
+                <td class="table__tbody">PHP</td>
+                <td class="table__tbody">△</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">Ruby</td>
+                <td class="table__tbody"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="explanation">
           <div>※　◎:精通している ○:活用できる △:指示通りできる</div>
           <div>※：「一定程度であれば独力でできる」とは、⇒ "使える"、"経験がある"など実績を持つ。</div>
