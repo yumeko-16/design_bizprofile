@@ -137,7 +137,7 @@
             <a href=""><img src="/images/no_image.png" alt="社員画像" class="employee__img-item"></a>
           </div>
           <div class="employee-btn">
-            <input type="submit" value="画像を選択" class="btn btn--white">
+            <input type="submit" value="画像を選択" class="btn btn--img">
             <span style="padding-left: 3px;">選択されていません</span>
           </div>
           <div class="employee-btn">
@@ -331,7 +331,7 @@
       <div class="contents">
         <h2 class="contents__title">管理者情報</h2>
         <table class="table__vertical">
-          <tr>
+          <tr class="table__vertical__tr">
             <th class="table__vertical__th">社員ステータス</th>
             <td class="table__vertical__td">
               <label>
@@ -348,7 +348,7 @@
               </label>
             </td>
           </tr>
-          <tr>
+          <tr class="table__vertical__tr">
             <th class="table__vertical__th">社員管理権限</th>
             <td class="table__vertical__td">
               <label>
@@ -361,7 +361,7 @@
               </label>
             </td>
           </tr>
-          <tr>
+          <tr class="table__vertical__tr">
             <th class="table__vertical__th">参加プロジェクト参照権限</th>
             <td class="table__vertical__td">
               <label>
@@ -374,7 +374,7 @@
               </label>
             </td>
           </tr>
-          <tr>
+          <tr class="table__vertical__tr">
             <th class="table__vertical__th">スキルシート情報参照権限</th>
             <td class="table__vertical__td">
               <label>
@@ -387,7 +387,7 @@
               </label>
             </td>
           </tr>
-          <tr>
+          <tr class="table__vertical__tr">
             <th class="table__vertical__th">保有資格情報参照権限</th>
             <td class="table__vertical__td">
               <label>
@@ -413,42 +413,97 @@
       <div class="contents">
         <h2 class="contents__title contents__title--edit">資格情報
           <span class="fas fa-pencil-alt btn--edit-item">
-            <a href="#">編集</a>
+            <a href="#" class="edit__text-sp">編集</a>
           </span>
         </h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="table__thead">資格名称</th>
-              <th class="table__thead">取得日</th>
-              <th class="table__thead">備考</th>
+        <div class="sp-none">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__thead">資格名称</th>
+                <th class="table__thead">取得日</th>
+                <th class="table__thead">備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__tbody">ITパスポート</td>
+                <td class="table__tbody">2018/5/26</td>
+                <td class="table__tbody">大学時代に取得</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">基本情報技術者試験</td>
+                <td class="table__tbody">2018/3/1</td>
+                <td class="table__tbody">社内業務用に取得</td>
+              </tr>
+              <tr>
+                <td class="table__tbody">Java Silver</td>
+                <td class="table__tbody">2017/3/1</td>
+                <td class="table__tbody">社内業務用に取得</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div class="pc-none">
+          <table class="table--sp">
+            <tr class="table--sp__tr">
+              <th colspan="2" class="table--sp__th table--sp__th-name">
+                <span>ITパスポート</span>
+                <span id="acMenu-button" class="fas fa-chevron-up table--sp__icon"></span>
+              </th>
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table__tbody">ITパスポート</td>
-              <td class="table__tbody">2018/5/26</td>
-              <td class="table__tbody">大学時代に取得</td>
+            <tr id="acMenu--target1" class="table--sp__tr">
+              <th class="table--sp__th">取得日</th>
+              <td class="table--sp__td">2018/5/26</td>
             </tr>
-            <tr>
-              <td class="table__tbody">基本情報技術者試験</td>
-              <td class="table__tbody">2018/3/1</td>
-              <td class="table__tbody">社内業務用に取得</td>
+            <tr id="acMenu--target2" class="table--sp__tr">
+              <th class="table--sp__th">備考</th>
+              <td class="table--sp__td">大学時代に取得</td>
             </tr>
-            <tr>
-              <td class="table__tbody">Java Silver</td>
-              <td class="table__tbody">2017/3/1</td>
-              <td class="table__tbody">社内業務用に取得</td>
+          </table>
+        </div> -->
+
+        <div class="pc-none">
+          <div class="table--sp__header">
+            <div colspan="2" class="table--sp__th table--sp__th-name acMenu-button">
+              <span class="table--sp__header--name">ITパスポート</span>
+              <span class="fas fa-chevron-up table--sp__icon"></span>
+            </div>
+          </div>
+          <table class="table--sp acMenu--target">
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">取得日</th>
+              <td class="table--sp__td">2018/5/26</td>
             </tr>
-          </tbody>
-        </table>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">備考</th>
+              <td class="table--sp__td">大学時代に取得</td>
+            </tr>
+          </table>
+          <div class="table--sp__header">
+            <div colspan="2" class="table--sp__th table--sp__th-name acMenu-button">
+              <span class="table--sp__header--name">基本情報技術者試験</span>
+              <span class="fas fa-chevron-up table--sp__icon"></span>
+            </div>
+          </div>
+          <table class="table--sp acMenu--target">
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">取得日</th>
+              <td class="table--sp__td">2018/3/1</td>
+            </tr>
+            <tr class="table--sp__tr">
+              <th class="table--sp__th">備考</th>
+              <td class="table--sp__td">社内業務用に取得</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     <div id="project">
       <div class="contents">
         <h2 class="contents__title contents__title--edit">参加プロジェクト
           <span class="fas fa-pencil-alt btn--edit-item">
-            <a href="#">編集</a>
+            <a href="#" class="edit__text-sp">編集</a>
           </span>
         </h2>
         <table class="table">
@@ -491,7 +546,7 @@
       <div class="contents">
         <h2 class="contents__title contents__title--edit">スキル情報
           <span class="fas fa-pencil-alt btn--edit-item">
-            <a href="#">編集</a>
+            <a href="#" class="edit__text-sp">編集</a>
           </span>
         </h2>
         <table class="table">

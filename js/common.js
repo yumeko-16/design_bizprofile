@@ -40,3 +40,13 @@ function topButton(elmId, duration) {
     });
   }
   toggleNav();
+
+  //SP表示時のテーブルのアコーディオン開閉処理
+  $(function(){
+
+    $( '.acMenu-button' ).click( function()
+    {
+      $( '.acMenu--target' ).slideToggle() ;
+
+    } ) ;
+});
