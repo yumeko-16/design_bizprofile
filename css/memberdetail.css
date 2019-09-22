@@ -92,8 +92,15 @@
 　6.skill
 ================================*/
 .explanation {
-  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
+
+.explanation__paragraph {
+  font-size: 13px;
+}
+
 
 /*
 　7.button
@@ -147,10 +154,12 @@
 
     .anchor-sp__item-name {
       color: #0096DE;
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: bold;
     }
 
     .anchor-sp__item-icon {
       color: #0096DE;
+      font-size: 18px;
     }
   }
