@@ -247,9 +247,9 @@
 }
 
 .table__vertical__th {
-  width: 30%;
+  width: 34%;
   text-align: left;
-  padding: 1px 0 1px 15px;
+  padding: 0 15px;
   background-color: #0096DE;
   color: #FFF;
 }
