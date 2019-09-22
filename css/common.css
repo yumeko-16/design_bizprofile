@@ -696,7 +696,6 @@ label {
 
   .asterisk--sp:after {
     position: absolute;
-    top: 1px;
     content: "※";
     color: #FF0000;
   }
