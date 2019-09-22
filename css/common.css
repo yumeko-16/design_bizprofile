@@ -662,6 +662,7 @@ label {
   .table__vertical__th {
     width: 100%;
     padding-left: 5px;
+    position: relative;
     background-color: #FFF;
     color: #0096DE;
   }
@@ -694,6 +695,8 @@ label {
   }
 
   .asterisk--sp:after {
+    position: absolute;
+    top: 1px;
     content: "※";
     color: #FF0000;
   }
@@ -708,10 +711,6 @@ label {
     margin: 0 auto;
     padding-bottom: 20px;
   }
-
-  .table--sp__tr {
-
-}
 
   .table--sp__th {
     width: 30%;
