@@ -204,7 +204,6 @@
 .pullDown {
   position: relative;
   overflow: hidden;
-  width: 100%;
   text-align: center;
   border: 1px solid #a9a9a9;
   background: #fff;
@@ -222,10 +221,6 @@
   border-right: 6px solid transparent;
   border-top: 6px solid #666;
   pointer-events: none;
-}
-
-.pullDown-w {
-  width: 100%;
 }
 
 .pullDown-list {
@@ -252,9 +247,9 @@
 }
 
 .table__vertical__th {
-  width: 30%;
+  width: 34%;
   text-align: left;
-  padding: 1px 0 1px 15px;
+  padding: 0 15px;
   background-color: #0096DE;
   color: #FFF;
 }
@@ -268,8 +263,14 @@
 .table__vertical__td-box {
   width: 40%;
   height: 30px;
+  padding: 3px 8px;
   border: solid 1px #a9a9a9;
   background-color: #FFF;
+}
+
+.table__vertical__td-box--mail {
+  min-width: 386px;
+  width: 90%;
 }
 
 .table__vertical__td--address {
@@ -277,13 +278,10 @@
   align-items: center;
 }
 
-.table__vertical__td--address-w {
-  width: 40%
-}
-
 .table__vertical__td-pr {
   width: 100%;
   height: 60px;
+  padding: 3px 8px;
   border: solid 1px #a9a9a9;
   background-color: #FFF;
 }
@@ -402,23 +400,28 @@ label {
   border: 1px solid #CDCDCD;
 }
 
+.btn--img {
+  background-color: #FFF;
+  color: #000;
+  border: 1px solid #CDCDCD;
+}
+
 .btn--blue {
   background-color: #0096DE;
   color: #FFF;
 }
 
 .btn--edit {
-  float: right;
+  text-decoration: none;
 }
 
-.btn--edit-item {
+.btn--edit-icon {
   color: #000;
   text-decoration: none;
 }
 
-.btn--edit-item a {
+.btn--edit-link {
   font-size: 15px;
-  text-decoration: none;
   color: #0096DE;
 }
 
@@ -487,7 +490,8 @@ label {
 
 　　1.common
 　　2.header
-　　3.button
+　　3.main
+　　4.button
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -647,34 +651,112 @@ label {
   }
 
 /*
-　3.button
+　3.main
 ================================*/
-  .btn--search {
+  .pullDown {
     width: 100%;
   }
+  .contents-nbg__between {
+    display: block;
+  }
+
+  .table__vertical__tr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .table__vertical__th {
+    width: 100%;
+    padding-left: 5px;
+    position: relative;
+    background-color: #FFF;
+    color: #0096DE;
+  }
+
+  .table__vertical__td {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFF;
+  }
+
+  .table__vertical__td-box {
+    width: 100%;
+  }
+
+  .table__vertical__td-box--sp {
+    width: 49%;
+  }
+
+  .table__vertical__td--address {
+    width: 100%;
+  }
+
+  .table__vertical__td__radio {
+    justify-content: unset;
+  }
+
+  .asterisk {
+    display: none;
+  }
+
+  .asterisk--sp:after {
+    position: absolute;
+    content: "※";
+    color: #FF0000;
+  }
+
+  .table--sp__header {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .table--sp {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .table--sp__th {
+    width: 30%;
+    text-align: left;
+    padding: 10px;
+    background-color: #0096DE;
+    color: #FFF;
+  }
+
+  .table--sp__th-name {
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .table--sp__header--name {
+    font-weight: bold;
+  }
+
+  .table--sp__td {
+    width: 65%;
+    padding: 5px;
+    background-color: #EAEDF2;
+  }
+
+
+
+/*
+　4.button
+================================*/
+  .btn--green, .btn--white, .btn--delete {
+    width: 100%;
+  }
+
+  .btn--between {
+    margin-top: 15px;
+  }
+
+  .edit__text-sp {
+    display: none;
+  }
 }
-
-/* Start スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で
-
-/* .skill-grid-outer {
-  display: grid;
-  grid-template-columns: 2fr 6fr;
-
-}
-
-.skill-grid-outer div:not(.skill-grid-inner) {
-  padding: 4px;
-  border-top: solid thin;
-  border-left: solid thin;
-}
-
-.skill-grid-inner {
-  display: grid;
-  grid-template-columns: 1fr 80px 1fr 80px;
-}
-
-.grid-header {
-  background-color: #ccf;
-} */
-
-/* End スキル情報の組み方が分からないので松島さんに助けを求めます　なので一旦保留で

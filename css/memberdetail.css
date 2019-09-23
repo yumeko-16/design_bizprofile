@@ -6,11 +6,8 @@
 
 　　1.anchor
 　　2.basic
-　　3.admin
-　　4.qualification
-　　5.project
-　　6.skill
-　　7.button
+　　3.skill
+　　4.button
 
 ================================*/
 
@@ -89,14 +86,21 @@
 }
 
 /*
-　6.skill
+　3.skill
 ================================*/
 .explanation {
-  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
+.explanation__paragraph {
+  font-size: 13px;
+}
+
+
 /*
-　7.button
+　4.button
 ================================*/
 .contents__title--edit {
   display: flex;
@@ -110,11 +114,6 @@
 　SP
 
 　　1.anchor
-　　2.basic_info
-　　3.admin_info
-　　4.qualification_info
-　　5.project_info
-　　6.skill_info
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -122,5 +121,37 @@
   /*
 　　1.anchor
   ================================*/
+    .anchor-sp {
+      max-width: 1000px;
+      width: 90%;
+      margin: 50px auto 0;
+    }
 
+    .anchor-sp__list {
+      list-style: none;
+    }
+
+    .anchor-sp__item {
+      background-color: #FFF;
+      margin-top: 5px;
+      padding: 0 10px
+    }
+
+    .anchor-sp__item-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+    }
+
+    .anchor-sp__item-name {
+      color: #0096DE;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .anchor-sp__item-icon {
+      color: #0096DE;
+      font-size: 18px;
+    }
   }
