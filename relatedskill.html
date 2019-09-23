@@ -62,38 +62,243 @@
   <div class="main">
     <h1 class="title">保有スキル登録</h1>
     <div class="contents">
-      <h2 class="contents__title contents__title--edit">資格情報
-        <a href="#" class="btn--edit">
-          <span class="fas fa-pencil-alt btn--edit-icon"></span>
-          <span class="btn--edit-link edit__text-sp">編集</span>
-        </a>
-      </h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="table__thead">資格名称</th>
-            <th class="table__thead">取得日</th>
-            <th class="table__thead">備考</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="table__tbody">ITパスポート</td>
-            <td class="table__tbody">2018/5/26</td>
-            <td class="table__tbody">大学時代に取得</td>
-          </tr>
-          <tr>
-            <td class="table__tbody">基本情報技術者試験</td>
-            <td class="table__tbody">2018/3/1</td>
-            <td class="table__tbody">社内業務用に取得</td>
-          </tr>
-          <tr>
-            <td class="table__tbody">Java Silver</td>
-            <td class="table__tbody">2017/3/1</td>
-            <td class="table__tbody">社内業務用に取得</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 class="contents__title contents__title--edit">スキル情報</h2>
+      <div class="sp-none">
+        <table class="table">　　
+          <thead>
+            <tr>
+              <th class="table__thead">カテゴリ</th>
+              <th class="table__thead">スキル項目</th>
+              <th class="table__thead">習熟度</th>
+              <th class="table__thead">スキル項目</th>
+              <th class="table__thead">習熟度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__tbody" rowspan="3">業務</td>
+              <td class="table__tbody">販売管理</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+              <td class="table__tbody">生産管理</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">ＰＯＳ・レジ</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+              <td class="table__tbody">ＳＣＭ・物流</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">C++</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+              <td class="table__tbody">Java</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody" rowspan="2">プログラミング言語</td>
+              <td class="table__tbody">HTML</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+              <td class="table__tbody">JSP</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">PHP</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+              <td class="table__tbody">Ruby</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pc-none">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__thead">カテゴリ</th>
+              <th class="table__thead">スキル項目</th>
+              <th class="table__thead">習熟度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__tbody" rowspan="6">業務</td>
+              <td class="table__tbody">販売管理</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">生産管理</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">ＰＯＳ・レジ</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">ＳＣＭ・物流</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">C++</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">Java</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody" rowspan="4">プログラミング言語</td>
+              <td class="table__tbody">HTML</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">JSP</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">PHP</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">Ruby</td>
+              <td class="table__tbody">
+                <div class="pullDown">
+                  <select name="example01" class="pullDown-list">
+                    <option value="aaa">〇</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="explanation">
+        <p class="explanation__paragraph">※　◎:精通している ○:活用できる △:指示通りできる</p>
+        <p class="explanation__paragraph">※：「一定程度であれば独力でできる」とは、⇒ "使える"、"経験がある"など実績を持つ。</p>
+      </div>
+      <div class="update">
+        <div class="update__btn">
+          <input type="submit" value="&#xf2f1; 更新" class="fas btn btn--green">
+        </div>
+      </div>
+    </div>
+    <div class="contents-nbg">
+      <div class="contents-nbg__between">
+        <input type="submit" value="前へ戻る" class="btn btn--white">
+      </div>
     </div>
   </div>
   <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>

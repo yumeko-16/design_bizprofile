@@ -324,6 +324,16 @@ label {
   content: '\f192';
 }
 
+.explanation {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.explanation__paragraph {
+  font-size: 13px;
+}
+
 /*
 　4.footer
 ================================*/
