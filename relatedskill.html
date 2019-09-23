@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>保有スキル登録 | BizProfile</title>
+  <link rel="stylesheet" type="text/css" href="/css/ress.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/relatedskill.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/dashboard.html"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+    </div>
+    <nav class="sp-none">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="/memberlist.html">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="header__nav-item-image">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
+            <li class="header__dropDown-item"><a href="/dashboard.html">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="/memberdetail.html">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="global-nav pc-none">
+      <div class="global-nav__user">
+        <div class="global-nav__userIcon">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="global-nav__userIcon-image">
+        </div>
+        <div class="global-nav__userName">小寺ひめ</div>
+      </div>
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="/dashboard.html">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="/memberdetail.html">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="/memberlist.html">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+  <div class="main">
+    <h1 class="title">保有スキル登録</h1>
+    <div class="contents">
+      <h2 class="contents__title contents__title--edit">資格情報
+        <a href="#" class="btn--edit">
+          <span class="fas fa-pencil-alt btn--edit-icon"></span>
+          <span class="btn--edit-link edit__text-sp">編集</span>
+        </a>
+      </h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table__thead">資格名称</th>
+            <th class="table__thead">取得日</th>
+            <th class="table__thead">備考</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table__tbody">ITパスポート</td>
+            <td class="table__tbody">2018/5/26</td>
+            <td class="table__tbody">大学時代に取得</td>
+          </tr>
+          <tr>
+            <td class="table__tbody">基本情報技術者試験</td>
+            <td class="table__tbody">2018/3/1</td>
+            <td class="table__tbody">社内業務用に取得</td>
+          </tr>
+          <tr>
+            <td class="table__tbody">Java Silver</td>
+            <td class="table__tbody">2017/3/1</td>
+            <td class="table__tbody">社内業務用に取得</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
+  <div id="page_top" class="page_top"><a href="#"></a></div>
+
+  <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>
