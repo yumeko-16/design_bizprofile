@@ -269,7 +269,8 @@
 }
 
 .table__vertical__td-box--mail {
-  width: 80%;
+  min-width: 386px;
+  width: 90%;
 }
 
 .table__vertical__td--address {
