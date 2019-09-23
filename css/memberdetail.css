@@ -6,11 +6,8 @@
 
 　　1.anchor
 　　2.basic
-　　3.admin
-　　4.qualification
-　　5.project
-　　6.skill
-　　7.button
+　　3.skill
+　　4.button
 
 ================================*/
 
@@ -89,7 +86,7 @@
 }
 
 /*
-　6.skill
+　3.skill
 ================================*/
 .explanation {
   width: 95%;
@@ -103,7 +100,7 @@
 
 
 /*
-　7.button
+　4.button
 ================================*/
 .contents__title--edit {
   display: flex;
@@ -117,11 +114,6 @@
 　SP
 
 　　1.anchor
-　　2.basic_info
-　　3.admin_info
-　　4.qualification_info
-　　5.project_info
-　　6.skill_info
 
 ================================*/
 @media only screen and (max-width: 767px) {
