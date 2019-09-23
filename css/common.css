@@ -267,6 +267,10 @@
   background-color: #FFF;
 }
 
+.table__vertical__td-box--mail {
+  width: 80%;
+}
+
 .table__vertical__td--address {
   display: flex;
   align-items: center;
