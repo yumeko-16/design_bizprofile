@@ -137,10 +137,6 @@
   color: #689ACA;
   content: '\f192';
 }
-.radio-fontas {
-  vertical-align: bottom;
-  font-size: 20px;
-}
 
 .asterisk {
   color: #ed5c65;
@@ -384,6 +380,38 @@
   .btn--green {
     width: 100%;
     height: 50px;
+  }
+
+  .radio {
+    height: 40px;
+    margin-right: 0;
+    background-color: #EAEDF2;
+    border-radius: 2px;
+  }
+  .radio--two {
+    width: 50%;
+  }
+  .radio--three {
+    width: calc(100% / 3);
+  }
+  .radio-btn + .radio-fontas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #EAEDF2;
+  }
+  .radio-btn:checked + .radio-fontas {
+    background-color: #0096DE;
+    color: #fff;
+  }
+  .radio-btn + .radio-fontas:before {
+    margin-right: 0;
+    content: '';
+  }
+  .radio-btn:checked + .radio-fontas:before {
+    margin-right: 0;
+    content: '';
   }
 
   .asterisk::after {
