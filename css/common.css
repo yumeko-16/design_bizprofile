@@ -13,6 +13,7 @@
 　1.common
 ================================*/
 * {
+  color: #666;
   font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",YuGothic,"Yu Gothic",Verdana,Meiryo,sans-serif;
 }
 
@@ -50,15 +51,22 @@
   border-radius: 2px;
   color: #FFF;
 }
-.btn--search {
+.btn--green {
   background-color: #31C453;
 }
-.btn--change {
+.btn--blue {
   background-color: #0096DE;
+}
+.btn--white {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #bbb;
 }
 
 .txtField {
+  width: 205px;
   height: 35px;
+  margin-right: 10px;
   padding: 0 8px;
   border: 1px solid #bbb;
   border-radius: 2px;
@@ -76,6 +84,7 @@
 
 .pullDown {
   position: relative;
+  margin-right: 10px;
   border: 1px solid #bbb;
   border-radius: 2px;
   background: #fff;
@@ -94,7 +103,7 @@
   pointer-events: none;
 }
 .pullDown__list {
-  width: 100%;
+  width: 205px;
   height: 35px;
   padding: 0 45px 0 8px;
   cursor: pointer;
@@ -144,6 +153,11 @@
   background-color: #FFF;
   border-top: solid 5px #0096DE;
 }
+.contents--nbg {
+  max-width: 1024px;
+  width: 100%;
+  margin: 50px auto 0;
+}
 .contents__title {
   width: 95%;
   margin: 0 auto;
@@ -154,7 +168,7 @@
 .contents__body {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .table {
@@ -177,9 +191,6 @@
   padding: 10px;
   text-align: center;
   background-color: #EAEDF2;
-}
-.table__tbody__frame {
-  margin-right: 5px;
 }
 
 /*
@@ -327,6 +338,9 @@
   　1.common
   ================================*/
   .contents {
+    width: 95%;
+  }
+  .contents--nbg {
     width: 95%;
   }
 }

@@ -57,7 +57,7 @@
         <div class="basic__icon">
           <img src="/images/img_icon_noimage.png" alt="アイコン" class="basic__icon__img">
           <div class="basic__icon__btn">
-            <input type="submit" value="画像を変更" class="btn btn--change fas">
+            <input type="submit" value="画像を変更" class="btn btn--blue fas">
           </div>
         </div>
       </div>
@@ -71,55 +71,39 @@
         <tr>
           <th class="table__thead table__thead--left">氏名</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">氏名(カナ)</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">氏名(英字)</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">メールアドレス</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">パスワード</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
@@ -131,10 +115,8 @@
         <tr>
           <th class="table__thead table__thead--left">生年月日</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
@@ -154,19 +136,15 @@
         <tr>
           <th class="table__thead table__thead--left">国籍</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">エレクス入社年月日</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
-            </div>
-            <div class="asterisk">＊</div>
+            <input type="text" class="txtField">
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
@@ -185,6 +163,7 @@
                 <option value="沖縄">沖縄</option>
               </select>
             </div>
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
@@ -226,37 +205,131 @@
         <tr>
           <th class="table__thead table__thead--left">部署</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
+            <div class="pullDown">
+              <select class="pullDown__list">
+                <option value="北海道">北海道</option>
+                <option value="青森">青森</option>
+                <option value="沖縄">沖縄</option>
+              </select>
             </div>
-            <div class="asterisk">＊</div>
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">拠点</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
+            <div class="pullDown">
+              <select class="pullDown__list">
+                <option value="北海道">北海道</option>
+                <option value="青森">青森</option>
+                <option value="沖縄">沖縄</option>
+              </select>
             </div>
-            <div class="asterisk">＊</div>
+            <span class="asterisk">＊</span>
           </td>
         </tr>
         <tr>
           <th class="table__thead table__thead--left">役職</th>
           <td class="table__tbody">
-            <div class="table__tbody__frame">
-              <input type="text" class="txtField">
+            <div class="pullDown">
+              <select class="pullDown__list">
+                <option value="北海道">北海道</option>
+                <option value="青森">青森</option>
+                <option value="沖縄">沖縄</option>
+              </select>
             </div>
-            <div class="asterisk">＊</div>
+            <span class="asterisk">＊</span>
           </td>
         </tr>
       </table>
     </div>
+
+    <div class="contents">
+      <h2 class="contents__title">管理者情報</h2>
+      <table class="contents__body">
+        <tr>
+          <th class="table__thead table__thead--left">社員ステータス</th>
+          <td class="table__tbody">
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>通常
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>休職中
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>退職
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">社員管理権限</th>
+          <td class="table__tbody">
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>あり
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>なし
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">参加プロジェクト参照権限</th>
+          <td class="table__tbody">
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>あり
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>なし
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">スキルシート情報参照権限</th>
+          <td class="table__tbody">
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>あり
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>なし
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th class="table__thead table__thead--left">保有資格情報参照権限</th>
+          <td class="table__tbody">
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>あり
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio1" class="radio-btn">
+              <span class="radio-fontas"></span>なし
+            </label>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contents--nbg">
+      <div class="bothEnds">
+        <input type="submit" value="前へ戻る" class="btn btn--white fas">
+        <input type="submit" value="&#xf2f1; 更新" class="btn btn--green fas">
+      </div>
+    </div>
   </div>
 
-  <footer id="footer" class="footer"></footer>
-
   <div id="page_top" class="page_top"><a href="#"></a></div>
+
+  <footer id="footer" class="footer"></footer>
 
   <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
   <script>
