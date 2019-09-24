@@ -16,6 +16,7 @@
 　1.common
 ================================*/
 * {
+  font-size: 16px;
   color: $color-txt;
   font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",YuGothic,"Yu Gothic",Verdana,Meiryo,sans-serif;
 }
@@ -148,6 +149,7 @@
     margin: 0 auto;
     padding-bottom: 15px;
     line-height: 40px;
+    font-size: 24px;
     color: $color-btn--blue;
   }
   &__body {
@@ -320,9 +322,15 @@
 ================================*/
 @media only screen and (max-width: 1024px) {
 
-/*
-　1.common
-================================*/
+  /*
+  　1.common
+  ================================*/
+  * {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 24px;
+  }
   .contents {
     width: 95%;
     &--nbg {
@@ -343,9 +351,9 @@
 ================================*/
 @media only screen and (max-width: 767px) {
 
-/*
-　1.common
-================================*/
+  /*
+  　1.common
+  ================================*/
   .sp-none {
     display: none;
   }
@@ -363,9 +371,9 @@
     }
   }
 
-/*
-　2.header
-================================*/
+  /*
+  　2.header
+  ================================*/
   .global-nav {
     position: fixed;
     right: -320px;

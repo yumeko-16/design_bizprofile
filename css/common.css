@@ -13,6 +13,7 @@
 　1.common
 ================================*/
 * {
+  font-size: 16px;
   color: #666;
   font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",YuGothic,"Yu Gothic",Verdana,Meiryo,sans-serif;
 }
@@ -157,6 +158,7 @@
   margin: 0 auto;
   padding-bottom: 15px;
   line-height: 40px;
+  font-size: 24px;
   color: #0096DE;
 }
 .contents__body {
@@ -331,6 +333,14 @@
   /*
   　1.common
   ================================*/
+  * {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
   .contents {
     width: 95%;
   }
