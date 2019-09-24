@@ -85,8 +85,19 @@
   /*
   　1.anchor
   ================================*/
+  .anchor {
+    height: 100%;
+  }
   .anchor__list {
+    flex-direction: column;
     width: 95%;
+  }
+  .anchor__list__item {
+    width: 100%;
+    padding: 10px 0 0;
+  }
+  .anchor__list__item:last-child {
+    padding-bottom: 10px;
   }
 }
 /*===============================

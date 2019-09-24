@@ -93,8 +93,19 @@
   /*
   　1.anchor
   ================================*/
-  .anchor__list {
-    width: 95%;
+  .anchor {
+    height: 100%;
+    &__list {
+      flex-direction: column;
+      width: 95%;
+      &__item {
+        width: 100%;
+        padding: 10px 0 0;
+        &:last-child {
+          padding-bottom: 10px;
+        }
+      }
+    }
   }
 }
 
