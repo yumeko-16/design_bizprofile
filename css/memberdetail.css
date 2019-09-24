@@ -12,6 +12,14 @@
 /*
 　1.common
 ================================*/
+.txtField {
+  width: 205px;
+}
+
+.pullDown__list {
+  width: 205px;
+}
+
 .table__tbody {
   display: flex;
   align-items: center;
@@ -81,9 +89,35 @@
 　　1.anchor
 
 ================================*/
-@media only screen and (max-width: 1024px) {
+/*===============================
+
+　SP
+
+　　1.
+
+================================*/
+@media only screen and (max-width: 767px) {
   /*
-  　1.anchor
+  　1.common
+  ================================*/
+  .txtField {
+    width: 100%;
+  }
+
+  .pullDown {
+    width: 100%;
+  }
+  .pullDown__list {
+    width: 100%;
+  }
+
+  .table__tbody {
+    padding: 0 10px 10px;
+    background-color: #fff;
+  }
+
+  /*
+  　2.anchor
   ================================*/
   .anchor {
     height: 100%;
@@ -99,18 +133,6 @@
   .anchor__list__item:last-child {
     padding-bottom: 10px;
   }
-}
-/*===============================
-
-　SP
-
-　　1.
-
-================================*/
-@media only screen and (max-width: 767px) {
-  /*
-  　1.
-  ================================*/
 }
 
 /*# sourceMappingURL=memberdetail.css.map */

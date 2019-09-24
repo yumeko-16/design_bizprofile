@@ -58,10 +58,16 @@
   border: 1px solid #bbb;
 }
 
-.txtField {
-  width: 205px;
-  height: 35px;
+.space-right {
   margin-right: 10px;
+}
+.space-left {
+  margin-left: 10px;
+}
+
+.txtField {
+  width: 100%;
+  height: 35px;
   padding: 0 8px;
   border: 1px solid #bbb;
   border-radius: 2px;
@@ -79,7 +85,6 @@
 
 .pullDown {
   position: relative;
-  margin-right: 10px;
   border: 1px solid #bbb;
   border-radius: 2px;
   background: #fff;
@@ -98,7 +103,7 @@
   pointer-events: none;
 }
 .pullDown__list {
-  width: 205px;
+  width: 100%;
   height: 35px;
   padding: 0 45px 0 8px;
   cursor: pointer;
@@ -379,6 +384,23 @@
   .btn--green {
     width: 100%;
     height: 50px;
+  }
+
+  .asterisk::after {
+    margin-left: 10px;
+    content: '＊';
+    vertical-align: baseline;
+    color: #ed5c65;
+  }
+
+  .table__tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .table__thead--left {
+    width: 100%;
+    background: #fff;
+    color: #0096DE;
   }
 
   /*

@@ -15,6 +15,14 @@
 /*
 　1.common
 ================================*/
+.txtField {
+  width: 205px;
+}
+.pullDown {
+  &__list {
+    width: 205px;
+  }
+}
 .table {
   &__tbody {
     display: flex;
@@ -90,8 +98,38 @@
 ================================*/
 @media only screen and (max-width: 1024px) {
 
+}
+
+/*===============================
+
+　SP
+
+　　1.
+
+================================*/
+@media only screen and (max-width: 767px) {
+
   /*
-  　1.anchor
+  　1.common
+  ================================*/
+  .txtField {
+    width: 100%;
+  }
+  .pullDown {
+    width: 100%;
+    &__list {
+      width: 100%;
+    }
+  }
+  .table {
+    &__tbody {
+      padding: 0 10px 10px;
+      background-color: #fff;
+    }
+  }
+
+  /*
+  　2.anchor
   ================================*/
   .anchor {
     height: 100%;
@@ -107,19 +145,4 @@
       }
     }
   }
-}
-
-/*===============================
-
-　SP
-
-　　1.
-
-================================*/
-@media only screen and (max-width: 767px) {
-
-  /*
-  　1.
-  ================================*/
-
 }
