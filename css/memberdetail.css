@@ -93,7 +93,9 @@
 
 　SP
 
-　　1.
+　　1.common
+　　2.anchor
+　　3.bothEnds
 
 ================================*/
 @media only screen and (max-width: 767px) {
@@ -132,6 +134,16 @@
   }
   .anchor__list__item:last-child {
     padding-bottom: 10px;
+  }
+
+  /*
+  　3.bothEnds
+  ================================*/
+  .bothEnds {
+    flex-direction: column-reverse;
+  }
+  .bothEnds__space {
+    margin-bottom: 20px;
   }
 }
 
