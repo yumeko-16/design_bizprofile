@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "color";
 
 /*===============================
 
@@ -42,7 +43,7 @@
   &__label {
     display: block;
     padding: .25em .25em .25em .75em;
-    border-left: 6px solid #0096DE;
+    border-left: 6px solid $color-main;
   }
   &__years {
     display: flex;
@@ -136,13 +137,12 @@
       height: 50px;
       margin: 0 2px;
       padding: 0;
-      background:#0096DE;
+      background:$color-main;
       text-align: center;
       a {
         display:table;
         width: 100%;
         height: 100%;
-        color: #fff;
         text-decoration: none;
         &:hover,
         &.active{
@@ -152,6 +152,7 @@
         span {
           display:table-cell;
           vertical-align:middle;
+          color: $color-txt--white;
         }
       }
     }

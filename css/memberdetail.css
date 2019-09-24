@@ -38,9 +38,14 @@
   width: 20%;
 }
 .anchor__list__item__link {
-  color: #0096DE;
   font-weight: bold;
   text-decoration: none;
+}
+.anchor__list__item__link span {
+  color: #0096DE;
+}
+.anchor__list__item__link i {
+  color: #0096DE;
 }
 
 /*

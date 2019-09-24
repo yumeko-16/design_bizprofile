@@ -139,7 +139,6 @@
   display: table;
   width: 100%;
   height: 100%;
-  color: #fff;
   text-decoration: none;
 }
 .pager__list-item a:hover, .pager__list-item a.active {
@@ -149,6 +148,7 @@
 .pager__list-item a span {
   display: table-cell;
   vertical-align: middle;
+  color: #fff;
 }
 
 /*===============================
