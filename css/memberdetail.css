@@ -6,8 +6,7 @@
 
 　　1.anchor
 　　2.basic
-　　3.skill
-　　4.button
+　　3.button
 
 ================================*/
 
@@ -86,21 +85,7 @@
 }
 
 /*
-　3.skill
-================================*/
-.explanation {
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-.explanation__paragraph {
-  font-size: 13px;
-}
-
-
-/*
-　4.button
+　3.button
 ================================*/
 .contents__title--edit {
   display: flex;
