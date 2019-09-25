@@ -4,12 +4,20 @@
 
 　PC
 
-　　1.button
+　　1.main
+　　2.button
 
 ================================*/
 
 /*
-　1.button
+　2.main
+================================*/
+.pullDown-lis--skill {
+  min-width: 65px;
+}
+
+/*
+　2.button
 ================================*/
 .update {
   max-width: 1000px;
