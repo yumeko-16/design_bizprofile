@@ -483,8 +483,8 @@ label {
   justify-content: center;
 }
 
-.info-button--pc--delete {
-  margin-left: 10px;
+.info-button--pc--white {
+  margin-right: 10px;
 }
 
 .conditions__btn {
@@ -897,10 +897,10 @@ label {
 
   .info-button--sp--edit {
     width: 70%;
+    margin-right: 10px;
   }
 
   .info-button--sp--delete {
     width: 30%;
-    margin-left: 10px;
   }
 }
