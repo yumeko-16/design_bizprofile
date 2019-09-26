@@ -163,6 +163,8 @@
 .table__td--flex {
   display: flex;
   align-items: center; }
+.table__td--left {
+  text-align: left; }
 
 /*
 　2.header
