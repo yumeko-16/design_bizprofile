@@ -265,6 +265,19 @@
   background: #fff;
 }
 
+.pullDown__date {
+  display: flex;
+  align-items: center;
+}
+
+.pullDown__date-list {
+  min-width: 30%;
+}
+
+.pullDown__date-list--text {
+  margin: 0 10px;
+}
+
 .pullDown::before {
   position: absolute;
   top: 0.8em;
