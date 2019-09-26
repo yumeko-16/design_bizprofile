@@ -11,37 +11,7 @@
 /*
 　1.button
 ================================*/
-.table__thead__info-button {
-  padding: 10px 0;
-}
 
-.table__tbody__info-button {
-  width: 25%;
-  padding: 10px 0 10px 20px;
-}
-
-.info-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.info-button--pc--delete {
-  margin-left: 10px;
-}
-
-.update {
-  max-width: 1000px;
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 15px;
-}
-
-.update__btn {
-  display: block;
-  padding: 15px;
-  text-align: right;
-}
 
 /*===============================
 
@@ -55,21 +25,5 @@
   /*
   　1.button
   ================================*/
-  .info-button--sp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
 
-  .info-button--sp--edit {
-    width: 70%;
-  }
-
-  .info-button--sp--delete {
-    width: 30%;
-    margin-left: 10px;
-  }
 }
