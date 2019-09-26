@@ -179,6 +179,53 @@
   color: #0096DE;
 }
 
+.conditions {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.conditions__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.conditions__list__item {
+  white-space: nowrap;
+  width: 50%;
+  padding: 15px;
+}
+
+.conditions__list__item-label {
+  font-weight: bold;
+  border-left: solid 6px #0096DE;
+  margin: 10px auto 12px;
+  padding-left: 10px;
+}
+
+.conditions__list__item-box {
+  width: 100%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+}
+
+.conditions__list__item-year {
+  display: flex;
+}
+
+.conditions__list__item-year span {
+  display: block;
+  margin: 0 10px;
+}
+
+.conditions__list__item-year-textbox {
+  width: 50%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+}
+
 .table {
   width: 95%;
   margin: 0 auto;
@@ -397,6 +444,12 @@ label {
 .update__btn {
   display: block;
   padding: 15px 0;
+  text-align: right;
+}
+
+.conditions__btn {
+  display: block;
+  padding: 15px;
   text-align: right;
 }
 
@@ -683,6 +736,18 @@ label {
     display: block;
   }
 
+  .conditions__list {
+    display: block;
+  }
+
+  .conditions__list__item {
+    width: 100%;
+  }
+
+  .conditions__btn {
+    padding: 0 15px 15px;
+  }
+
   .table__vertical__tr {
     display: flex;
     flex-direction: column;
@@ -765,8 +830,6 @@ label {
     padding: 5px;
     background-color: #EAEDF2;
   }
-
-
 
 /*
 　4.button
