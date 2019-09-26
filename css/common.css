@@ -179,6 +179,53 @@
   color: #0096DE;
 }
 
+.conditions {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.conditions__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.conditions__list__item {
+  white-space: nowrap;
+  width: 50%;
+  padding: 15px;
+}
+
+.conditions__list__item-label {
+  font-weight: bold;
+  border-left: solid 6px #0096DE;
+  margin: 10px auto 12px;
+  padding-left: 10px;
+}
+
+.conditions__list__item-box {
+  width: 100%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+}
+
+.conditions__list__item-year {
+  display: flex;
+}
+
+.conditions__list__item-year span {
+  display: block;
+  margin: 0 10px;
+}
+
+.conditions__list__item-year-textbox {
+  width: 50%;
+  height: 30px;
+  border: solid 1px #a9a9a9;
+}
+
 .table {
   width: 95%;
   margin: 0 auto;
@@ -191,10 +238,19 @@
   color: #fff;
 }
 
+.table__thead__info-button {
+  padding: 10px 0;
+}
+
 .table__tbody {
   padding: 10px 20px;
   text-align: center;
   background-color: #EAEDF2;
+}
+
+.table__tbody__info-button {
+  width: 25%;
+  padding: 10px 0 10px 20px;
 }
 
 .table__tbody--subject {
@@ -207,6 +263,19 @@
   text-align: center;
   border: 1px solid #a9a9a9;
   background: #fff;
+}
+
+.pullDown__date {
+  display: flex;
+  align-items: center;
+}
+
+.pullDown__date-list {
+  min-width: 30%;
+}
+
+.pullDown__date-list--text {
+  margin: 0 10px;
 }
 
 .pullDown::before {
@@ -279,6 +348,14 @@
 }
 
 .table__vertical__td-pr {
+  width: 100%;
+  height: 60px;
+  padding: 3px 8px;
+  border: solid 1px #a9a9a9;
+  background-color: #FFF;
+}
+
+.table__vertical__td-remarks {
   width: 100%;
   height: 60px;
   padding: 3px 8px;
@@ -397,6 +474,22 @@ label {
 .update__btn {
   display: block;
   padding: 15px 0;
+  text-align: right;
+}
+
+.info-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-button--pc--white {
+  margin-right: 10px;
+}
+
+.conditions__btn {
+  display: block;
+  padding: 15px;
   text-align: right;
 }
 
@@ -683,6 +776,18 @@ label {
     display: block;
   }
 
+  .conditions__list {
+    display: block;
+  }
+
+  .conditions__list__item {
+    width: 100%;
+  }
+
+  .conditions__btn {
+    padding: 0 15px 15px;
+  }
+
   .table__vertical__tr {
     display: flex;
     flex-direction: column;
@@ -766,8 +871,6 @@ label {
     background-color: #EAEDF2;
   }
 
-
-
 /*
 　4.button
 ================================*/
@@ -781,5 +884,23 @@ label {
 
   .edit__text-sp {
     display: none;
+  }
+
+  .info-button--sp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .info-button--sp--edit {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  .info-button--sp--delete {
+    width: 30%;
   }
 }
