@@ -162,8 +162,8 @@
 }
 .table {
   width: 100%;
-  &__thead {
-    padding: 10px 10px;
+  &__th {
+    padding: 10px;
     background-color: $color-btn--blue;
     color: $color-txt--white;
     &--center {
@@ -175,10 +175,14 @@
       text-align: left;
     }
   }
-  &__tbody {
+  &__td {
     padding: 10px;
     text-align: center;
     background-color: #EAEDF2;
+    &--flex {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -415,11 +419,17 @@
       display: flex;
       flex-direction: column;
     }
-    &__thead {
+    &__th {
       &--left {
         width: 100%;
         background: #fff;
         color: $color-main;
+      }
+    }
+    &__td {
+      &--flex {
+        padding: 0 10px 10px;
+        background-color: #fff;
       }
     }
   }

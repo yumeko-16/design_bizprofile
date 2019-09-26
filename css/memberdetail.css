@@ -13,17 +13,10 @@
 　1.common
 ================================*/
 .txtField {
-  width: 205px;
-}
+  width: 205px; }
 
 .pullDown__list {
-  width: 205px;
-}
-
-.table__tbody {
-  display: flex;
-  align-items: center;
-}
+  width: 205px; }
 
 /*
 　2.anchor
@@ -31,30 +24,24 @@
 .anchor {
   width: 100%;
   height: 50px;
-  background-color: #fff;
-}
+  background-color: #fff; }
 .anchor__list {
   display: flex;
   max-width: 1024px;
   height: 100%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 .anchor__list__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
-}
+  width: 20%; }
 .anchor__list__item__link {
   font-weight: bold;
-  text-decoration: none;
-}
+  text-decoration: none; }
 .anchor__list__item__link span {
-  color: #0096DE;
-}
+  color: #0096DE; }
 .anchor__list__item__link i {
-  color: #0096DE;
-}
+  color: #0096DE; }
 
 /*
 　3.basic
@@ -62,25 +49,21 @@
 .basic__icon {
   display: flex;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 .basic__icon__img {
   width: 200px;
   height: 200px;
-  background-color: #ddd;
-}
+  background-color: #ddd; }
 .basic__icon__btn {
   padding: 15px 0;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 /*
 　4.bothEnds
 ================================*/
 .bothEnds {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 /*===============================
 
@@ -103,48 +86,33 @@
   　1.common
   ================================*/
   .txtField {
-    width: 100%;
-  }
+    width: 100%; }
 
   .pullDown {
-    width: 100%;
-  }
+    width: 100%; }
   .pullDown__list {
-    width: 100%;
-  }
-
-  .table__tbody {
-    padding: 0 10px 10px;
-    background-color: #fff;
-  }
+    width: 100%; }
 
   /*
   　2.anchor
   ================================*/
   .anchor {
-    height: 100%;
-  }
+    height: 100%; }
   .anchor__list {
     flex-direction: column;
-    width: 95%;
-  }
+    width: 95%; }
   .anchor__list__item {
     width: 100%;
-    padding: 10px 0 0;
-  }
+    padding: 10px 0 0; }
   .anchor__list__item:last-child {
-    padding-bottom: 10px;
-  }
+    padding-bottom: 10px; }
 
   /*
   　3.bothEnds
   ================================*/
   .bothEnds {
-    flex-direction: column-reverse;
-  }
+    flex-direction: column-reverse; }
   .bothEnds__space {
-    margin-bottom: 20px;
-  }
-}
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=memberdetail.css.map */

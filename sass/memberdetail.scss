@@ -23,12 +23,6 @@
     width: 205px;
   }
 }
-.table {
-  &__tbody {
-    display: flex;
-    align-items: center;
-  }
-}
 
 /*
 　2.anchor
@@ -121,12 +115,6 @@
     width: 100%;
     &__list {
       width: 100%;
-    }
-  }
-  .table {
-    &__tbody {
-      padding: 0 10px 10px;
-      background-color: #fff;
     }
   }
 
