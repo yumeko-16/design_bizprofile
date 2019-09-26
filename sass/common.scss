@@ -50,6 +50,9 @@
   &--green {
     background-color: $color-btn--green;
   }
+  &--red {
+    background-color: $color-btn--red;
+  }
   &--white {
     background-color: $color-btn--white;
     color: #666;
@@ -187,6 +190,15 @@
     &--left {
       text-align: left;
     }
+  }
+}
+.position {
+  display: flex;
+  &--both {
+    justify-content: space-between;
+  }
+  &--right {
+    justify-content: flex-end;
   }
 }
 
@@ -434,6 +446,14 @@
       &--flex {
         padding: 0 10px 10px;
         background-color: #fff;
+      }
+    }
+  }
+  .position {
+    &--both {
+      flex-direction: column-reverse;
+      &__btn {
+        margin-bottom: 10px;
       }
     }
   }

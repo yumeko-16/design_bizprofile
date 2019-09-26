@@ -45,6 +45,8 @@
   background-color: #0096DE; }
 .btn--green {
   background-color: #31C453; }
+.btn--red {
+  background-color: #f76363; }
 .btn--white {
   background-color: #fff;
   color: #666;
@@ -165,6 +167,13 @@
   align-items: center; }
 .table__td--left {
   text-align: left; }
+
+.position {
+  display: flex; }
+.position--both {
+  justify-content: space-between; }
+.position--right {
+  justify-content: flex-end; }
 
 /*
 　2.header
@@ -368,6 +377,11 @@
   .table__td--flex {
     padding: 0 10px 10px;
     background-color: #fff; }
+
+  .position--both {
+    flex-direction: column-reverse; }
+  .position--both__btn {
+    margin-bottom: 10px; }
 
   /*
   　2.header
