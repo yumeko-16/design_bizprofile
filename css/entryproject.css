@@ -4,32 +4,13 @@
 
 　PC
 
-　　1.button
+　　1.main
 
 ================================*/
 
 /*
-　1.button
+　1.main
 ================================*/
-.table__thead__info-button {
-  padding: 10px 0;
-}
-
-.table__tbody__info-button {
-  width: 25%;
-  padding: 10px 0 10px 20px;
-}
-
-.info-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.info-button--pc--delete {
-  margin-left: 10px;
-}
-
 .table__horizontal__th {
   width: 100%;
   text-align: left;
@@ -42,29 +23,13 @@
 
 　SP
 
-　　1.button
+　　1.main
 
 ================================*/
 @media only screen and (max-width: 767px) {
 
   /*
-  　1.button
+  　1.main
   ================================*/
-  .info-button--sp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
 
-  .info-button--sp--edit {
-    width: 70%;
-  }
-
-  .info-button--sp--delete {
-    width: 30%;
-    margin-left: 10px;
-  }
 }
