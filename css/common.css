@@ -159,6 +159,18 @@
   border-top: solid 5px #0096DE;
 }
 
+.contents__clear {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.contents__clear__link {
+  text-decoration: none;
+}
+
 .contents-nbg {
   max-width: 1000px;
   width: 90%;
