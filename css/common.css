@@ -392,6 +392,10 @@
   padding-left: 5px;
 }
 
+.checkbox--item {
+  margin: 0 5px;
+}
+
 .radiobutton {
   display: none;
 }
