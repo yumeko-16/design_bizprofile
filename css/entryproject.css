@@ -11,12 +11,8 @@
 /*
 　1.main
 ================================*/
-.table__horizontal__th {
-  width: 100%;
-  text-align: left;
-  padding: 0 15px;
-  background-color: #0096DE;
-  color: #FFF;
+.table__horizontal {
+  padding-bottom: unset;
 }
 
 /*===============================

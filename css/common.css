@@ -218,8 +218,7 @@
 }
 
 .conditions__list__item-checkbox {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
 }
 
 .conditions__list__item-box {
@@ -255,6 +254,11 @@
   color: #fff;
 }
 
+.table__thead__left {
+  padding: 10px 0 10px 10px;
+  text-align: left;
+}
+
 .table__thead__info-button {
   padding: 10px 0;
 }
@@ -263,6 +267,10 @@
   padding: 10px 20px;
   text-align: center;
   background-color: #EAEDF2;
+}
+
+.table__tbody__left {
+  text-align: left;
 }
 
 .table__tbody__info-button {
