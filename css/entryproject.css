@@ -11,9 +11,28 @@
 /*
 　1.main
 ================================*/
-.table__horizontal {
+.table__vertical--pdm {
   padding-bottom: unset;
 }
+
+.table__horizontal {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.table__horizontal__th {
+  padding: 10px 0 10px 10px;
+  text-align: left;
+  background-color: #0096DE;
+  color: #fff;
+}
+
+.table__horizontal__td {
+  padding: 10px 20px;
+  text-align: left;
+  background-color: #EAEDF2;
+}
+
 
 /*===============================
 
@@ -27,5 +46,27 @@
   /*
   　1.main
   ================================*/
+  .table__horizontal__th {
+    width: 100%;
+    padding-left: 5px;
+    position: relative;
+    background-color: #FFF;
+    color: #0096DE;
+  }
 
+  .table__horizontal__td {
+    background-color: #FFF;
+  }
+
+  .table__horizontal__tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table__vertical__td--date {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+  }
+  
 }
