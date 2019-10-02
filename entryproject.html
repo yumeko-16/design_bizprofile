@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>参加プロジェクト登録 | BizProfile</title>
+  <link rel="stylesheet" type="text/css" href="/css/ress.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/entryproject.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/dashboard.html"><img src="/images/img_logo_elecs.jpg" alt="BizProfile" class="header__logo"></a>
+    </div>
+    <nav class="sp-none">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item"><a href="/memberlist.html">プロフィール一覧</a></li>
+            <li class="header__dropDown-item"><a href="#">新規登録</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="header__nav-item-image">
+          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <ul class="header__dropDown">
+            <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
+            <li class="header__dropDown-item"><a href="/dashboard.html">ダッシュボード</a></li>
+            <li class="header__dropDown-item"><a href="/memberdetail.html">マイプロフィール</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="global-nav pc-none">
+      <div class="global-nav__user">
+        <div class="global-nav__userIcon">
+          <img src="/images/img_icon_private.png" alt="個人メニュー" class="global-nav__userIcon-image">
+        </div>
+        <div class="global-nav__userName">小寺ひめ</div>
+      </div>
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="/dashboard.html">ダッシュボード</a></li>
+        <li class="global-nav__item"><a href="/memberdetail.html">マイプロフィール</a></li>
+        <li class="global-nav__item"><a href="/memberlist.html">プロフィール一覧</a></li>
+        <li class="global-nav__item"><a href="">新規登録</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="js-hamburger">
+      <span class="hamburger__line hamburger__line--1"></span>
+      <span class="hamburger__line hamburger__line--2"></span>
+      <span class="hamburger__line hamburger__line--3"></span>
+    </div>
+    <div class="black-bg" id="js-black-bg"></div>
+  </header>
+  <div class="main">
+    <h1 class="title">参加プロジェクト登録</h1>
+    <div class="contents">
+      <h2 class="contents__title">検索条件</h2>
+      <form class="conditions">
+        <ul class="conditions__list">
+          <li class="conditions__list__item">
+            <div class="conditions__list__item-label">プロジェクト名（部分一致）</div>
+            <input type="text" name="example02" class="conditions__list__item-box">
+          </li>
+          <li class="conditions__list__item">
+            <div class="conditions__list__item-label">客先名（部分一致）</div>
+            <input type="text" name="example02" class="conditions__list__item-box">
+          </li>
+          <li class="conditions__list__item">
+            <div class="conditions__list__item-label">部署</div>
+            <ul class="conditions__list__item-checkbox">
+              <li><input type="checkbox"><span class="checkbox--item">システムインテグレーション部</span></li>
+              <li><input type="checkbox"><span class="checkbox--item">デザインスタジオ部</span></li>
+              <li><input type="checkbox"><span class="checkbox--item">テスト事業部</span></li>
+            </ul>
+          </li>
+        </ul>
+      </form>
+      <div class="conditions">
+        <div class="conditions__btn">
+          <input type="submit" value="&#xf002; 検索" class="btn btn--green fas">
+        </div>
+      </div>
+    </div>
+
+    <div class="contents">
+      <h2 class="contents__title">検索結果</h2>
+      <div class="sp-none">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="table__thead">プロジェクト名<br>会社名</th>
+              <th class="table__thead">プロジェクト開始日<br>プロジェクト終了日</th>
+              <th class="table__thead">プロジェクト参加開始日<br>プロジェクト参加終了日</th>
+              <th class="table__thead__info-button"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__tbody">プロジェクトA<br>会社A</td>
+              <td class="table__tbody">2018/01/05<br>2019/02/13</td>
+              <td class="table__tbody">2018/01/05<br>2019/02/13</td>
+              <td class="table__tbody__info-button">
+                <div class="info-button">
+                  <input type="submit" value="編集" class="btn btn--white info-button--pc--white">
+                  <input type="submit" value="削除" class="btn btn--delete">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__tbody">プロジェクトB<br>会社A</td>
+              <td class="table__tbody">2018/01/05</td>
+              <td class="table__tbody">2018/01/05<br>2019/02/13</td>
+              <td class="table__tbody__info-button">
+                <div class="info-button">
+                  <input type="submit" value="編集" class="btn btn--white info-button--pc--white">
+                  <input type="submit" value="削除" class="btn btn--delete">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pc-none">
+        <table class="table--sp">
+          <tr class="table--sp__tr">
+            <th colspan="2" class="table--sp__th table--sp__th-name">
+              <span>プロジェクトA</span>
+            </th>
+          </tr>
+          <tr class="table--sp__tr">
+            <th class="table--sp__th">会社名</th>
+            <td class="table--sp__td">会社A</td>
+          </tr>
+          <tr class="table--sp__tr">
+            <th class="table--sp__th">プロジェクト期間</th>
+            <td class="table--sp__td">2018/01/05～2019/02/13</td>
+          </tr>
+          <tr class="table--sp__tr">
+            <th class="table--sp__th">プロジェクト参加期間</th>
+            <td class="table--sp__td">2018/01/05～2019/02/13</td>
+          </tr>
+        </table>
+        <div class="info-button--sp">
+          <input type="submit" value="編集" class="btn btn--white info-button--sp--edit">
+          <input type="submit" value="削除" class="btn btn--delete info-button--sp--delete">
+        </div>
+        <table class="table--sp">
+          <tr class="table--sp__tr">
+            <th colspan="2" class="table--sp__th table--sp__th-name">
+              <span>プロジェクトB</span>
+            </th>
+          </tr>
+          <tr class="table--sp__tr">
+            <th class="table--sp__th">会社名</th>
+            <td class="table--sp__td">会社B</td>
+          </tr>
+          <tr class="table--sp__tr">
+            <th class="table--sp__th">プロジェクト期間</th>
+            <td class="table--sp__td">2018/01/05～</td>
+          </tr>
+          <tr class="table--sp__tr">
+            <th class="table--sp__th">プロジェクト参加期間</th>
+            <td class="table--sp__td">2018/01/05～2019/02/13</td>
+          </tr>
+        </table>
+        <div class="info-button--sp">
+          <input type="submit" value="編集" class="btn btn--white info-button--sp--edit">
+          <input type="submit" value="削除" class="btn btn--delete info-button--sp--delete">
+        </div>
+      </div>
+    </div>
+    <div class="contents-nbg">
+      <div class="contents-nbg__between">
+        <input type="submit" value="前へ戻る" class="btn btn--white">
+      </div>
+    </div>
+
+    <div class="contents">
+      <h2 class="contents__title">プロジェクト情報</h2>
+      <table class="table__vertical">
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">プロジェクト名</th>
+          <td class="table__vertical__td">プロジェクトA</td>
+        </tr>
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">プロジェクト期間</th>
+          <td class="table__vertical__td">2018/01/05 ～ 2019/02/13</td>
+        </tr>
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">客先名</th>
+          <td class="table__vertical__td">会社A</td>
+        </tr>
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">作業場所</th>
+          <td class="table__vertical__td">埼玉本社</td>
+        </tr>
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">人数規模</th>
+          <td class="table__vertical__td">8</td>
+        </tr>
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">プロジェクト備考</th>
+          <td class="table__vertical__td">大炎上しました</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contents">
+      <h2 class="contents__title">プロジェクト参加情報</h2>
+      <table class="table__vertical table__vertical--pdm">
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">プロジェクト参加期間</th>
+          <td class="table__vertical__td">
+            <input type="text" name="" class="table__vertical__td-box">
+            <span class="table__vertical__td--date">～</span>
+            <input type="text" name="" class="table__vertical__td-box">
+          </td>
+        </tr>
+        <tr class="table__vertical__tr">
+          <th class="table__vertical__th">備考</th>
+          <td class="table__vertical__td">
+            <input type="text" name="" class="table__vertical__td-remarks">
+          </td>
+        </tr>
+      </table>
+      <table class="table__horizontal">
+        <tr class="table__horizontal__tr">
+          <th class="table__horizontal__th" colspan="2">担当・役割</th>
+        </tr>
+        <tr class="table__horizontal__tr">
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">PG</td>
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">保守</td>
+        </tr>
+        <tr class="table__horizontal__tr">
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">PG</td>
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">保守</td>
+        </tr>
+      </table>
+      <table class="table__horizontal">
+        <tr class="table__horizontal__tr">
+          <th class="table__horizontal__th" colspan="2">作業工程</th>
+        </tr>
+        <tr class="table__horizontal__tr">
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">調査・要件定義</td>
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">詳細設計</td>
+        </tr>
+        <tr class="table__horizontal__tr">
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">基本設計</td>
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">製造・単体テスト</td>
+        </tr>
+      </table>
+      <table class="table__horizontal">
+        <tr class="table__horizontal__tr">
+          <th class="table__horizontal__th" colspan="2">作業工使用開発言語・ソフト</th>
+        </tr>
+        <tr class="table__horizontal__tr">
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">JAVA</td>
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">Eclipse</td>
+        </tr>
+        <tr class="table__horizontal__tr">
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">C</td>
+          <td class="table__horizontal__td"><input type="checkbox" name="" value="" class="checkbox--item">PyCharm</td>
+        </tr>
+      </table>
+      <div class="update">
+        <div class="update__btn">
+          <input type="submit" value="&#xf2f1; 更新" class="fas btn btn--green">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">Copyright © エレクス株式会社 All Rights Reserved</footer>
+  <div id="page_top" class="page_top"><a href="#"></a></div>
+
+  <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>

@@ -159,6 +159,18 @@
   border-top: solid 5px #0096DE;
 }
 
+.contents__clear {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.contents__clear__link {
+  text-decoration: none;
+}
+
 .contents-nbg {
   max-width: 1000px;
   width: 90%;
@@ -205,6 +217,10 @@
   padding-left: 10px;
 }
 
+.conditions__list__item-checkbox {
+  list-style: none;
+}
+
 .conditions__list__item-box {
   width: 100%;
   height: 30px;
@@ -236,6 +252,11 @@
   padding: 10px 0;
   background-color: #0096DE;
   color: #fff;
+}
+
+.table__thead__left {
+  padding: 10px 0 10px 10px;
+  text-align: left;
 }
 
 .table__thead__info-button {
@@ -369,6 +390,10 @@
 
 .asterisk--pd {
   padding-left: 5px;
+}
+
+.checkbox--item {
+  margin: 0 5px;
 }
 
 .radiobutton {
