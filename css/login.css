@@ -51,3 +51,29 @@
   min-width: 270px;
   width: 100%;
 }
+
+/*===============================
+
+　SP
+
+　　1.main
+
+================================*/
+
+/*
+　1.main
+================================*/
+@media only screen and (max-width: 767px) {
+  .loginForm__txtArea {
+    margin: 50px 0 0;
+  }
+  .loginForm__txtArea__txtField {
+    min-width: 100%;
+  }
+  .loginForm__btnArea {
+    margin: 20px 0 0;
+  }
+  .loginForm__btnArea__btn {
+    min-width: 100%;
+  }
+}
