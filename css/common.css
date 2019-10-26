@@ -436,6 +436,19 @@ label {
   font-size: 13px;
 }
 
+.message {
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #CDE4FF;
+  border-left: solid 10px #0096DE;
+}
+
+.message__text {
+  font-size: 18px;
+}
+
 /*
 　4.footer
 ================================*/
