@@ -436,6 +436,25 @@ label {
   font-size: 13px;
 }
 
+.contents--coming-soon {
+  position: relative;
+}
+
+.coming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
 .message__success {
   width: 90%;
   max-width: 1000px;
