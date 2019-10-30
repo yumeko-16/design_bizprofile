@@ -455,6 +455,28 @@ label {
   font-size: 50px;
 }
 
+.message__success {
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #CDE4FF;
+  border-left: solid 10px #0096DE;
+}
+
+.message__error {
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #FFCCCC;
+  border-left: solid 10px #DE1600;
+}
+
+.message__text {
+  font-size: 18px;
+}
+
 /*
 　4.footer
 ================================*/
