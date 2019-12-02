@@ -76,6 +76,10 @@
   list-style: none;
 }
 
+.header__nav-item-arrows {
+  margin-left :5px;
+}
+
 .header__nav-item-image {
   width:30px;
   height:30px;
