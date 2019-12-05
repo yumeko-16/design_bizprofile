@@ -20,16 +20,16 @@
     <nav class="sp-none">
       <ul class="header__nav">
         <li class="header__nav-item">
-          <img src="/images/img_icon_member.png" alt="メンバーメニュー">
-          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <span class="fas fa-users fa-2x"></span>
+          <span class="fas fa-caret-down header__nav-item-arrows"></span>
           <ul class="header__dropDown">
             <li class="header__dropDown-item"><a href="/memberlist.html">プロフィール一覧</a></li>
             <li class="header__dropDown-item"><a href="#">新規登録</a></li>
           </ul>
         </li>
         <li class="header__nav-item">
-          <img src="/images/img_icon_private.png" alt="個人メニュー" class="header__nav-item-image">
-          <img src="/images/img_icon_drop-down_black.png" alt="下矢印">
+          <img src="/images/no_image.png" alt="個人メニュー" class="header__nav-item-image">
+          <span class="fas fa-caret-down header__nav-item-arrows"></span>
           <ul class="header__dropDown">
             <li class="header__dropDown-item header__dropDown-item--userName">小寺ひめ</li>
             <li class="header__dropDown-item"><a href="/dashboard.html">ダッシュボード</a></li>
@@ -41,7 +41,7 @@
     <nav class="global-nav pc-none">
       <div class="global-nav__user">
         <div class="global-nav__userIcon">
-          <img src="/images/img_icon_private.png" alt="個人メニュー" class="global-nav__userIcon-image">
+          <img src="/images/no_image.png" alt="個人メニュー" class="global-nav__userIcon-image">
         </div>
         <div class="global-nav__userName">小寺ひめ</div>
       </div>
@@ -65,19 +65,23 @@
       <ul class="menu__nav">
         <li class="menu__nav-item">
           <a href="/memberdetail.html">
-              <img src="/images/no_image.png" alt="マイプロフィール" class="menu__nav-item-image-circle">
+            <img src="/images/no_image.png" alt="マイプロフィール" class="menu__nav-item-image-circle">
             <span class="menu__nav-item-text">マイプロフィール</span>
           </a>
         </li>
         <li class="menu__nav-item">
           <a href="/memberlist.html">
-              <img src="/images/img_icon_member-64.png" alt="プロフィール一覧">
+            <span class="menu__nav-item-icon">
+              <span class="fas fa-users fa-4x"></span>
+            </span>
             <span class="menu__nav-item-text">プロフィール一覧</span>
           </a>
         </li>
         <li class="menu__nav-item">
           <a href="">
-              <img src="/images/img_icon_register-white.png" alt="新規登録">
+            <span class="menu__nav-item-icon">
+              <span class="fas fa-database fa-4x"></span>
+            </span>
             <span class="menu__nav-item-text">新規登録</span>
           </a>
         </li>

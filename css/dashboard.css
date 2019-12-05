@@ -56,6 +56,14 @@
   margin: 20px auto 5px;
 }
 
+.menu__nav-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin: 20px auto 5px;
+}
+
 .menu__nav-item-text {
   display: block;
   text-align: center;
