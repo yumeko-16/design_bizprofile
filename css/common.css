@@ -842,7 +842,7 @@ label {
     width: 100%;
   }
   .contents-nbg__between {
-    display: block;
+    flex-direction: column-reverse;
   }
 
   .conditions__list {
