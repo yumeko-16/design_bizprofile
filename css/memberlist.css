@@ -39,6 +39,7 @@
   width: 110px;
   height: 110px;
   margin: auto;
+  border-radius: 50%;
 }
 
 .result__list-item {
