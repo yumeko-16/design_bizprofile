@@ -652,6 +652,7 @@ label {
 }
 
 .pager__pagination-item a span{
+  color: #fff;
   display:table-cell;
   vertical-align:middle;
 }
