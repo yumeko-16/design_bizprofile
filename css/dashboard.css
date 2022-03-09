@@ -64,10 +64,15 @@
   margin: 20px auto 5px;
 }
 
+.menu__nav-item-icon-color {
+  color: #fff;
+}
+
 .menu__nav-item-text {
   display: block;
   text-align: center;
   font-weight: bold;
+  color: #fff;
   padding-bottom: 12px;
 }
 
